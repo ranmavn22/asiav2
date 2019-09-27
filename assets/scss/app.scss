@@ -1,0 +1,154 @@
+*{
+  box-sizing: border-box;
+  transition: 0.3s all;
+}
+.admin-bar .headerHome {
+  top: 32px;
+}
+.displayFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.alignCenter{
+  display: flex;
+  align-items: center;
+}
+
+.positionR {
+  position: relative;
+}
+
+.positionA {
+  position: absolute;
+}
+html {
+  ul {
+    margin: 0;
+    li {
+      list-style: none;
+    }
+  }
+  .hideContent {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .hoverContent:hover{
+    color: #d0d0d0;
+    .hideContent{
+      opacity: 1;
+      top: 50px;
+      visibility: visible;
+    }
+  }
+}
+
+// Header site
+.header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(82, 129, 89, .8);
+  font-size: 16px;
+  color: #fff;
+  a {
+    color: #fff;
+    width: 100%;
+    &:hover{
+      color: #d0d0d0;
+    }
+  }
+  .container.grid-container {
+    background: transparent;
+  }
+}
+
+//Header home page
+.headerHome {
+  button {
+    height: 50px;
+    background: transparent;
+    padding: 0;
+    &:hover{
+      color: #d0d0d0;
+      background: transparent;
+    }
+  }
+
+  .topUL{
+    top:100px;
+    background: rgba(82, 129, 89, 0.8);
+    width: 200px;
+    li {
+      line-height: 35px;
+      border-bottom: 1px solid #fff;
+      padding-left: 10px;
+    }
+  }
+
+  .leftHeader {
+    align-items: center;
+    display: flex;
+    span:nth-child(2){
+      padding-left: 15px;
+      margin: 0 15px;
+      border-left: 1px solid #acacac;
+    }
+    .paysOther {
+      cursor: pointer;
+      height: 50px;
+      display: flex;
+      align-items: center;
+    }
+    .country_flats {
+      display: flex;
+      li {
+        margin-right: 10px;
+        img{
+          max-height: 30px;
+          max-width: 26px;
+          position: relative;
+          top: 3px;
+        }
+      }
+    }
+  }
+  .rightHeader{
+    display: flex;
+    align-items: center;
+    span{
+      margin-left: 15px;
+      &:hover{
+        color: #d0d0d0;
+      }
+    }
+    .fa{
+      border: 2px solid #fff;
+      color: #fff;
+      display: inline-block;
+      border-radius: 100%;
+      margin-right: 10px;
+      font-size: 22px;
+      width: 36px;
+      height: 36px;
+      position: relative;
+      &:before{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+    .topUL{
+      right: 0;
+      a{
+        display: inline-block;
+      }
+    }
+    .btnShowMenu{
+      .fa{
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+#wp-wz_editor_esprit_carte-wrap{
+     width: 50%;
+     float: left;
+ }
+.area_carte{
+    width: 45%;
+    float: left;
+    margin-left: 5%;
+}
+.itineraire_en_bref{
+    clear: both;
+}
+.itineraire_en_bref h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.itineraire_en_bref input{
+    width: 90%;
+ }
+.itineraire_en_bref .item,.content_program_tour .item{
+    border-bottom: 1px solid #2f8445;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.itineraire_en_bref img,#list_img_galery_post img{
+    width: 100px;
+    height: 100px;
+}
+.content_itineraire_en_bref .etape span,.content_program_tour .title{
+    font-size: 18px;
+    font-weight: bold;
+    color: #2f8445;
+}
+a{
+    cursor: pointer;
+}
+.del_item,.btn_del_carte{
+    color: #a00;
+}
+.area_carte img{
+    height: 250px;
+    width: auto;
+    max-width: 100%;
+}
+#content_program_tour textarea{
+    width: 100%;
+    height: 100px;
+}
+#vnsecret_information img,#hotel_information img{
+    width: 100px;
+    height:100px;
+}
+#vnsecret_information input{
+    width: 50%;
+}
