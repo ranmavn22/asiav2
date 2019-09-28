@@ -1,0 +1,99 @@
+@media (max-width: 1200px) {
+  .header .listFavourite{
+    right: 5px;
+    background-size: 40px;
+    max-width: 90px;
+    padding-top: 40px;
+    top: 10px;
+    line-height: 1;
+    a{
+      font-size: 13px;
+    }
+    span{
+    }
+  }
+  .header .logo{
+    left: 5px;
+    max-width: 80px;
+    top:10px;
+  }
+  #mainMenu {
+    padding: 0 90px;
+  }
+}
+
+@media (max-width: 990px) {
+  #mainMenu ul li > a {
+    line-height: 85px;
+    font-size: 13px;
+  }
+  .header .listFavourite,
+  .header .logo{
+    top:5px;
+  }
+  .header{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  #mainMenu{
+    display: none;
+  }
+  .header .logo {
+    max-width: 65px;
+  }
+  .menuMobile{
+    display: inline-block;
+    float: right;
+    button{
+      background: transparent;
+      padding: 0;
+      height: 70px;
+      margin: 0;
+    }
+    .fa{
+      border: 2px solid #fff;
+      color: #fff;
+      display: inline-block;
+      border-radius: 100%;
+      font-size: 22px;
+      width: 36px;
+      height: 36px;
+      position: relative;
+      &:before{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+    .topUL{
+      right: 0;
+    }
+  }
+  .header .listFavourite{
+    display: none;
+  }
+  html{
+    .separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header{
+      padding: 30px 5px;
+    }
+  }
+  .headerHome .rightHeader{
+    span:nth-child(2),
+    span:first-child{
+      display: none;
+    }
+  }
+  .headerHome .leftHeader span:nth-child(2){
+    display: none;
+  }
+  .headerHome .leftHeader .paysOther{
+    margin-right: 10px;
+  }
+  .country_flats{
+    padding-left: 10px;
+    border-left: 1px solid #e5e5e5;
+  }
+}

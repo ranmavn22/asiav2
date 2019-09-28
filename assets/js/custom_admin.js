@@ -15,7 +15,8 @@
                 var selection = image_caption_hover_plugin.state().get('selection');
                 selection.map( function( attachment ) {
                     attachment = attachment.toJSON();
-                    el.val(attachment.url);
+                    el.val(attachment.id);
+                    el.after('<img src="'+attachment.url+'" style="width: 300px">')
                 });
             });
             image_caption_hover_plugin.open();
