@@ -1,14 +1,14 @@
 <div class="form footerForm">
-    <p><span>Votre nom et prénom *</span><span>[text* nom placeholder "Nom"]</span><span>[text* Prenom placeholder "Prénom"]</span><span>[select* mr "Mr" "Ms"]</span></p>
-    <p><span>Votre nationalité</span><span>[select country data:countries]</span></p>
-    <p><span>Votre adresse</span><span>[text adresse]</span></p>
-    <p><span>Votre pays</span><span>[text pays]</span></p>
-    <p><span>Votre e-mail *</span><span>[email* email]</span></p>
-    <p><span>Votre téléphone *</span><span>[tel* telephone]</span></p>
-    <p><span>Durée du voyage *</span><span>[number* date min:1 max:12]</span><span> Départ vers </span><span>[select* month "01" "02" "03" "04" "05" "06" "07" "08" "09" "10" "11" "12"]</span><span>[select* year "2019" "2020" "2021" "2022" "2023" "2024" "2025" "2026" "2027" "2028" "2029" "2030"]</span></p>
-    <p><span>Participants? </span><span>[number* adultes min:1]</span><span> Adultes et </span><span>[number* enfants min:1]</span><span> enfants</span></p>
-    <p><span>Budget</span><span>[number* budget min:1]</span> <span>USD/pers(sans vols internationaux depuis votre pays)</span></p>
-    <p>Précisez d'éventuelles informations complémentaires  </p>
+    <p class="hasDot"><span>Votre nom et prénom *</span>[text* nom placeholder "Nom"][text* Prenom placeholder "Prénom"][select* mr "Mr" "Ms"]</p>
+    <p><span>Votre nationalité</span>[select country data:countries]</p>
+    <p><span>Votre adresse</span>[text adresse]</p>
+    <p><span>Votre pays</span>[text pays]</p>
+    <p><span>Votre e-mail *</span>[email* email]</p>
+    <p><span>Votre téléphone *</span>[tel* telephone]</p>
+    <p class="hasDot"><span>Durée du voyage *</span>[number* date min:1 max:12]<span> Départ vers </span>[select* month "01" "02" "03" "04" "05" "06" "07" "08" "09" "10" "11" "12"][select* years "2019" "2020" "2021" "2022" "2023" "2024" "2025" "2026" "2027" "2028" "2029" "2030"]</p>
+    <p class="hasDot"><span>Participants? </span>[number* adultes min:1]<span> Adultes et </span>[number* enfants min:1]<span> enfants</span></p>
+    <p class="hasDot"><span>Budget</span>[number* budget min:1] <span>USD/pers(sans vols internationaux depuis votre pays)</span></p>
+    <p class="hasDot">Précisez d'éventuelles informations complémentaires  </p>
     <p>[textarea message]</p>
-    <p>[submit "Envoyer"]</p>
+    <p class="btnSubmit">[submit "Envoyer"]</p>
 </div>
