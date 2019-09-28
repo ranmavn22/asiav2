@@ -1,0 +1,299 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 1.2; }
+
+h1, h2, h3, h4 {
+  font-weight: bold; }
+
+.admin-bar .header {
+  top: 32px; }
+
+.displayFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.alignCenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.positionR {
+  position: relative;
+  z-index: 1; }
+
+.positionA {
+  position: absolute; }
+
+html ul {
+  margin: 0; }
+  html ul li {
+    list-style: none; }
+
+html .hideContent {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all; }
+
+html .hoverContent:hover {
+  color: #d0d0d0; }
+  html .hoverContent:hover .hideContent {
+    opacity: 1;
+    top: 100%;
+    visibility: visible; }
+
+html button,
+html a {
+  cursor: pointer; }
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(82, 129, 89, 0.8);
+  font-size: 16px;
+  color: #fff;
+  z-index: 1; }
+  .header button {
+    height: 50px;
+    background: transparent;
+    padding: 0; }
+    .header button:hover {
+      color: #d0d0d0;
+      background-color: transparent; }
+    .header button:active {
+      background-color: transparent; }
+  .header a {
+    color: #fff;
+    width: 100%; }
+    .header a:hover {
+      color: #d0d0d0; }
+  .header .container.grid-container {
+    background: transparent; }
+  .header .logo {
+    max-width: 100px;
+    top: 1px;
+    left: 0; }
+  .header .topUL {
+    top: 100px;
+    background: rgba(82, 129, 89, 0.8);
+    width: 200px; }
+    .header .topUL li {
+      border-bottom: 1px solid #fff;
+      padding-left: 10px; }
+      .header .topUL li a {
+        display: block;
+        line-height: 35px; }
+  .header .listFavourite {
+    top: 5px;
+    right: 0;
+    max-width: 100px;
+    background: url(../images/icon_3.png) no-repeat top center;
+    padding-top: 45px;
+    text-align: center; }
+    .header .listFavourite a {
+      color: #bb9d55;
+      font-weight: bold; }
+      .header .listFavourite a .number_tour {
+        top: 0;
+        right: 0;
+        display: inline-block;
+        background: #bb9d55;
+        color: #fff;
+        border-radius: 100%;
+        width: 20px;
+        height: 20px;
+        font-size: 14px;
+        padding-top: 1px; }
+
+.headerHome .leftHeader {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .headerHome .leftHeader span:nth-child(2) {
+    padding-left: 15px;
+    margin: 0 15px;
+    border-left: 1px solid #acacac; }
+  .headerHome .leftHeader .paysOther {
+    cursor: pointer;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .headerHome .leftHeader .country_flats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .headerHome .leftHeader .country_flats li {
+      margin-right: 10px; }
+      .headerHome .leftHeader .country_flats li img {
+        max-height: 30px;
+        max-width: 26px;
+        position: relative;
+        top: 3px; }
+
+.headerHome .rightHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .headerHome .rightHeader span {
+    margin-left: 15px; }
+    .headerHome .rightHeader span:hover {
+      color: #d0d0d0; }
+  .headerHome .rightHeader .fa {
+    border: 2px solid #fff;
+    color: #fff;
+    display: inline-block;
+    border-radius: 100%;
+    margin-right: 10px;
+    font-size: 22px;
+    width: 36px;
+    height: 36px;
+    position: relative; }
+    .headerHome .rightHeader .fa:before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+  .headerHome .rightHeader .topUL {
+    right: 0; }
+    .headerHome .rightHeader .topUL a {
+      display: inline-block; }
+  .headerHome .rightHeader .btnShowMenu .fa {
+    margin: 0; }
+
+.menuMobile {
+  display: none; }
+
+#mainMenu {
+  width: 100%;
+  padding: 0 140px; }
+  #mainMenu ul {
+    width: 100%;
+    display: table; }
+    #mainMenu ul li {
+      display: table-cell;
+      font-size: 14px;
+      float: none;
+      text-align: center; }
+      #mainMenu ul li > a {
+        line-height: 100px;
+        padding: 0;
+        color: #fff;
+        display: inline-block;
+        font-weight: bold; }
+        #mainMenu ul li > a:hover {
+          -webkit-box-shadow: inset 0 -4px 0 0 #bb9d55;
+          box-shadow: inset 0 -4px 0 0 #bb9d55; }
+      #mainMenu ul li .sub_menu {
+        width: 100%;
+        top: 150%;
+        left: 0;
+        background: url(../images/menu-hover-vietnam_03.jpg) no-repeat bottom center;
+        background-size: 100% 100%; }
+        #mainMenu ul li .sub_menu .see_more {
+          padding: 10px 20px;
+          background: #bb9d55;
+          margin-top: 20px;
+          font-weight: bold;
+          border-radius: 2px; }
+        #mainMenu ul li .sub_menu .alignright {
+          padding-right: 60px; }
+      #mainMenu ul li:hover .sub_menu {
+        top: 100%; }
+      #mainMenu ul li .content_sub {
+        display: table;
+        vertical-align: middle;
+        padding: 15px 0 30px; }
+      #mainMenu ul li .text_sub_menu {
+        padding: 0 40px;
+        width: 30%;
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 18px;
+        color: #fff;
+        border-right: 1px solid #518846;
+        background: url(../images/bg_menu.png) no-repeat center center; }
+      #mainMenu ul li .item_sub-menu {
+        border-left: 1px solid #fff;
+        padding: 0 60px 0 60px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-bottom: 30px; }
+      #mainMenu ul li .item {
+        width: 33%;
+        padding: 10px 0; }
+        #mainMenu ul li .item img {
+          border-radius: 100%;
+          margin-bottom: 5px; }
+        #mainMenu ul li .item a {
+          text-transform: uppercase;
+          font-size: 13px;
+          line-height: 1.2;
+          font-weight: bold; }
+          #mainMenu ul li .item a:hover {
+            color: #bb9d55; }
+    #mainMenu ul .vietnam_secret .item:first-child {
+      border-top: none; }
+    #mainMenu ul .vietnam_secret .item {
+      width: 100%;
+      text-align: left;
+      border-top: 1px dashed #fff;
+      padding: 20px; }
+      #mainMenu ul .vietnam_secret .item img {
+        margin-right: 15px; }
+    #mainMenu ul .vietnam_secret .item:nth-child(2) {
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+      #mainMenu ul .vietnam_secret .item:nth-child(2) .img_vietnam {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2; }
+      #mainMenu ul .vietnam_secret .item:nth-child(2) img {
+        margin-right: 0;
+        margin-left: 15px; }
+    #mainMenu ul .site_a_decouvrir img {
+      max-width: 80%; }
+    #mainMenu ul .site_a_decouvrir .item_sub-menu .textwidget {
+      margin-bottom: 40px;
+      text-align: left;
+      border-bottom: 1px dashed #fff;
+      font-weight: bold; }
+      #mainMenu ul .site_a_decouvrir .item_sub-menu .textwidget h3 {
+        font-size: 16px;
+        font-weight: bold; }
+      #mainMenu ul .site_a_decouvrir .item_sub-menu .textwidget p {
+        text-transform: uppercase;
+        font-size: 13px;
+        color: #fff; }
+      #mainMenu ul .site_a_decouvrir .item_sub-menu .textwidget a {
+        color: #fff; }
+        #mainMenu ul .site_a_decouvrir .item_sub-menu .textwidget a:hover {
+          color: #bb9d55; }

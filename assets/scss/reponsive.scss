@@ -20,6 +20,9 @@
   #mainMenu {
     padding: 0 90px;
   }
+  footer .sectionFooter1 .leftColumn {
+    background-position: 200px 139px;
+  }
 }
 
 @media (max-width: 990px) {
@@ -33,6 +36,19 @@
   }
   .header{
     font-size: 14px;
+  }
+  footer .sectionFooter1 .leftColumn {
+    background-position: 130px 139px;
+    padding-right: 30px;
+  }
+  footer .country_vietnam{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  footer .country_vietnam .item_location{
+    width: 33.33%;
+    padding: 15px 5px;
+    justify-content: flex-start;
   }
 }
 
@@ -95,5 +111,73 @@
   .country_flats{
     padding-left: 10px;
     border-left: 1px solid #e5e5e5;
+  }
+  footer .sectionFooter1 .displayFlex{
+    flex-wrap: wrap;
+  }
+  footer .sectionFooter1 .leftColumn{
+    width: 100%;
+    padding: 0;
+  }
+  footer .sectionFooter1 .leftColumn aside:last-child {
+    margin-top: 25px;
+  }
+  footer .sectionFooter1 .rightColumn{
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .footerForm p {
+    flex-wrap: wrap;
+  }
+  .footerForm span{
+    width: 100%;
+  }
+  html .footerForm p span:nth-child(2) {
+    padding-left: 0;
+  }
+  html .footerForm p span:first-child {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+    padding-left: 0;
+  }
+  .footerForm span{
+    padding-left: 5px;
+    margin-left: 0 !important;
+  }
+  .footerForm p:first-child span{
+    width: 33%;
+  }
+  .footerForm p:nth-child(8) span:first-child,
+  .footerForm p:nth-child(9) span:first-child,
+  .footerForm p:nth-child(7) span:first-child{
+    width: 100%;
+  }
+  .footerForm p:nth-child(8) span,
+  .footerForm p:nth-child(7) span {
+    width: 25%;
+  }
+  .footerForm p:nth-child(9) span{
+    width: 30%;
+  }
+  .footerForm p:nth-child(9) span:last-child {
+    width: 70%;
+  }
+  footer .sectionFooter1 .rightColumn aside:last-child{
+    text-align: left;
+  }
+  footer .tabs_country{
+    flex-wrap: wrap;
+  }
+  footer .tabs_country .item_country.active:before{
+    display: none;
+  }
+  footer .tabs_country .item_country{
+    width: 100%;
+  }
+  footer .country_vietnam .item_location{
+    width: 100%;
   }
 }

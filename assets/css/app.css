@@ -55,6 +55,9 @@ html button,
 html a {
   cursor: pointer; }
 
+html body {
+  font-size: 16px; }
+
 .header {
   position: fixed;
   top: 0;
@@ -93,6 +96,8 @@ html a {
       .header .topUL li a {
         display: block;
         line-height: 35px; }
+    .header .topUL .current-menu-item a {
+      color: #d0d0d0; }
   .header .listFavourite {
     top: 5px;
     right: 0;
@@ -298,6 +303,206 @@ html a {
         #mainMenu ul .site_a_decouvrir .item_sub-menu .textwidget a:hover {
           color: #bb9d55; }
 
+footer {
+  border-top: none;
+  padding: 29px 0 30px;
+  background-color: #75946f !important;
+  background: url(../images/bg_footer.jpg) repeat-x top center; }
+  footer .sectionFooter1 .leftColumn {
+    background: url(../images/bg_img_footer.png) no-repeat right center;
+    padding-right: 74px;
+    background-position: 295px 139px;
+    width: 47%; }
+    footer .sectionFooter1 .leftColumn aside:last-child {
+      margin-top: 130px; }
+      footer .sectionFooter1 .leftColumn aside:last-child .wz_images_footer {
+        margin-top: 22px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        footer .sectionFooter1 .leftColumn aside:last-child .wz_images_footer li {
+          margin-right: 33px; }
+  footer .sectionFooter1 .widget-title,
+  footer .sectionFooter1 .widgettitle {
+    margin-top: .7em;
+    font-size: 21px;
+    line-height: 1.3;
+    letter-spacing: .6px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase; }
+  footer .sectionFooter1 .list_raisons li {
+    color: #fff;
+    display: block;
+    border-bottom: 1px solid #fff;
+    padding: 15px 0; }
+    footer .sectionFooter1 .list_raisons li a {
+      color: #bb9d55; }
+  footer .sectionFooter1 .rightColumn {
+    width: 53%; }
+    footer .sectionFooter1 .rightColumn h3 {
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff; }
+    footer .sectionFooter1 .rightColumn .widgettitle {
+      font-size: 21px; }
+    footer .sectionFooter1 .rightColumn aside:last-child {
+      margin-top: 20px;
+      text-align: right; }
+      footer .sectionFooter1 .rightColumn aside:last-child .wz_images_footer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end; }
+        footer .sectionFooter1 .rightColumn aside:last-child .wz_images_footer img {
+          margin-left: 10px; }
+  footer .tabs_country {
+    padding-top: 40px; }
+    footer .tabs_country .item_country {
+      background: #bb9d55;
+      width: 33.33%;
+      margin: 0;
+      text-align: center;
+      line-height: 40px;
+      color: #fff;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 16px;
+      border-left: 1px solid #7aa573; }
+      footer .tabs_country .item_country.active {
+        background: #7aa573; }
+        footer .tabs_country .item_country.active:before {
+          content: '';
+          z-index: -1;
+          position: absolute;
+          top: -10px;
+          left: 49%;
+          -webkit-transform: rotateZ(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotateZ(45deg);
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          background: #7aa573; }
+  footer .country_vietnam {
+    color: #fff; }
+    footer .country_vietnam .item_location {
+      width: 20%;
+      padding: 0 5px; }
+    footer .country_vietnam h3 {
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      font-size: 16px; }
+    footer .country_vietnam li {
+      margin-bottom: 15px;
+      line-height: 1.3; }
+      footer .country_vietnam li .fa {
+        margin-right: 5px; }
+      footer .country_vietnam li a {
+        color: #fff; }
+  footer .area_footer_country {
+    padding-top: 26px;
+    background: #75946f; }
+  footer #menu-menu-socket {
+    text-align: center;
+    padding-top: 20px; }
+    footer #menu-menu-socket li {
+      display: inline-block;
+      padding: 0 10px;
+      border-left: 1px solid #fff; }
+      footer #menu-menu-socket li a {
+        color: #fff; }
+        footer #menu-menu-socket li a:hover {
+          color: #bb9d55; }
+    footer #menu-menu-socket li:first-child {
+      border: none; }
+  footer .kkstart {
+    margin-top: 10px;
+    text-align: center; }
+    footer .kkstart span {
+      display: inline-block;
+      background-image: url(../images/img_star_rating_new.png);
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px; }
+
+.footerForm p {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+  font-size: 14px; }
+  .footerForm p select,
+  .footerForm p textarea,
+  .footerForm p input {
+    height: 30px;
+    line-height: 30px;
+    padding: 2px 10px;
+    border: none;
+    border-radius: 2px;
+    width: 100%; }
+
+.footerForm p:first-child span {
+  width: 25%; }
+
+.footerForm span {
+  width: 78%;
+  margin-left: 10px; }
+  .footerForm span input {
+    width: 100%; }
+
+.footerForm span:first-child {
+  width: 25%;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 0; }
+
+.footerForm p:nth-child(7) span:first-child {
+  width: 25%; }
+
+.footerForm p:nth-child(7) span {
+  width: 18%; }
+
+.footerForm p:nth-child(8) span:first-child {
+  width: 25%; }
+
+.footerForm p:nth-child(8) span {
+  width: 18%; }
+
+.footerForm p:nth-child(9) span:first-child {
+  width: 25%; }
+
+.footerForm p:nth-child(9) span {
+  width: 18%; }
+
+.footerForm p:nth-child(9) span:last-child {
+  width: 57%; }
+
+.footerForm p:nth-child(11) span {
+  width: 100%; }
+  .footerForm p:nth-child(11) span textarea {
+    resize: none;
+    height: 100px; }
+
+.footerForm .btnSubmit {
+  display: block;
+  text-align: center; }
+  .footerForm .btnSubmit input {
+    background: #7aa573;
+    border-radius: 4px;
+    width: auto;
+    height: 38px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold; }
+
 @media (max-width: 1200px) {
   .header .listFavourite {
     right: 5px;
@@ -313,7 +518,9 @@ html a {
     max-width: 80px;
     top: 10px; }
   #mainMenu {
-    padding: 0 90px; } }
+    padding: 0 90px; }
+  footer .sectionFooter1 .leftColumn {
+    background-position: 200px 139px; } }
 
 @media (max-width: 990px) {
   #mainMenu ul li > a {
@@ -323,7 +530,22 @@ html a {
   .header .logo {
     top: 5px; }
   .header {
-    font-size: 14px; } }
+    font-size: 14px; }
+  footer .sectionFooter1 .leftColumn {
+    background-position: 130px 139px;
+    padding-right: 30px; }
+  footer .country_vietnam {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+  footer .country_vietnam .item_location {
+    width: 33.33%;
+    padding: 15px 5px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; } }
 
 @media (max-width: 767px) {
   #mainMenu {
@@ -369,4 +591,55 @@ html a {
     margin-right: 10px; }
   .country_flats {
     padding-left: 10px;
-    border-left: 1px solid #e5e5e5; } }
+    border-left: 1px solid #e5e5e5; }
+  footer .sectionFooter1 .displayFlex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  footer .sectionFooter1 .leftColumn {
+    width: 100%;
+    padding: 0; }
+  footer .sectionFooter1 .leftColumn aside:last-child {
+    margin-top: 25px; }
+  footer .sectionFooter1 .rightColumn {
+    width: 100%; } }
+
+@media (max-width: 450px) {
+  .footerForm p {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .footerForm span {
+    width: 100%; }
+  html .footerForm p span:nth-child(2) {
+    padding-left: 0; }
+  html .footerForm p span:first-child {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+    padding-left: 0; }
+  .footerForm span {
+    padding-left: 5px;
+    margin-left: 0 !important; }
+  .footerForm p:first-child span {
+    width: 33%; }
+  .footerForm p:nth-child(8) span:first-child,
+  .footerForm p:nth-child(9) span:first-child,
+  .footerForm p:nth-child(7) span:first-child {
+    width: 100%; }
+  .footerForm p:nth-child(8) span,
+  .footerForm p:nth-child(7) span {
+    width: 25%; }
+  .footerForm p:nth-child(9) span {
+    width: 30%; }
+  .footerForm p:nth-child(9) span:last-child {
+    width: 70%; }
+  footer .sectionFooter1 .rightColumn aside:last-child {
+    text-align: left; }
+  footer .tabs_country {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  footer .tabs_country .item_country.active:before {
+    display: none; }
+  footer .tabs_country .item_country {
+    width: 100%; }
+  footer .country_vietnam .item_location {
+    width: 100%; } }
