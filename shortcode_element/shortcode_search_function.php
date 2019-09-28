@@ -11,6 +11,7 @@ $terms = get_terms("category_tour");
 
     <form role="search" action="<?php echo site_url('/'); ?>" method="get" id="searchform">
         <input type="hidden" name="post_type" value="tours"/>
+        <div class="displayFlex alignCenter contentForm">
         <select name="category_tour">
             <option value="">Type de voyages?</option>
             <?php if (!empty($terms)) {
@@ -30,5 +31,6 @@ $terms = get_terms("category_tour");
         <input type="text" placeholder="Mot de clé" name="s">
         <button type="submit" class="btn_submit_search" id="btn-search"><span><?php _e('235 Voyages', 'wz') ?></span> <i
                     class="fa fa-search"></i></button>
+        </div>
     </form>
 </div>

@@ -5,6 +5,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 function wpdocs_theme_name_scripts() {
     wp_enqueue_style( 'style-app', get_stylesheet_directory_uri() . '/assets/css/app.css' );
+    wp_enqueue_script( 'slick_script', get_stylesheet_directory_uri() . '/assets/js/slick.min.js', array('jquery'), '1.0.0', true );
     wp_enqueue_script( 'app_script', get_stylesheet_directory_uri() . '/assets/js/app.js', array('jquery'), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
@@ -39,4 +40,20 @@ if (!function_exists('main_menu_callback')):
         include __DIR__.'/shortcode_element/shortcode_menu.php';
     }
     add_shortcode('main_menu', 'main_menu_callback');
+endif;
+
+if (!function_exists('search_function_callback')):
+    function search_function_callback()
+    {
+        include __DIR__.'/shortcode_element/shortcode_search_function.php';
+    }
+    add_shortcode('search_form', 'search_function_callback');
+endif;
+
+if (!function_exists('tour_home_callback')):
+    function tour_home_callback()
+    {
+        include __DIR__.'/shortcode_element/shortcode_list_tour_home.php';
+    }
+    add_shortcode('tour_feature', 'tour_home_callback');
 endif;

@@ -1,3 +1,5 @@
+@import url(./slick.css);
+@import url(./slick-theme.css);
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -30,7 +32,8 @@ h1, h2, h3, h4 {
   z-index: 1; }
 
 .positionA {
-  position: absolute; }
+  position: absolute;
+  z-index: 1; }
 
 html ul {
   margin: 0; }
@@ -65,7 +68,7 @@ html body {
   background: rgba(82, 129, 89, 0.8);
   font-size: 16px;
   color: #fff;
-  z-index: 1; }
+  z-index: 9999; }
   .header button {
     height: 50px;
     background: transparent;
@@ -98,27 +101,28 @@ html body {
         line-height: 35px; }
     .header .topUL .current-menu-item a {
       color: #d0d0d0; }
-  .header .listFavourite {
-    top: 5px;
-    right: 0;
-    max-width: 100px;
-    background: url(../images/icon_3.png) no-repeat top center;
-    padding-top: 45px;
-    text-align: center; }
-    .header .listFavourite a {
-      color: #bb9d55;
-      font-weight: bold; }
-      .header .listFavourite a .number_tour {
-        top: 0;
-        right: 0;
-        display: inline-block;
-        background: #bb9d55;
-        color: #fff;
-        border-radius: 100%;
-        width: 20px;
-        height: 20px;
-        font-size: 14px;
-        padding-top: 1px; }
+
+.listFavourite {
+  top: 5px;
+  right: 0;
+  max-width: 100px;
+  background: url(../images/icon_3.png) no-repeat top center;
+  padding-top: 45px;
+  text-align: center; }
+  .listFavourite a {
+    color: #bb9d55;
+    font-weight: bold; }
+    .listFavourite a .number_tour {
+      top: 0;
+      right: 0;
+      display: inline-block;
+      background: #bb9d55;
+      color: #fff;
+      border-radius: 100%;
+      width: 20px;
+      height: 20px;
+      font-size: 14px;
+      padding-top: 1px; }
 
 .headerHome .leftHeader {
   -webkit-box-align: center;
@@ -502,6 +506,86 @@ footer {
     font-size: 16px;
     line-height: 30px;
     font-weight: bold; }
+
+.homeSlider {
+  overflow: hidden; }
+  .homeSlider .item img {
+    width: 100%; }
+  .homeSlider .item .slogan {
+    top: 90px;
+    left: 50px;
+    color: #fff; }
+    .homeSlider .item .slogan .text {
+      text-align: center;
+      width: 750px; }
+      .homeSlider .item .slogan .text p {
+        font-family: Constantia;
+        text-shadow: black 1px 2px 2px;
+        font-size: 30px;
+        -webkit-filter: none;
+        filter: none;
+        white-space: nowrap;
+        margin: 0; }
+      .homeSlider .item .slogan .text p:last-child {
+        font-family: "Monotype Corsiva";
+        text-shadow: black 1px 2px 2px;
+        font-size: 26px; }
+  .homeSlider .item .inforTour {
+    color: #fff;
+    right: 50px;
+    bottom: 50px;
+    text-align: center; }
+    .homeSlider .item .inforTour p {
+      margin: 10px; }
+      .homeSlider .item .inforTour p a {
+        border: 2px solid #fff;
+        display: inline-block;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 20px; }
+    .homeSlider .item .inforTour p:first-child {
+      border-bottom: 1px solid white;
+      padding: 0 0 5px;
+      font-size: 34px; }
+    .homeSlider .item .inforTour p:nth-child(2) {
+      font-size: 30px; }
+
+.mainMenuHome #mainMenu {
+  padding: 0 40px; }
+  .mainMenuHome #mainMenu a {
+    color: #bb9d55; }
+  .mainMenuHome #mainMenu .sub_menu a {
+    color: #fff; }
+
+.mainMenuHome img:nth-child(3) {
+  margin-right: 20px; }
+
+.mainMenuHome .listFavourite {
+  position: relative;
+  text-transform: inherit;
+  width: 100%; }
+
+.search {
+  margin-top: 20px; }
+  .search .search_function_main {
+    padding: 15px 25px;
+    background: #7aa573;
+    -webkit-box-shadow: 0 2px 0 0 #f2f2f2;
+    box-shadow: 0 2px 0 0 #f2f2f2; }
+  .search .contentForm select,
+  .search .contentForm button,
+  .search .contentForm input {
+    width: 25%;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    padding: 2px 5px;
+    border-radius: 2px;
+    margin: 0 5px; }
+  .search .contentForm button {
+    background: #bb9d55; }
+    .search .contentForm button:hover {
+      background: #e2ba5b; }
 
 @media (max-width: 1200px) {
   .header .listFavourite {

@@ -1,0 +1,103 @@
+.homeSlider {
+  overflow: hidden;
+  .item {
+    img{
+      width: 100%;
+    }
+    .slogan {
+      top: 90px;
+      left: 50px;
+      color: #fff;
+      .text {
+        text-align: center;
+        width: 750px;
+        p {
+          font-family: Constantia;
+          text-shadow: rgb(0, 0, 0) 1px 2px 2px;
+          font-size: 30px;
+          filter: none;
+          white-space: nowrap;
+          margin: 0;
+        }
+        p:last-child {
+          font-family: "Monotype Corsiva";
+          text-shadow: rgb(0, 0, 0) 1px 2px 2px;
+          font-size: 26px;
+        }
+      }
+    }
+
+    .inforTour {
+      color: #fff;
+      right: 50px;
+      bottom: 50px;
+      text-align: center;
+      p{
+        margin: 10px;
+        a{
+          border: 2px solid #fff;
+          display: inline-block;
+          color: #fff;
+          padding: 10px 20px;
+          font-size: 20px;
+        }
+      }
+      p:first-child {
+        border-bottom: 1px solid rgb(255, 255, 255);
+        padding: 0 0 5px;
+        font-size: 34px;
+      }
+      p:nth-child(2){
+        font-size: 30px;
+      }
+    }
+  }
+}
+.mainMenuHome{
+  #mainMenu {
+    padding: 0 40px;
+    a{
+      color: #bb9d55;
+    }
+    .sub_menu{
+      a{
+        color: #fff;
+      }
+    }
+  }
+  img:nth-child(3){
+    margin-right: 20px;
+  }
+  .listFavourite{
+    position: relative;
+    text-transform: inherit;
+    width: 100%;
+  }
+}
+.search{
+  margin-top: 20px;
+  .search_function_main{
+    padding: 15px 25px;
+    background: #7aa573;
+    box-shadow: 0 2px 0 0 #f2f2f2;
+  }
+  .contentForm{
+    select,
+    button,
+    input{
+      width: 25%;
+      border: none;
+      height: 40px;
+      line-height: 40px;
+      padding: 2px 5px;
+      border-radius: 2px;
+      margin: 0 5px;
+    }
+    button{
+      background: #bb9d55;
+      &:hover{
+        background: #e2ba5b;
+      }
+    }
+  }
+}
