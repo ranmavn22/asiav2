@@ -2,29 +2,30 @@
 if (!defined('ABSPATH')) {
     die();
 }
+
+$page = !empty($page) ? $page : 1;
+$offset = !empty($page) ? ($page - 1)*6 : 0;
 $args = array(
     'posts_per_page' => 6,
-    'offset' => 0,
-    'category_name' => 'guide',
+    'offset' => $offset,
+    'category_name' => 'guide-de-voyage-vietnam',
     'post_type' => 'post',
     'post_status' => 'publish'
 );
 $loop = new WP_Query($args);
-global $post;
+
 ?>
 
-
 <div class="list_guide">
-    <div class="list_item_guide">
+    <div class="list_item_guide displayFlex">
         <?php
         if (!empty($loop)) {
             while ($loop->have_posts()) : $loop->the_post();
-                $image = get_the_post_thumbnail_url($post->ID, "medium");
                 ?>
-                <div class="item">
-                    <div class="img_guide"><img class="wz_lazyload" data-original="<?php echo $image ?>" alt=""></div>
+                <div class="item displayFlex alignCenter">
+                    <div class="img_guide"><a href="<?php echo get_permalink($post->id) ?>" title="<?php echo the_title() ?>"><?php echo get_the_post_thumbnail($post->id,'thumbnail')?></a></div>
                     <div class="content_guide">
-                        <h3><a href="<?php echo get_permalink() ?>"><?php echo the_title() ?></a></h3>
+                        <h3><a href="<?php echo get_permalink() ?>" title="<?php echo the_title() ?>"><?php echo the_title() ?></a></h3>
                         <p><?php echo wp_trim_words(get_the_content(), 30, '') ?></p>
                     </div>
                 </div>
@@ -40,7 +41,7 @@ global $post;
             echo paginate_links(array(
                 'base' => str_replace($big, '%#%', get_pagenum_link($big)),
                 'format' => '',
-                'current' => max(1, get_query_var('paged')),
+                'current' => $page,
                 'mid_size' => 2,
                 'end_size' => 2,
                 'total' => $loop->max_num_pages,
