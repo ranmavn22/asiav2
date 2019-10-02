@@ -1,32 +1,67 @@
 <div class="form footerForm">
-    <p class="hasDot"><span>Votre nom et prénom *</span>[text* nom placeholder "Nom"][text* Prenom placeholder "Prénom"][select* mr "Mr" "Ms"]</p>
+    <p class="hasDot"><span>Votre nom et prénom *</span>[text* nom placeholder "Nom"][text* Prenom placeholder
+        "Prénom"][select* mr "Mr" "Ms"]</p>
     <p><span>Votre nationalité</span>[select country data:countries]</p>
     <p><span>Votre adresse</span>[text adresse]</p>
     <p><span>Votre pays</span>[text pays]</p>
     <p><span>Votre e-mail *</span>[email* email]</p>
     <p><span>Votre téléphone *</span>[tel* telephone]</p>
-    <p class="hasDot"><span>Durée du voyage *</span>[number* date min:1 max:12]<span> Départ vers </span>[select* month "01" "02" "03" "04" "05" "06" "07" "08" "09" "10" "11" "12"][select* years "2019" "2020" "2021" "2022" "2023" "2024" "2025" "2026" "2027" "2028" "2029" "2030"]</p>
-    <p class="hasDot"><span>Participants? </span>[number* adultes min:1]<span> Adultes et </span>[number* enfants min:1]<span> enfants</span></p>
-    <p class="hasDot"><span>Budget</span>[number* budget min:1] <span>USD/pers(sans vols internationaux depuis votre pays)</span></p>
-    <p class="hasDot">Précisez d'éventuelles informations complémentaires  </p>
+    <p class="hasDot"><span>Durée du voyage *</span>[number* date min:1 max:12]<span> Départ vers </span>[select* month
+        "01" "02" "03" "04" "05" "06" "07" "08" "09" "10" "11" "12"][select* years "2019" "2020" "2021" "2022" "2023"
+        "2024" "2025" "2026" "2027" "2028" "2029" "2030"]</p>
+    <p class="hasDot"><span>Participants? </span>[number* adultes min:1]<span> Adultes et </span>[number* enfants min:1]<span> enfants</span>
+    </p>
+    <p class="hasDot"><span>Budget</span>[number* budget min:1] <span>USD/pers(sans vols internationaux depuis votre pays)</span>
+    </p>
+    <p class="hasDot">Précisez d'éventuelles informations complémentaires </p>
     <p>[textarea message]</p>
     <p class="btnSubmit">[submit "Envoyer"]</p>
 </div>
 
 <div class="form hotelForm">
-    <p><span>Nom et prénom: </span>[text* nom placeholder "Nom"][text* Prenom placeholder "Prénom"][select* mr "Mr" "Ms"]</p>
+    <p><span>Nom et prénom *: </span>[text* nom placeholder "Nom"][text* Prenom placeholder "Prénom"][select* mr "Mr"
+        "Ms"]</p>
     <p><span>Nationalité:  </span>[select country data:countries]</p>
-    <p><span>Téléphone: </span>[text adresse]</p>
-    <p><span>Adresse:  </span>[text pays]</p>
-    <p><span>Email: *</span>[email* email]</p>
-    <p><span>Durée prévue de voyage: </span>[tel* telephone]</p>
+    <p><span>Téléphone *: </span>[tel telephone]</p>
+    <p><span>Adresse:  </span>[text address]</p>
+    <p><span>Email *: </span>[email* email]</p>
+    <p><span>Durée prévue de voyage *: </span>[text* duree]</p>
 
-    <p><span>Période de voyage: </span>[tel* telephone]</p>
-    <p><span>Indiquer le nombre d'adultes participants:  </span>[tel* telephone]</p>
-    <p><span>Indiquer parmis eux le nombre de couples:  </span>[tel* telephone]</p>
-    <p><span>Indiquer le nombre d'enfants mineurs participants:  </span>[tel* telephone]</p>
-    <p><span>Indiquer le type d'hebergement que vous preferez  </span>[tel* telephone]</p>
-    <p>Précisez d'éventuelles informations complémentaires  </p>
+    <p><span>Période de voyage *: </span>[text* periode]</p>
+    <p><span>Indiquer le nombre d'adultes participants:  </span>[text participants]</p>
+    <p><span>Indiquer parmis eux le nombre de couples:  </span>[text couples]</p>
+    <p><span>Indiquer le nombre d'enfants mineurs participants:  </span>[text mineures_participants]</p>
+    <p><span>Indiquer le type d'hebergement que vous preferez  </span>[text preferez]</p>
+    <div>
+        <p>
+            <span>Chambre doudle avec un grand lit</span>
+            <span><img src="//asia-soleil-travel.com/wp-content/uploads/2017/07/phoca_thumb_l_deluxe-005.jpg"
+                       alt=""></span>
+            [select chambre_doudle_avec "01" "02" "03" "04" "05" "06" "07" "08" "09" "10"]
+        </p>
+        <p>
+            <span>Chambre doudle avec 2 petit lits</span>
+            <span><img
+                    src="//asia-soleil-travel.com/wp-content/uploads/2017/07/hinh-anh-ve-phong-02-giuong-cua-thuy-moc-hotel636298350821415675.jpg"
+                    alt=""></span>
+            [select chambre_doudle_avec_2_petit "01" "02" "03" "04" "05" "06" "07" "08" "09" "10"]
+        </p>
+        <p>
+            <span>Chambre pour 3 personnes</span>
+            <span><img
+                    src="//asia-soleil-travel.com/wp-content/uploads/2017/07/10382_ADR-33556280-kiman-hoi-an-hotel-3-phong-deluxe-triple-kem-an-sang-cho-03-nguoi-39f557d2-1927-4fec-adb4-292e40439b6e.jpg"
+                    alt=""></span>
+            [select chambre_pour_3_personnes "01" "02" "03" "04" "05" "06" "07" "08" "09" "10"]
+        </p>
+        <p>
+            <span>Chambre indeviduelle</span>
+            <span><img src="//asia-soleil-travel.com/wp-content/uploads/2017/07/67180715000.jpg" alt=""></span>
+            [select chambre_indeviduelle "01" "02" "03" "04" "05" "06" "07" "08" "09" "10"]
+        </p>
+    </div>
+    <p><span>Indiquer les repas que vous souhaitez inclure dans le prix de votre voyage:</span>[checkbox indiquer "Petit
+        déjeuner (B) inclu normalement à l'hôtel" "Déjeunner ( L)" "Dîner ( D)"]</p>
+    <p>Précisez d'éventuelles informations complémentaires </p>
     <p>[textarea message]</p>
     <p class="btnSubmit">[submit "Envoyer"]</p>
 </div>

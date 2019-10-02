@@ -53,6 +53,23 @@
 }
 
 @media (max-width: 767px) {
+  .hotelForm div p{
+    width: 50%;
+  }
+  .hotelForm p{
+    flex-wrap: wrap;
+  }
+  .hotelForm p .wpcf7-form-control-wrap,
+  .hotelForm p > span:first-child{
+    width: 100%;
+    margin: 0;
+  }
+  .titlePage h1 {
+    font-size: 20px;
+  }
+  .titlePage{
+    padding: 5px 0;
+  }
   #mainMenu{
     display: none;
   }

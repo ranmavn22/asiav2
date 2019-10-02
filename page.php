@@ -19,9 +19,11 @@ get_header(); ?>
     <?php
     while (have_posts()) : the_post(); ?>
 
-        <div class="bannerPage"><?php echo get_the_post_thumbnail() ?></div>
+        <div class="bannerPage positionR">
+            <?php echo get_the_post_thumbnail() ?>
+            <div class="titlePage positionA"><h1><?php the_title() ?></h1></div>
+        </div>
         <div class="grid-container">
-            <div class="title"><h1><?php the_title() ?></h1></div>
             <div class="contentPage"><?php the_content() ?></div>
         </div>
         <?php endwhile; ?>
