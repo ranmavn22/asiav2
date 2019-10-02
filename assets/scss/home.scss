@@ -107,7 +107,7 @@
   margin-top: -15px;
 }
 .listTourStyle1{
-  background: #e1e1e1;
+  background: #f7f7f7;
   margin-top: 20px;
   padding-bottom: 40px;
   .tourWrap{
@@ -144,6 +144,16 @@
   }
 }
 .home {
+  .titleSection{
+    padding: 40px 5px;
+    text-align: center;
+    p{
+      font-size: 15px;
+      color: #bb9d55;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
   h2{
     font-size: 20px;
     font-family: fha mod tuscan roman ncv, sans-serif;
@@ -151,7 +161,6 @@
     text-transform: uppercase;
     text-align: center;
     color: #333;
-    padding: 40px 0;
     margin: 0;
     span{
       font-family: Lato,sans-serif;
@@ -165,7 +174,6 @@
   a:visited,
   a{
     display: inline-block;
-    text-transform: uppercase;
     background: #bb9d55;
     color: #fff;
     padding: 10px 20px;
@@ -299,7 +307,7 @@
 }
 
 .aboutUs{
-  background: #e1e1e1;
+  background: #f7f7f7;
   padding: 20px 0;
   .contentSection{
     background: url(../images/banner2.jpg) no-repeat center center;
@@ -321,5 +329,198 @@
       padding: 5px 10px;
       text-transform: inherit;
     }
+  }
+}
+.reviewsSection{
+  background: url("//asia-soleil-travel.com/wp-content/uploads/2017/05/banner-1-1.jpg");
+  padding: 40px 0;
+}
+.wrap_temoignages{
+  .item{
+    padding: 15px;
+    padding-bottom: 50px;
+    .content{
+      background: #fff;
+      padding: 30px 20px 100px;
+      box-shadow: 0 0 4px 1px #ddd;
+      border-radius: 5px;
+    }
+    .img_avartar{
+      position: absolute;
+      bottom: -46px;
+      left: 50%;
+      transform: translateX(-50%);
+      img{
+        border-radius: 100%;
+        border: 3px solid #7aa573;
+      }
+    }
+    h3{
+      text-align: right;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+}
+
+.videoSection{
+  padding: 40px;
+  .leftContent{
+    background: url(../images/bg_area_video.jpg) no-repeat;
+    background-size: cover;
+    width: 40%;
+    color: #fff;
+    padding: 20px 5px;
+    h3{
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    ul{
+      padding-left: 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      li{
+        padding: 5px 0;
+        a{
+          color: #fff;
+          font-weight: bold;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+  .rightContent{
+    width: 60%;
+    font-size: 0;
+    video{
+      width: 100%;
+      height: auto;
+    }
+  }
+  .contentSection{
+    align-items: stretch;
+  }
+}
+
+.blockSection{
+  background: #f7f7f7;
+  padding: 40px;
+  .title{
+    text-align: center;
+    margin-bottom: 10px;
+    h3{
+      font-size: 24px;
+      font-family: san-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 400;
+      color: #2a2a2a;
+    }
+    p{
+      color: #2a2a2a;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  }
+  .wrap_slideBlog{
+    .item{
+      padding: 15px;
+      img{
+        width: 100%;
+        border-radius: 3px;
+      }
+      h3{
+        font-size: 16px;
+        font-weight: bold;
+        a{
+          color: #2a2a2a;
+        }
+      }
+      &:hover{
+        .hover{
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    }
+    .hover{
+      transition: .3s all;
+      opacity: 0;
+      transform: scale(0);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(122,165,115,.62);
+      z-index: 9;
+      border-radius: 3px;
+    }
+  }
+  .linkToBlog{
+    text-align: right;
+    a{
+      display: inline-block;
+      width: 160px;
+      text-align: center;
+      line-height: 35px;
+      border-radius: 5px;
+      border: 2px solid #78a471;
+      font-size: 16px;
+      font-style: italic;
+      color: #78a471;
+      &:hover{
+        background: #78a471;
+        color: #fff;
+      }
+    }
+  }
+}
+.slick-dots{
+  li{
+    button{
+      &:before{
+        font-size: 20px;
+        color: #d6d6d6;
+      }
+    }
+  }
+  li.slick-active{
+    button{
+      &:before{
+        color: #869791;
+      }
+    }
+  }
+}
+
+.countSection{
+  padding: 40px 0;
+  .item{
+    text-align: center;
+    padding-top: 50px;
+    max-width: 200px;
+    margin: 0 auto;
+    .counter{
+      font-size: 40px;
+    }
+    p{
+      margin-top: 0;
+    }
+  }
+  .item:first-child{
+    background: url("//asia-soleil-travel.com/wp-content/uploads/2017/05/icon_1-2.png") no-repeat top center;
+  }
+  .item:nth-child(2){
+    background: url("//asia-soleil-travel.com/wp-content/uploads/2017/05/icon_2-1.png") no-repeat top center;
+  }
+  .item:nth-child(3){
+    background: url("//asia-soleil-travel.com/wp-content/uploads/2017/05/icon_3-1.png") no-repeat top center;
+  }
+  .item:nth-child(4){
+    background: url("//asia-soleil-travel.com/wp-content/uploads/2017/05/icon_4.png") no-repeat top center;
+  }
+  .item:last-child{
+    background: url("//asia-soleil-travel.com/wp-content/uploads/2017/05/icon_5.png") no-repeat top center;
   }
 }

@@ -6,10 +6,12 @@
             elSlider.slick({
                 infinite: true,
                 slidesToShow: item ? item : 1,
-                slidesToScroll: 1,
+                slidesToScroll: item ? item : 1,
                 //autoplay: true,
                 //autoplaySpeed: 5000,
                 speed: 500,
+                dots: elSlider.data('dots-enable') ? true : false,
+                arrows: elSlider.data('arrow-disable') ? false : true,
                 prevArrow: '<img src="//asia-soleil-travel.com/wp-content/themes/enfold-child/dist/images/icon_pre.png" alt="prev" class="prevIcon">',
                 nextArrow: '<img src="//asia-soleil-travel.com/wp-content/themes/enfold-child/dist/images/icon_next.png" alt="next" class="nextIcon">',
             });
@@ -48,3 +50,62 @@
         })
     }
 }(jQuery));
+
+(function($) {
+    $.fn.countTo = function(options) {
+        options = $.extend({}, $.fn.countTo.defaults, options || {});
+        var loops = Math.ceil(options.speed / options.refreshInterval),
+            increment = (options.to - options.from) / loops;
+        return $(this).each(function() {
+            var _this = this,
+                loopCount = 0,
+                value = options.from,
+                interval = setInterval(updateTimer, options.refreshInterval);
+            function updateTimer() {
+                value += increment;
+                loopCount++;
+                $(_this).html(value.toFixed(options.decimals));
+                if (typeof(options.onUpdate) == 'function') {
+                    options.onUpdate.call(_this, value);
+                }
+                if (loopCount >= loops) {
+                    clearInterval(interval);
+                    value = options.to;
+
+                    if (typeof(options.onComplete) == 'function') {
+                        options.onComplete.call(_this, value);
+                    }
+                }
+            }
+        });
+    };
+
+    $.fn.countTo.defaults = {
+        from: 0,  // the number the element should start at
+        to: 100,  // the number the element should end at
+        speed: 1000,  // how long it should take to count between the target numbers
+        refreshInterval: 100,  // how often the element should be updated
+        decimals: 0,  // the number of decimal places to show
+        onUpdate: null,  // callback method for every time the element is updated,
+        onComplete: null,  // callback method for when the element finishes updating
+    };
+    if(!$('.counter').hasClass('complete') && $('.countSection').length > 0){
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop() >= $('.countSection').offset().top - 200) {
+                $('.counter').each(function (index) {
+                    if(!$(this).hasClass('complete')){
+                        $('.counter'+index).countTo({
+                            from: 0,
+                            to: $(this).data('count'),
+                            speed: 4000,
+                            refreshInterval: 50,
+                            onComplete: function(value) {
+                                $(this).addClass('complete')
+                            }
+                        });
+                    }
+                });
+            }
+        });
+    }
+})(jQuery);

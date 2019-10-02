@@ -32,7 +32,8 @@ include_once __DIR__. '/post-types/vietnam_secret.php';
 include_once __DIR__. '/libs/add_custom_fields_category.php';
 include_once __DIR__. '/libs/register_widget.php';
 
-add_image_size('feature_thumbnail','370','275', true);
+add_image_size('feature_thumbnail',370,275, true);
+add_image_size( 'custom-medium', 270, 190, true );
 
 // Get list guide
 add_action( 'wp_ajax_getGuide', 'getGuide' );
@@ -75,4 +76,20 @@ if (!function_exists('list_guid_callback')):
         include __DIR__.'/shortcode_element/shortcode_list_guid_vietnam.php';
     }
     add_shortcode('list_guid', 'list_guid_callback');
+endif;
+
+if (!function_exists('list_reviews_callback')):
+    function list_reviews_callback($atts)
+    {
+        include __DIR__.'/shortcode_element/shortcode_temoignages.php';
+    }
+    add_shortcode('list_reviews', 'list_reviews_callback');
+endif;
+
+if (!function_exists('slider_blog_callback')):
+    function slider_blog_callback($atts)
+    {
+        include __DIR__.'/shortcode_element/slider_blog_homepage.php';
+    }
+    add_shortcode('slider_blog', 'slider_blog_callback');
 endif;

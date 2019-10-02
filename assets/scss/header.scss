@@ -86,6 +86,7 @@ html {
       background-color: transparent;
     }
   }
+  a:visited,
   a {
     color: #fff;
     width: 100%;
@@ -119,6 +120,9 @@ html {
       }
     }
   }
+}
+.contentMenu{
+  z-index: 999;
 }
 
 .listFavourite{
@@ -221,6 +225,7 @@ html {
 #mainMenu{
   width: 100%;
   padding: 0 140px;
+  z-index: 9999;
   ul{
     width: 100%;
     display: table;
@@ -245,6 +250,7 @@ html {
         left: 0;
         background: url(../images/menu-hover-vietnam_03.jpg) no-repeat bottom center;
         background-size: 100% 100%;
+        z-index: 9999;
         .see_more{
           padding: 10px 20px;
           background: #bb9d55;

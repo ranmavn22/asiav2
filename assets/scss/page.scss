@@ -1,0 +1,26 @@
+.bannerPage{
+  max-height: 600px;
+  overflow: hidden;
+  img{
+    width: 100%;
+  }
+}
+.title{
+  background: url(../images/banner_h3.png) no-repeat left center;
+  font-weight: bold;
+  font-family: "Open Sans",sans-serif;
+  text-align: center;
+  background-size: cover;
+  color: #000;
+  margin-top: -45px;
+  h1{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 60px 0 110px;
+    margin-bottom: 0;
+  }
+}
+.contentPage{
+  margin-top: -20px;
+  margin-bottom: 40px;
+}

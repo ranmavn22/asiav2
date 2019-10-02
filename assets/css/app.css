@@ -89,9 +89,11 @@ html p {
       background-color: transparent; }
     .header button:active {
       background-color: transparent; }
+  .header a:visited,
   .header a {
     color: #fff;
     width: 100%; }
+    .header a:visited:hover,
     .header a:hover {
       color: #d0d0d0; }
   .header .container.grid-container {
@@ -112,6 +114,9 @@ html p {
         line-height: 35px; }
     .header .topUL .current-menu-item a {
       color: #d0d0d0; }
+
+.contentMenu {
+  z-index: 999; }
 
 .listFavourite {
   top: 5px;
@@ -207,7 +212,8 @@ html p {
 
 #mainMenu {
   width: 100%;
-  padding: 0 140px; }
+  padding: 0 140px;
+  z-index: 9999; }
   #mainMenu ul {
     width: 100%;
     display: table; }
@@ -230,7 +236,8 @@ html p {
         top: 150%;
         left: 0;
         background: url(../images/menu-hover-vietnam_03.jpg) no-repeat bottom center;
-        background-size: 100% 100%; }
+        background-size: 100% 100%;
+        z-index: 9999; }
         #mainMenu ul li .sub_menu .see_more {
           padding: 10px 20px;
           background: #bb9d55;
@@ -603,7 +610,7 @@ footer {
   margin-top: -15px; }
 
 .listTourStyle1 {
-  background: #e1e1e1;
+  background: #f7f7f7;
   margin-top: 20px;
   padding-bottom: 40px; }
   .listTourStyle1 .tourWrap {
@@ -631,6 +638,15 @@ footer {
     .listTourStyle1 .item_tour:hover .positionA {
       color: #e4c780; }
 
+.home .titleSection {
+  padding: 40px 5px;
+  text-align: center; }
+  .home .titleSection p {
+    font-size: 15px;
+    color: #bb9d55;
+    font-weight: bold;
+    text-transform: uppercase; }
+
 .home h2 {
   font-size: 20px;
   font-family: fha mod tuscan roman ncv, sans-serif;
@@ -638,7 +654,6 @@ footer {
   text-transform: uppercase;
   text-align: center;
   color: #333;
-  padding: 40px 0;
   margin: 0; }
   .home h2 span {
     font-family: Lato,sans-serif;
@@ -650,7 +665,6 @@ footer {
   .btnSeemore a:visited,
   .btnSeemore a {
     display: inline-block;
-    text-transform: uppercase;
     background: #bb9d55;
     color: #fff;
     padding: 10px 20px;
@@ -777,7 +791,7 @@ footer {
   padding: 40px; }
 
 .aboutUs {
-  background: #e1e1e1;
+  background: #f7f7f7;
   padding: 20px 0; }
   .aboutUs .contentSection {
     background: url(../images/banner2.jpg) no-repeat center center;
@@ -793,6 +807,183 @@ footer {
   .aboutUs .btnSeemore a {
     padding: 5px 10px;
     text-transform: inherit; }
+
+.reviewsSection {
+  background: url("//asia-soleil-travel.com/wp-content/uploads/2017/05/banner-1-1.jpg");
+  padding: 40px 0; }
+
+.wrap_temoignages .item {
+  padding: 15px;
+  padding-bottom: 50px; }
+  .wrap_temoignages .item .content {
+    background: #fff;
+    padding: 30px 20px 100px;
+    -webkit-box-shadow: 0 0 4px 1px #ddd;
+    box-shadow: 0 0 4px 1px #ddd;
+    border-radius: 5px; }
+  .wrap_temoignages .item .img_avartar {
+    position: absolute;
+    bottom: -46px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+    .wrap_temoignages .item .img_avartar img {
+      border-radius: 100%;
+      border: 3px solid #7aa573; }
+  .wrap_temoignages .item h3 {
+    text-align: right;
+    font-size: 16px;
+    font-weight: 700; }
+
+.videoSection {
+  padding: 40px; }
+  .videoSection .leftContent {
+    background: url(../images/bg_area_video.jpg) no-repeat;
+    background-size: cover;
+    width: 40%;
+    color: #fff;
+    padding: 20px 5px; }
+    .videoSection .leftContent h3 {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 10px; }
+    .videoSection .leftContent ul {
+      padding-left: 30px;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+      .videoSection .leftContent ul li {
+        padding: 5px 0; }
+        .videoSection .leftContent ul li a {
+          color: #fff;
+          font-weight: bold;
+          font-size: 17px; }
+  .videoSection .rightContent {
+    width: 60%;
+    font-size: 0; }
+    .videoSection .rightContent video {
+      width: 100%;
+      height: auto; }
+  .videoSection .contentSection {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch; }
+
+.blockSection {
+  background: #f7f7f7;
+  padding: 40px; }
+  .blockSection .title {
+    text-align: center;
+    margin-bottom: 10px; }
+    .blockSection .title h3 {
+      font-size: 24px;
+      font-family: san-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 400;
+      color: #2a2a2a; }
+    .blockSection .title p {
+      color: #2a2a2a;
+      max-width: 900px;
+      margin: 0 auto; }
+  .blockSection .wrap_slideBlog .item {
+    padding: 15px; }
+    .blockSection .wrap_slideBlog .item img {
+      width: 100%;
+      border-radius: 3px; }
+    .blockSection .wrap_slideBlog .item h3 {
+      font-size: 16px;
+      font-weight: bold; }
+      .blockSection .wrap_slideBlog .item h3 a {
+        color: #2a2a2a; }
+    .blockSection .wrap_slideBlog .item:hover .hover {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1); }
+  .blockSection .wrap_slideBlog .hover {
+    -webkit-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(122, 165, 115, 0.62);
+    z-index: 9;
+    border-radius: 3px; }
+  .blockSection .linkToBlog {
+    text-align: right; }
+    .blockSection .linkToBlog a {
+      display: inline-block;
+      width: 160px;
+      text-align: center;
+      line-height: 35px;
+      border-radius: 5px;
+      border: 2px solid #78a471;
+      font-size: 16px;
+      font-style: italic;
+      color: #78a471; }
+      .blockSection .linkToBlog a:hover {
+        background: #78a471;
+        color: #fff; }
+
+.slick-dots li button:before {
+  font-size: 20px;
+  color: #d6d6d6; }
+
+.slick-dots li.slick-active button:before {
+  color: #869791; }
+
+.countSection {
+  padding: 40px 0; }
+  .countSection .item {
+    text-align: center;
+    padding-top: 50px;
+    max-width: 200px;
+    margin: 0 auto; }
+    .countSection .item .counter {
+      font-size: 40px; }
+    .countSection .item p {
+      margin-top: 0; }
+  .countSection .item:first-child {
+    background: url("//asia-soleil-travel.com/wp-content/uploads/2017/05/icon_1-2.png") no-repeat top center; }
+  .countSection .item:nth-child(2) {
+    background: url("//asia-soleil-travel.com/wp-content/uploads/2017/05/icon_2-1.png") no-repeat top center; }
+  .countSection .item:nth-child(3) {
+    background: url("//asia-soleil-travel.com/wp-content/uploads/2017/05/icon_3-1.png") no-repeat top center; }
+  .countSection .item:nth-child(4) {
+    background: url("//asia-soleil-travel.com/wp-content/uploads/2017/05/icon_4.png") no-repeat top center; }
+  .countSection .item:last-child {
+    background: url("//asia-soleil-travel.com/wp-content/uploads/2017/05/icon_5.png") no-repeat top center; }
+
+.bannerPage {
+  max-height: 600px;
+  overflow: hidden; }
+  .bannerPage img {
+    width: 100%; }
+
+.title {
+  background: url(../images/banner_h3.png) no-repeat left center;
+  font-weight: bold;
+  font-family: "Open Sans",sans-serif;
+  text-align: center;
+  background-size: cover;
+  color: #000;
+  margin-top: -45px; }
+  .title h1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 60px 0 110px;
+    margin-bottom: 0; }
+
+.contentPage {
+  margin-top: -20px;
+  margin-bottom: 40px; }
 
 @media (max-width: 1200px) {
   .header .listFavourite {
