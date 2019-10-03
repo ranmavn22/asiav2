@@ -53,6 +53,12 @@
 }
 
 @media (max-width: 767px) {
+  .list_category{
+    flex-wrap: wrap;
+  }
+  .list_category .item{
+    width: 50%;
+  }
   .hotelForm div p{
     width: 50%;
   }
@@ -145,6 +151,9 @@
 }
 
 @media (max-width: 450px) {
+  .list_category .item{
+    width: 100%;
+  }
   .footerForm p {
     flex-wrap: wrap;
   }
