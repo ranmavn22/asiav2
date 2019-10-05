@@ -49,6 +49,14 @@
             }
         })
     }
+    $('#back a').on('click',function (e) {
+        e.preventDefault();
+        window.history.back();
+    });
+
+    $(document).ready(function () {
+        $('.lightBox').fancybox();
+    })
 }(jQuery));
 
 (function($) {
@@ -108,4 +116,5 @@
             }
         });
     }
+
 })(jQuery);

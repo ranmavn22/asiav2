@@ -53,6 +53,24 @@
 }
 
 @media (max-width: 767px) {
+  .content_contact{
+    display: none;
+  }
+  .content_tour .listPost .excerpt_tour_pc{
+    display: none;
+  }
+  .content_tour .listPost .excerpt_tour{
+    display: block;
+  }
+  .titlePageCategory{
+    background: none;
+    margin-top: 20px;
+    padding: 0;
+    text-align: left;
+  }
+  .listPost .item{
+    width: 50%;
+  }
   .list_category{
     flex-wrap: wrap;
   }
@@ -151,6 +169,7 @@
 }
 
 @media (max-width: 450px) {
+  .listPost .item,
   .list_category .item{
     width: 100%;
   }

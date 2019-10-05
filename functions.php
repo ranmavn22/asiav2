@@ -4,8 +4,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 function wpdocs_theme_name_scripts() {
+    wp_enqueue_style( 'fancy-style', get_stylesheet_directory_uri() . '/assets/js/fancybox/jquery.fancybox-1.3.4.css' );
     wp_enqueue_style( 'style-app', get_stylesheet_directory_uri() . '/assets/css/app.css' );
     wp_enqueue_script( 'slick_script', get_stylesheet_directory_uri() . '/assets/js/slick.min.js', array('jquery'), '1.0.0', true );
+    wp_enqueue_script( 'fancy_script', get_stylesheet_directory_uri() . '/assets/js/fancybox/jquery.fancybox-1.3.4.pack.js', array('jquery'), '1.0.0', true );
     wp_enqueue_script( 'app_script', get_stylesheet_directory_uri() . '/assets/js/app.js', array('jquery'), '1.0.0', true );
     wp_localize_script( 'app_script', 'ajax_url', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 }
