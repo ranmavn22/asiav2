@@ -54,9 +54,11 @@ html {
     transition: 0.3s all;
   }
   button,
-  a{
+  a,a:visited{
     cursor: pointer;
+    color: #333;
     &:hover{
+      color: #bb9d55;
       img{
         opacity: 0.6;
       }

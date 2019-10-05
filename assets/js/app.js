@@ -3,6 +3,8 @@
         $('.sliderItem').each(function (index) {
             let elSlider = $(this);
             let item = elSlider.data('item');
+            console.log(elSlider.data('arrow-disable') ? false : true);
+
             elSlider.slick({
                 infinite: true,
                 slidesToShow: item ? item : 1,
@@ -56,6 +58,11 @@
 
     $(document).ready(function () {
         $('.lightBox').fancybox();
+        $('.seeMoreContentPage').on('click',function (e) {
+            e.preventDefault();
+            $('.hidePart').css('height','auto');
+            $(this).hide();
+        })
     })
 }(jQuery));
 
