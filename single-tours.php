@@ -179,7 +179,7 @@ while (have_posts()) : the_post();
             </div>
             <div class="tabContent content_tabs_infor content_tabs_infor4">
                 <h3><?php _e('Demander un devis gratuit','wz')?></h3>
-                <?php echo do_shortcode("[ninja_form id=9]")?>
+                <?php echo do_shortcode('[contact-form-7 id="13187" title="Tour chi tiết"]')?>
             </div>
 
 
