@@ -96,3 +96,11 @@ if (!function_exists('slider_blog_callback')):
     }
     add_shortcode('slider_blog', 'slider_blog_callback');
 endif;
+
+if (!function_exists('hotel_tour_callback')):
+    function hotel_tour_callback($atts)
+    {
+        include __DIR__.'/shortcode_element/tours/shortcode_list_hotels_intour.php';
+    }
+    add_shortcode('wz_table_hotel', 'hotel_tour_callback');
+endif;

@@ -3,6 +3,9 @@ footer{
   padding: 29px 0 30px;
   background-color: #75946f!important;
   background: url(../images/bg_footer.jpg) repeat-x top center;
+  .grid-container{
+    max-width: 1200px;
+  }
   .sectionFooter1{
     .leftColumn{
       background: url(../images/bg_img_footer.png) no-repeat right center;
@@ -155,7 +158,7 @@ footer{
   p{
     margin-bottom: 10px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     color: #fff;
     font-size: 14px;
     select,
@@ -234,6 +237,13 @@ footer{
       font-size: 16px;
       line-height: 30px;
       font-weight: bold;
+      color: #fff;
+      &:hover{
+        background: #9bc194;
+      }
+    }
+    .ajax-loader{
+      width: 16px;
     }
   }
 }

@@ -62,6 +62,15 @@
             e.preventDefault();
             $('.hidePart').css('height','auto');
             $(this).hide();
+        });
+        $('.tabControl .item').on('click',function (e) {
+            e.preventDefault();
+            let el = $(this).data('el');
+            if($(el).length > 0){
+                $('.tabControl .item,.tabContent').removeClass('active');
+                $(this).addClass('active');
+                $(el).addClass('active');
+            }
         })
     })
 }(jQuery));

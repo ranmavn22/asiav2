@@ -8,8 +8,8 @@ $array_hotel = array();
 if(!empty($value_program_tour)){
     $i= 0;
     foreach ($value_program_tour as $item){
-        $index = $i++;
-        $array_hotel[$index] = $item["hotels"];
+        $array_hotel[$i] = $item["hotels"];
+        $i++;
     }
 }
 $hotel = array_count_values($array_hotel);

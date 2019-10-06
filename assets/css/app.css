@@ -3,7 +3,9 @@
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  line-height: 1.5; }
+  line-height: 1.5;
+  padding: 0;
+  margin: 0; }
 
 .admin-bar .header {
   top: 32px; }
@@ -63,12 +65,18 @@ html .hoverContent:hover {
 html img {
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
-  transition: 0.3s all; }
+  transition: 0.3s all;
+  height: auto;
+  max-width: 100%; }
 
 html button,
 html a, html a:visited {
   cursor: pointer;
-  color: #333; }
+  color: #333;
+  text-decoration: none;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all; }
   html button:hover,
   html a:hover, html a:visited:hover {
     color: #bb9d55; }
@@ -78,11 +86,40 @@ html a, html a:visited {
 
 html body {
   font-size: 16px;
-  background: #fff; }
+  background: #fff;
+  font-family: Lato, sans-serif; }
+  html body .form p span.wpcf7-not-valid-tip,
+  html body .footerForm.form p span.wpcf7-not-valid-tip {
+    width: 100%;
+    margin: 0;
+    font-size: 13px;
+    color: #e41e1e; }
+  html body .wpcf7-validation-errors {
+    border: none;
+    margin: 0;
+    color: #e41e1e; }
 
 html p {
   color: #3b3b3b;
   margin: .85em 0; }
+
+html input[type='button'], html input[type='submit'], html button {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all; }
+
+html .grid-container {
+  max-width: 1010px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.home .grid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px; }
 
 .form input[type="text"],
 .form input[type="tel"],
@@ -273,7 +310,8 @@ html p {
           font-weight: bold;
           border-radius: 2px; }
         #mainMenu ul li .sub_menu .alignright {
-          padding-right: 60px; }
+          padding-right: 60px;
+          text-align: right; }
       #mainMenu ul li:hover .sub_menu {
         top: 100%; }
       #mainMenu ul li .content_sub {
@@ -358,6 +396,8 @@ footer {
   padding: 29px 0 30px;
   background-color: #75946f !important;
   background: url(../images/bg_footer.jpg) repeat-x top center; }
+  footer .grid-container {
+    max-width: 1200px; }
   footer .sectionFooter1 .leftColumn {
     background: url(../images/bg_img_footer.png) no-repeat right center;
     padding-right: 74px;
@@ -484,9 +524,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   color: #fff;
   font-size: 14px; }
   .footerForm.form p select,
@@ -551,7 +591,12 @@ footer {
     height: 38px;
     font-size: 16px;
     line-height: 30px;
-    font-weight: bold; }
+    font-weight: bold;
+    color: #fff; }
+    .footerForm.form .btnSubmit input:hover {
+      background: #9bc194; }
+  .footerForm.form .btnSubmit .ajax-loader {
+    width: 16px; }
 
 .homeSlider {
   overflow: hidden; }
@@ -713,6 +758,11 @@ footer {
 
 .sliderItem .prevIcon {
   left: -40px; }
+
+.listTourHome.listTourStyle1 {
+  padding: 40px 0; }
+  .listTourHome.listTourStyle1 h2 {
+    margin-bottom: 40px; }
 
 .listGuid .contentList {
   background: url("//asia-soleil-travel.com/wp-content/uploads/2017/05/banner-1.jpg");
@@ -1120,16 +1170,23 @@ footer {
       color: #fff;
       border: 1px solid #689c72; }
 
+.titlePageCategory2,
 .titlePageCategory {
-  font-family: 'Open Sans', san-serif;
   text-align: center;
   background: url(../images/bg_h3.png) left center no-repeat;
   padding: 65px 70px;
   margin-top: -33px;
   font-weight: 700; }
+  .titlePageCategory2 h1,
   .titlePageCategory h1 {
     font-size: 25px;
     margin-bottom: 0; }
+    .titlePageCategory2 h1 span,
+    .titlePageCategory h1 span {
+      color: #bb9d55; }
+
+.titlePageCategory2 {
+  background: url(../images/banner_h3.png) left center no-repeat; }
 
 .listPost {
   display: -webkit-box;
@@ -1230,17 +1287,21 @@ footer {
   .content_tour .listPost .excerpt_tour {
     display: none; }
   .content_tour .listPost .infor_tour {
-    margin-top: 20px; }
+    margin-top: 20px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
     .content_tour .listPost .infor_tour .itemInfor {
       width: 50%;
-      border-right: 1px solid #ddd; }
-    .content_tour .listPost .infor_tour .map_tour {
-      text-align: right;
+      border-right: 1px solid #ddd;
+      text-align: center;
+      font-weight: bold; }
+    .content_tour .listPost .infor_tour span:last-child {
       border: none; }
-      .content_tour .listPost .infor_tour .map_tour a {
-        color: #333; }
-        .content_tour .listPost .infor_tour .map_tour a:hover {
-          color: #bb9d55; }
+    .content_tour .listPost .infor_tour .map_tour a {
+      color: #333; }
+      .content_tour .listPost .infor_tour .map_tour a:hover {
+        color: #bb9d55; }
 
 .img_hiden {
   display: none; }
@@ -1323,12 +1384,28 @@ footer {
     width: 40%;
     padding-right: 30px;
     position: relative; }
+    .slide_vnsceret .content_infor p {
+      text-align: justify; }
     .slide_vnsceret .content_infor a {
       font-weight: bold; }
     .slide_vnsceret .content_infor h3 {
       margin-bottom: 10px; }
     .slide_vnsceret .content_infor .see_more_img_colorbox {
       margin-top: 30px; }
+    .slide_vnsceret .content_infor .see_more {
+      text-align: right;
+      margin-top: 30px; }
+      .slide_vnsceret .content_infor .see_more a {
+        padding: 7px 20px;
+        display: inline-block;
+        background: #7aa573;
+        border-radius: 3px;
+        color: #fff; }
+        .slide_vnsceret .content_infor .see_more a:hover {
+          background: #fff;
+          -webkit-box-shadow: inset 0 0 0 2px #7aa573;
+          box-shadow: inset 0 0 0 2px #7aa573;
+          color: #7aa573; }
   .slide_vnsceret .img {
     width: 60%;
     font-size: 0; }
@@ -1355,6 +1432,207 @@ footer {
     position: relative;
     margin-top: 10px;
     margin-bottom: 40px; }
+
+.tabContent {
+  display: none; }
+
+.tabContent.active {
+  display: block; }
+
+.tabs_infor_tour {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 40px; }
+  .tabs_infor_tour .tab_tour {
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 1;
+    padding: 30px 0;
+    display: inline-block;
+    width: 215px;
+    font-weight: bold;
+    color: #444;
+    cursor: pointer;
+    -webkit-transition: 0.2s all;
+    -o-transition: 0.2s all;
+    transition: 0.2s all; }
+    .tabs_infor_tour .tab_tour:hover {
+      background: url(../images/bg_tabs_05.png) no-repeat center center;
+      color: #fff; }
+  .tabs_infor_tour .tabs_tour_02 {
+    background: url(../images/bg_tabs_02.png) no-repeat center center; }
+  .tabs_infor_tour .tabs_tour_01 {
+    background: url(../images/bg_tabs_01.png) no-repeat center center; }
+  .tabs_infor_tour .tabs_tour_03 {
+    background: url(../images/bg_tabs_03.png) no-repeat center center; }
+  .tabs_infor_tour .active {
+    background: url(../images/bg_tabs_05.png) no-repeat center center;
+    color: #fff; }
+  .tabs_infor_tour .tabs_tour_04 {
+    background: url(../images/bg_tabs_04.png) no-repeat center center;
+    color: #fff; }
+
+.content_tabs_infor1 .item,
+.content_tabs_infor2 .item {
+  padding-bottom: 30px; }
+
+.content_tabs_infor1 .list_etape,
+.content_tabs_infor2 .list_etape {
+  padding: 7px 0;
+  text-align: center;
+  background: #7aa573;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 125px;
+  float: left; }
+
+.content_tabs_infor1 .content_etape,
+.content_tabs_infor2 .content_etape {
+  float: right;
+  width: 80%; }
+
+.content_tabs_infor1 .label_etape,
+.content_tabs_infor2 .label_etape {
+  font-weight: 700;
+  font-size: 18px;
+  border-bottom: 1px solid #cdcdcd;
+  padding-bottom: 10px; }
+
+.content_tabs_infor1 .icon_etape,
+.content_tabs_infor2 .icon_etape {
+  display: inline-block;
+  float: right;
+  cursor: pointer; }
+  .content_tabs_infor1 .icon_etape .fa,
+  .content_tabs_infor2 .icon_etape .fa {
+    width: 28px;
+    text-align: center;
+    padding: 5px 0;
+    color: #fff;
+    background: #7aa573; }
+
+.content_tabs_infor1 .detail,
+.content_tabs_infor2 .detail {
+  clear: both; }
+  .content_tabs_infor1 .detail .content_tour_jour,
+  .content_tabs_infor2 .detail .content_tour_jour {
+    padding-left: 20%;
+    margin-bottom: 20px; }
+  .content_tabs_infor1 .detail p,
+  .content_tabs_infor2 .detail p {
+    margin: 0; }
+  .content_tabs_infor1 .detail .content_hotel_jour,
+  .content_tabs_infor2 .detail .content_hotel_jour {
+    background: url(../images/bg_hotel.png) no-repeat left center;
+    padding-left: 20%;
+    min-height: 100px; }
+
+.content_tabs_infor1 .title_hotel,
+.content_tabs_infor2 .title_hotel {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: inline-block; }
+
+.content_tabs_infor1 .inforHotel .img_hotel,
+.content_tabs_infor2 .inforHotel .img_hotel {
+  width: 40%;
+  padding-right: 30px; }
+
+.content_tabs_infor1 .inforHotel .desc,
+.content_tabs_infor2 .inforHotel .desc {
+  width: 60%; }
+
+.content_tabs_infor1 .fa.fa-star, .content_tabs_infor1 .fa-star-half-o,
+.content_tabs_infor2 .fa.fa-star,
+.content_tabs_infor2 .fa-star-half-o {
+  color: #ffd800; }
+
+.content_tabs_infor1 .short_description {
+  border-bottom: 2px dashed #ddd;
+  padding-bottom: 20px; }
+  .content_tabs_infor1 .short_description .content_description {
+    width: 50%;
+    border-right: 2px dashed #ddd;
+    padding-right: 20px; }
+    .content_tabs_infor1 .short_description .content_description li {
+      background: url(../images/dots2.png) no-repeat left 18px;
+      background-size: 10px;
+      padding: 10px 0 10px 20px; }
+  .content_tabs_infor1 .short_description .carte {
+    width: 50%;
+    padding: 0 20px;
+    text-align: center; }
+    .content_tabs_infor1 .short_description .carte img {
+      max-width: 250px; }
+
+.content_tabs_infor1 .star_tour {
+  font-size: 16px;
+  color: #f25334;
+  text-transform: uppercase; }
+
+.content_tabs_infor1 .etape_tour .star_tour {
+  font-weight: bold; }
+
+.content_tabs_infor1 .etape_tour .detail p {
+  margin: 15px 0; }
+
+.content_tabs_infor1 .etape_tour .detail li {
+  background: url(../images/dots2.png) no-repeat left 10px;
+  line-height: 1.4;
+  padding-left: 20px;
+  background-size: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.content_tabs_infor1 .img_tour_content {
+  padding-top: 20px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  clear: both;
+  margin: 0 -10px; }
+  .content_tabs_infor1 .img_tour_content .img_vietnam_secret_item:nth-child(2n+1) {
+    display: none; }
+  .content_tabs_infor1 .img_tour_content .img_vietnam_secret_item {
+    width: 50%;
+    padding: 10px; }
+
+.content_tabs_infor3 table {
+  width: 100%;
+  border: 1px solid #ddd; }
+  .content_tabs_infor3 table th {
+    text-align: center;
+    font-weight: 700;
+    background: #dde8fa;
+    padding: 5px 2px; }
+  .content_tabs_infor3 table tr td {
+    padding: 8px 10px;
+    border: 1px solid #ddd; }
+
+.content_tabs_infor3 h2, .content_tabs_infor3 h3 {
+  margin: 15px 0; }
+
+.content_tabs_infor3 li {
+  list-style: inherit; }
+
+.related_post.archive_tour {
+  border-top: 2px dashed #ddd; }
+  .related_post.archive_tour h3.title {
+    padding: 20px 0;
+    font-size: 16px;
+    color: #f25334;
+    text-transform: uppercase; }
+  .related_post.archive_tour h3 {
+    text-align: left; }
 
 @media (max-width: 1200px) {
   .header .listFavourite {
