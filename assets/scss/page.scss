@@ -966,6 +966,9 @@
       padding: 4px 28px 4px 13px;
       border-radius: 3px;
       text-decoration: none;
+      &:hover{
+        background-color: #bb9d55;
+      }
     }
   }
   .contentItem{

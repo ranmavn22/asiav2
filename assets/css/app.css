@@ -1806,6 +1806,8 @@ footer {
       padding: 4px 28px 4px 13px;
       border-radius: 3px;
       text-decoration: none; }
+      .blogTemplate #content .listPost .item .see_more:hover {
+        background-color: #bb9d55; }
   .blogTemplate #content .contentItem {
     border: 1px solid #ddd;
     display: -webkit-box;
