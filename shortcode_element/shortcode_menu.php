@@ -1,7 +1,7 @@
 <?php
 $url = get_stylesheet_directory_uri();
 ?>
-<div id="mainMenu">
+<div id="mainMenu" class="mainMenu">
     <ul class="displayFlex alignCenter">
         <li class="vietnam_secret menu_parent hoverContent"><a href="<?php echo get_permalink(539) ?>" class="" title="VIETNAM SECRET"><?php _e('VIETNAM SECRET', 'wz') ?></a>
             <div class="sub_menu positionA hideContent">

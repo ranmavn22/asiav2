@@ -5,7 +5,8 @@
   box-sizing: border-box;
   line-height: 1.5;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  max-width: 100%; }
 
 .admin-bar .header {
   top: 32px; }
@@ -42,6 +43,12 @@
 
 html h1, html h2, html h3, html h4 {
   font-weight: bold; }
+
+html h1 {
+  font-size: 25px; }
+
+html h5, html h6, html select, html p {
+  font-size: 16px; }
 
 html ul {
   margin: 0; }
@@ -116,6 +123,7 @@ html .grid-container {
   margin: 0 auto;
   padding: 0 15px; }
 
+.archive .grid-container,
 .home .grid-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -166,7 +174,8 @@ html .grid-container {
   .header .logo {
     max-width: 100px;
     top: 1px;
-    left: 0; }
+    left: 0;
+    z-index: 99999; }
   .header .topUL {
     top: 100px;
     background: rgba(82, 129, 89, 0.8);
@@ -275,50 +284,50 @@ html .grid-container {
 .menuMobile {
   display: none; }
 
-#mainMenu {
+.mainMenu {
   width: 100%;
   padding: 0 140px;
   z-index: 9999; }
-  #mainMenu ul {
+  .mainMenu ul {
     width: 100%;
     display: table; }
-    #mainMenu ul li {
+    .mainMenu ul li {
       display: table-cell;
       font-size: 14px;
       float: none;
       text-align: center; }
-      #mainMenu ul li > a {
+      .mainMenu ul li > a {
         line-height: 100px;
         padding: 0;
         color: #fff;
         display: inline-block;
         font-weight: bold; }
-        #mainMenu ul li > a:hover {
+        .mainMenu ul li > a:hover {
           -webkit-box-shadow: inset 0 -4px 0 0 #bb9d55;
           box-shadow: inset 0 -4px 0 0 #bb9d55; }
-      #mainMenu ul li .sub_menu {
+      .mainMenu ul li .sub_menu {
         width: 100%;
         top: 150%;
         left: 0;
         background: url(../images/menu-hover-vietnam_03.jpg) no-repeat bottom center;
         background-size: 100% 100%;
         z-index: 9999; }
-        #mainMenu ul li .sub_menu .see_more {
+        .mainMenu ul li .sub_menu .see_more {
           padding: 10px 20px;
           background: #bb9d55;
           margin-top: 20px;
           font-weight: bold;
           border-radius: 2px; }
-        #mainMenu ul li .sub_menu .alignright {
+        .mainMenu ul li .sub_menu .alignright {
           padding-right: 60px;
           text-align: right; }
-      #mainMenu ul li:hover .sub_menu {
+      .mainMenu ul li:hover .sub_menu {
         top: 100%; }
-      #mainMenu ul li .content_sub {
+      .mainMenu ul li .content_sub {
         display: table;
         vertical-align: middle;
         padding: 15px 0 30px; }
-      #mainMenu ul li .text_sub_menu {
+      .mainMenu ul li .text_sub_menu {
         padding: 0 40px;
         width: 30%;
         display: table-cell;
@@ -327,7 +336,7 @@ html .grid-container {
         color: #fff;
         border-right: 1px solid #518846;
         background: url(../images/bg_menu.png) no-repeat center center; }
-      #mainMenu ul li .item_sub-menu {
+      .mainMenu ul li .item_sub-menu {
         border-left: 1px solid #fff;
         padding: 0 60px 0 60px;
         display: -webkit-box;
@@ -339,57 +348,73 @@ html .grid-container {
         -ms-flex-pack: justify;
         justify-content: space-between;
         margin-bottom: 30px; }
-      #mainMenu ul li .item {
+      .mainMenu ul li .item {
         width: 33%;
         padding: 10px 0; }
-        #mainMenu ul li .item img {
+        .mainMenu ul li .item img {
           border-radius: 100%;
           margin-bottom: 5px; }
-        #mainMenu ul li .item a {
+        .mainMenu ul li .item a {
           text-transform: uppercase;
           font-size: 13px;
           line-height: 1.2;
           font-weight: bold; }
-          #mainMenu ul li .item a:hover {
+          .mainMenu ul li .item a:hover {
             color: #bb9d55; }
-    #mainMenu ul .vietnam_secret .item:first-child {
+    .mainMenu ul .vietnam_secret .item:first-child {
       border-top: none; }
-    #mainMenu ul .vietnam_secret .item {
+    .mainMenu ul .vietnam_secret .item {
       width: 100%;
       text-align: left;
       border-top: 1px dashed #fff;
       padding: 20px; }
-      #mainMenu ul .vietnam_secret .item img {
+      .mainMenu ul .vietnam_secret .item img {
         margin-right: 15px; }
-    #mainMenu ul .vietnam_secret .item:nth-child(2) {
+    .mainMenu ul .vietnam_secret .item:nth-child(2) {
       -webkit-box-pack: end;
       -ms-flex-pack: end;
       justify-content: flex-end; }
-      #mainMenu ul .vietnam_secret .item:nth-child(2) .img_vietnam {
+      .mainMenu ul .vietnam_secret .item:nth-child(2) .img_vietnam {
         -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
         order: 2; }
-      #mainMenu ul .vietnam_secret .item:nth-child(2) img {
+      .mainMenu ul .vietnam_secret .item:nth-child(2) img {
         margin-right: 0;
         margin-left: 15px; }
-    #mainMenu ul .site_a_decouvrir img {
+    .mainMenu ul .site_a_decouvrir img {
       max-width: 80%; }
-    #mainMenu ul .site_a_decouvrir .item_sub-menu .textwidget {
+    .mainMenu ul .site_a_decouvrir .item_sub-menu .textwidget {
       margin-bottom: 40px;
       text-align: left;
       border-bottom: 1px dashed #fff;
       font-weight: bold; }
-      #mainMenu ul .site_a_decouvrir .item_sub-menu .textwidget h3 {
+      .mainMenu ul .site_a_decouvrir .item_sub-menu .textwidget h3 {
         font-size: 16px;
         font-weight: bold; }
-      #mainMenu ul .site_a_decouvrir .item_sub-menu .textwidget p {
+      .mainMenu ul .site_a_decouvrir .item_sub-menu .textwidget p {
         text-transform: uppercase;
         font-size: 13px;
         color: #fff; }
-      #mainMenu ul .site_a_decouvrir .item_sub-menu .textwidget a {
+      .mainMenu ul .site_a_decouvrir .item_sub-menu .textwidget a {
         color: #fff; }
-        #mainMenu ul .site_a_decouvrir .item_sub-menu .textwidget a:hover {
+        .mainMenu ul .site_a_decouvrir .item_sub-menu .textwidget a:hover {
           color: #bb9d55; }
+
+.containerMenuBlog.mainMenu {
+  padding-right: 0; }
+
+#menu-menu-blog li {
+  display: table-cell;
+  font-size: 14px;
+  float: none;
+  text-align: center; }
+  #menu-menu-blog li a {
+    line-height: 100px;
+    padding: 0;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase; }
 
 footer {
   border-top: none;
@@ -1040,7 +1065,7 @@ footer {
     background: url("//asia-soleil-travel.com/wp-content/uploads/2017/05/icon_5.png") no-repeat top center; }
 
 .bannerPage {
-  max-height: 600px;
+  max-height: 500px;
   overflow: hidden;
   font-size: 0; }
   .bannerPage img {
@@ -1179,7 +1204,6 @@ footer {
   font-weight: 700; }
   .titlePageCategory2 h1,
   .titlePageCategory h1 {
-    font-size: 25px;
     margin-bottom: 0; }
     .titlePageCategory2 h1 span,
     .titlePageCategory h1 span {
@@ -1676,6 +1700,120 @@ footer {
     .single-tours .titlePage .info span {
       padding: 0 10px; }
 
+.breadcrumbs {
+  padding: 15px 0;
+  background: #ddd; }
+  .breadcrumbs p {
+    margin: 0; }
+
+.blogTemplate #content {
+  margin: 0 -15px; }
+  .blogTemplate #content h1 {
+    margin-bottom: 10px;
+    margin-top: 10px; }
+  .blogTemplate #content .mainSidebar {
+    width: 30%;
+    padding: 15px;
+    margin-top: 20px; }
+    .blogTemplate #content .mainSidebar .widget {
+      margin-bottom: 30px;
+      background: #efefef; }
+      .blogTemplate #content .mainSidebar .widget h2 {
+        text-align: center;
+        background: #689c72;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 10px; }
+      .blogTemplate #content .mainSidebar .widget .menu {
+        padding: 10px; }
+      .blogTemplate #content .mainSidebar .widget ul li {
+        padding: 5px 0;
+        position: relative; }
+        .blogTemplate #content .mainSidebar .widget ul li a {
+          display: block;
+          color: #000;
+          font-weight: bold; }
+      .blogTemplate #content .mainSidebar .widget ul ul {
+        padding: 0; }
+      .blogTemplate #content .mainSidebar .widget .sub-menu li {
+        padding-left: 10px; }
+        .blogTemplate #content .mainSidebar .widget .sub-menu li:before {
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome;
+          content: "\f054";
+          position: absolute;
+          top: 13px;
+          font-size: 11px;
+          left: 0; }
+        .blogTemplate #content .mainSidebar .widget .sub-menu li a {
+          color: #545454;
+          font-weight: 400; }
+    .blogTemplate #content .mainSidebar .widget_search label span {
+      display: none; }
+    .blogTemplate #content .mainSidebar .widget_search form {
+      position: relative; }
+      .blogTemplate #content .mainSidebar .widget_search form input {
+        height: 40px;
+        background: #ddd;
+        color: #000;
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 10px;
+        font-size: 16px; }
+      .blogTemplate #content .mainSidebar .widget_search form button {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        right: 8px;
+        font-size: 20px;
+        color: #999; }
+  .blogTemplate #content .mainContent {
+    width: 70%;
+    padding: 15px; }
+    .blogTemplate #content .mainContent p {
+      text-align: justify; }
+  .blogTemplate #content .listPost {
+    margin: 0;
+    margin-top: 20px; }
+  .blogTemplate #content .listPost .item {
+    width: 100%;
+    padding: 15px 0; }
+    .blogTemplate #content .listPost .item .img_post {
+      width: 40%;
+      padding-right: 20px;
+      font-size: 0; }
+    .blogTemplate #content .listPost .item .content_post {
+      width: 60%;
+      padding: 10px 10px 10px 0; }
+    .blogTemplate #content .listPost .item h4 {
+      margin-bottom: 5px;
+      font-size: 18px; }
+    .blogTemplate #content .listPost .item .date_time {
+      font-size: 13px;
+      color: #848484; }
+    .blogTemplate #content .listPost .item .see_more {
+      display: inline-block;
+      background-color: #689c72;
+      background-image: url(../images/icon_seemore.png);
+      color: #fff;
+      background-repeat: no-repeat;
+      background-position: 125px center;
+      padding: 4px 28px 4px 13px;
+      border-radius: 3px;
+      text-decoration: none; }
+  .blogTemplate #content .contentItem {
+    border: 1px solid #ddd;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+
 @media (max-width: 1200px) {
   .header .listFavourite {
     right: 5px;
@@ -1690,13 +1828,13 @@ footer {
     left: 5px;
     max-width: 80px;
     top: 10px; }
-  #mainMenu {
+  .mainMenu {
     padding: 0 90px; }
   footer .sectionFooter1 .leftColumn {
     background-position: 200px 139px; } }
 
 @media (max-width: 990px) {
-  #mainMenu ul li > a {
+  .mainMenu ul li > a {
     line-height: 85px;
     font-size: 13px; }
   .header .listFavourite,
@@ -1752,7 +1890,7 @@ footer {
     font-size: 20px; }
   .titlePage {
     padding: 5px 0; }
-  #mainMenu {
+  .mainMenu {
     display: none; }
   .header .logo {
     max-width: 65px; }

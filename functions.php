@@ -35,7 +35,7 @@ include_once __DIR__. '/libs/add_custom_fields_category.php';
 include_once __DIR__. '/libs/register_widget.php';
 
 add_image_size('feature_thumbnail',370,275, true);
-add_image_size( 'custom-medium', 270, 190, true );
+add_image_size( 'custom-medium', 270, 220, true );
 add_image_size( 'custom-large', 600, 350, true );
 
 // Get list guide

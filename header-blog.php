@@ -21,27 +21,19 @@ if (!defined('ABSPATH')) {
 
 <div class="header">
     <div class="container grid-container positionR">
-        <div class="contentHeader">
+        <div class="contentHeader displayFlex">
             <div class="logo positionA">
                 <?php generate_construct_logo()?>
             </div>
-            <div class="menu">
-                <?php echo do_shortcode('[main_menu]')?>
-            </div>
-            <div class="listFavourite positionA">
-                <a href="<?php echo get_page_link(672)?>" title="VOTRE LISTE D'ENVIES">
-                    <span>VOTRE LISTE</span>
-                    <span>D'ENVIES</span>
-                    <span class="number_tour positionA">0</span>
-                </a>
-            </div>
+            <?php wp_nav_menu( ['menu' => 347, 'menu_class' => 'displayFlex alignCenter', 'container_class' => 'containerMenuBlog mainMenu'] ) ?>
         </div>
         <div class="positionR hoverContent menuMobile">
-           <button type="button" class="btnShowMenu positionR"><i class="fa fa-bars" aria-hidden="true"></i></button>
-           <?php wp_nav_menu( ['menu_id' => 2,'menu_class'=> '', 'container_class'=> 'positionA hideContent topUL'] ) ?>
+            <button type="button" class="btnShowMenu positionR"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            <?php wp_nav_menu( ['menu' => 347,'menu_class'=> '', 'container_class'=> 'positionA hideContent topUL'] ) ?>
         </div>
     </div>
 </div>
+
 <div id="page" class="hfeed site grid-parent">
 
 <?php

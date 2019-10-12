@@ -1,5 +1,5 @@
 .bannerPage {
-  max-height: 600px;
+  max-height: 500px;
   overflow: hidden;
   font-size: 0;
 
@@ -176,11 +176,8 @@
   padding: 65px 70px;
   margin-top: -33px;
   font-weight: 700;
-
   h1 {
-    font-size: 25px;
     margin-bottom: 0;
-
     span {
       color: #bb9d55;
     }
@@ -833,5 +830,147 @@
         padding: 0 10px;
       }
     }
+  }
+}
+.breadcrumbs{
+  padding: 15px 0;
+  background: #ddd;
+  p{
+    margin: 0;
+  }
+}
+.blogTemplate #content{
+  margin: 0 -15px;
+  h1{
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .mainSidebar{
+    width: 30%;
+    padding: 15px;
+    margin-top: 20px;
+    .widget{
+      margin-bottom: 30px;
+      background: #efefef;
+      h2{
+        text-align: center;
+        background: #689c72;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 10px;
+      }
+      .menu{
+        padding: 10px;
+      }
+      ul{
+        li{
+          padding: 5px 0;
+          position: relative;
+          a{
+            display: block;
+            color: #000;
+            font-weight: bold;
+          }
+        }
+        ul{
+          padding: 0;
+        }
+      }
+      .sub-menu{
+        li{
+          padding-left: 10px;
+          &:before{
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            content: "\f054";
+            position: absolute;
+            top: 13px;
+            font-size: 11px;
+            left: 0;
+          }
+          a{
+            color: #545454;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    .widget_search{
+      label span{
+        display: none;
+      }
+      form{
+        position: relative;
+        input{
+          height: 40px;
+          background: #ddd;
+          color: #000;
+          width: 100%;
+          border: none;
+          outline: none;
+          padding: 10px;
+          font-size: 16px;
+        }
+        button{
+          position: absolute;
+          top:50%;
+          transform: translateY(-50%);
+          right: 8px;
+          font-size: 20px;
+          color: #999;
+
+        }
+      }
+    }
+  }
+  .mainContent{
+    width: 70%;
+    padding: 15px;
+    p{
+      text-align: justify;
+    }
+  }
+  .listPost{
+    margin: 0;
+    margin-top: 20px;
+  }
+  .listPost .item{
+    width: 100%;
+    padding: 15px 0;
+    .img_post{
+      width: 40%;
+      padding-right: 20px;
+      font-size: 0;
+    }
+    .content_post{
+      width: 60%;
+      padding: 10px 10px 10px 0;
+    }
+    h4{
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+    .date_time{
+      font-size: 13px;
+      color: #848484;
+    }
+    .see_more{
+      display: inline-block;
+      background-color: #689c72;
+      background-image: url(../images/icon_seemore.png);
+      color: #fff;
+      background-repeat: no-repeat;
+      background-position: 125px center;
+      padding: 4px 28px 4px 13px;
+      border-radius: 3px;
+      text-decoration: none;
+    }
+  }
+  .contentItem{
+    border: 1px solid #ddd;
+    display: flex;
+    flex-wrap: wrap;
   }
 }

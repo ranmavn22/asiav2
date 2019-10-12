@@ -17,7 +17,7 @@
     max-width: 80px;
     top:10px;
   }
-  #mainMenu {
+  .mainMenu {
     padding: 0 90px;
   }
   footer .sectionFooter1 .leftColumn {
@@ -26,7 +26,7 @@
 }
 
 @media (max-width: 990px) {
-  #mainMenu ul li > a {
+  .mainMenu ul li > a {
     line-height: 85px;
     font-size: 13px;
   }
@@ -94,7 +94,7 @@
   .titlePage{
     padding: 5px 0;
   }
-  #mainMenu{
+  .mainMenu{
     display: none;
   }
   .header .logo {

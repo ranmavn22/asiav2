@@ -50,7 +50,7 @@ if (!defined('ABSPATH')) {
     </div>
 </div>
 <div id="page" class="hfeed site grid-parent">
-    <div id="content" class="">
+
 <?php
 /**
  * generate_inside_container hook.
