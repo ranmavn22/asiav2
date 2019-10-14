@@ -977,3 +977,128 @@
     flex-wrap: wrap;
   }
 }
+.textRight{
+  text-align: right;
+}
+.listVideo{
+  padding: 40px 0;
+  background-image: url(https://asia-soleil-travel.com/wp-content/uploads/2017/05/bg_img.jpg);
+  h3{
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  a{
+    font-size: 0;
+    display: block;
+    position: relative;
+  }
+  h4{
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    a{
+      font-size: 14px;
+    }
+  }
+  .item{
+    padding: 15px;
+  }
+  .bgPlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    img{
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+  .see_more{
+    font-size: 16px;
+    padding: 5px 20px;
+    background: #bb9d55;
+    display: inline-block;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 20px;
+    &:hover{
+      background: #689c72;
+    }
+  }
+}
+.listLink{
+  padding-top: 40px;
+  img{
+    border-radius: 100%;
+  }
+  .topLink{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  h4{
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  .linkMain{
+    flex-wrap: wrap;
+    align-items: stretch;
+    .item{
+      width: 50%;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      .content{
+        height: 100%;
+        background: #d5e3d8;
+        border-radius: 10px;
+        padding: 20px;
+        img{
+          max-width: 130px;
+        }
+      }
+    }
+    .item:nth-child(even){
+      border-left: 2px solid #d5e3d8;
+      padding-left: 20px;
+      .content{
+        justify-content: end;
+        h4{
+          margin-left: 20px;
+          text-align: left;
+        }
+      }
+    }
+    .item:nth-child(odd){
+      position: relative;
+      border-right: 2px solid #d5e3d8;
+      padding-right: 20px;
+      &:before{
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background: #689c72;
+        right: -9px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 999;
+        position: absolute;
+      }
+      .content{
+        justify-content: flex-end;
+        h4{
+          order: 1;
+          margin-right: 20px;
+          text-align: right;
+        }
+        > a{
+          order: 2;
+        }
+      }
+    }
+  }
+}

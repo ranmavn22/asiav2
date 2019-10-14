@@ -1816,6 +1816,122 @@ footer {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
 
+.textRight {
+  text-align: right; }
+
+.listVideo {
+  padding: 40px 0;
+  background-image: url(https://asia-soleil-travel.com/wp-content/uploads/2017/05/bg_img.jpg); }
+  .listVideo h3 {
+    font-size: 20px;
+    text-transform: uppercase; }
+  .listVideo a {
+    font-size: 0;
+    display: block;
+    position: relative; }
+  .listVideo h4 {
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase; }
+    .listVideo h4 a {
+      font-size: 14px; }
+  .listVideo .item {
+    padding: 15px; }
+  .listVideo .bgPlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); }
+    .listVideo .bgPlay img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+  .listVideo .see_more {
+    font-size: 16px;
+    padding: 5px 20px;
+    background: #bb9d55;
+    display: inline-block;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 20px; }
+    .listVideo .see_more:hover {
+      background: #689c72; }
+
+.listLink {
+  padding-top: 40px; }
+  .listLink img {
+    border-radius: 100%; }
+  .listLink .topLink {
+    text-align: center;
+    margin-bottom: 40px; }
+  .listLink h4 {
+    text-transform: uppercase;
+    font-size: 16px; }
+  .listLink .linkMain {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch; }
+    .listLink .linkMain .item {
+      width: 50%;
+      padding-top: 5px;
+      padding-bottom: 5px; }
+      .listLink .linkMain .item .content {
+        height: 100%;
+        background: #d5e3d8;
+        border-radius: 10px;
+        padding: 20px; }
+        .listLink .linkMain .item .content img {
+          max-width: 130px; }
+    .listLink .linkMain .item:nth-child(even) {
+      border-left: 2px solid #d5e3d8;
+      padding-left: 20px; }
+      .listLink .linkMain .item:nth-child(even) .content {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: end; }
+        .listLink .linkMain .item:nth-child(even) .content h4 {
+          margin-left: 20px;
+          text-align: left; }
+    .listLink .linkMain .item:nth-child(odd) {
+      position: relative;
+      border-right: 2px solid #d5e3d8;
+      padding-right: 20px; }
+      .listLink .linkMain .item:nth-child(odd):before {
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background: #689c72;
+        right: -9px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        z-index: 999;
+        position: absolute; }
+      .listLink .linkMain .item:nth-child(odd) .content {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end; }
+        .listLink .linkMain .item:nth-child(odd) .content h4 {
+          -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+          order: 1;
+          margin-right: 20px;
+          text-align: right; }
+        .listLink .linkMain .item:nth-child(odd) .content > a {
+          -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+          order: 2; }
+
 @media (max-width: 1200px) {
   .header .listFavourite {
     right: 5px;

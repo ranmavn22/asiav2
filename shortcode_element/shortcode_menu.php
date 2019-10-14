@@ -49,30 +49,8 @@ $url = get_stylesheet_directory_uri();
                 </div>
             </div>
         </li>
-        <li class="site_a_decouvrir menu_parent hoverContent"><a href="<?php echo get_term_link(17); ?>"  class="" title="SITES À DÉCOUVRIR"><?php _e('SITES À DÉCOUVRIR', 'wz') ?></a>
-            <div class="sub_menu positionA hideContent">
-                <div class="content_sub">
-                    <div class="text_sub_menu">
-                        <?php
-                        if (is_active_sidebar('menu-sites-dcouvrir-left')) :
-                            dynamic_sidebar('menu-sites-dcouvrir-left');
-                        endif;
-                        ?>
-                    </div>
-                    <div class="item_sub-menu">
-                        <?php
-                        if (is_active_sidebar('menu-sites-dcouvrir-right')) :
-                            dynamic_sidebar('menu-sites-dcouvrir-right');
-                        endif;
-                        ?>
-                    </div>
-                    <div class="alignright">
-                    <a href="<?php echo get_permalink(553) ?>"class="see_more" title="Demandez un devis gratuit"><?php _e('Demandez un devis gratuit', 'wz') ?></a>
-                    </div>
-                </div>
-            </div>
-        </li>
         <li class="notre_agence menu_parent "><a href="<?php echo get_permalink(480) ?>" title="NOTRE AGENCE"><?php _e('NOTRE AGENCE', 'wz') ?></a></li>
+        <li class="site_a_decouvrir menu_parent hoverContent"><a href="<?php echo get_term_link(89); ?>"  class="" title="BLOG"><?php _e('BLOG', 'wz') ?></a></li>
     </ul>
 </div>
 
