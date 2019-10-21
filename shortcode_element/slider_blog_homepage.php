@@ -23,7 +23,7 @@ if (!empty($posts)) {
             <div class="item">
                 <div class="img positionR">
                     <a href="<?php echo get_permalink($post->ID) ?>" title="<?php echo get_the_title($post->ID) ?>"><?php echo get_the_post_thumbnail($post->ID, 'custom-medium') ?>
-                        <span class="hover positionA"><img src="<?php echo get_stylesheet_directory_uri() ?>/dist/images/hover-effect.png" alt=""></span>
+                        <span class="hover positionA"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/hover-effect.png" alt=""></span>
                     </a>
                 </div>
                 <div class="desc">

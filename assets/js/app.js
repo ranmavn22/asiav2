@@ -3,8 +3,6 @@
         $('.sliderItem').each(function (index) {
             let elSlider = $(this);
             let item = elSlider.data('item');
-            console.log(elSlider.data('arrow-disable') ? false : true);
-
             elSlider.slick({
                 infinite: true,
                 slidesToShow: item ? item : 1,

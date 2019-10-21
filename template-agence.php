@@ -82,18 +82,18 @@ while (have_posts()) : the_post(); ?>
             <div class="linkMain displayFlex">
                 <div class="item">
                     <div class="content displayFlex alignCenter">
-                    <a href="#" title="Notre équipe">
+                    <a href="<?php echo get_permalink(13218)?>" title="Notre équipe">
                         <img src="//asia-soleil-travel.com/wp-content/uploads/2017/05/Notre-equipe-180x180.jpg" alt="Notre équipe">
                     </a>
-                    <h4><a href="#" title="Notre équipe">Notre équipe</a></h4>
+                    <h4><a href="<?php echo get_permalink(13218)?>" title="Notre équipe">Notre équipe</a></h4>
                     </div>
                 </div>
                 <div class="item">
                     <div class="content displayFlex alignCenter">
-                    <a href="#" title="Nos bureaux">
+                    <a href="<?php echo get_permalink(13222)?>" title="Nos bureaux">
                         <img src="//asia-soleil-travel.com/wp-content/uploads/2017/05/Bureaux-1-180x180.jpg" alt="Nos bureaux">
                     </a>
-                    <h4><a href="#" title="Nos bureaux">Nos bureaux</a></h4>
+                    <h4><a href="<?php echo get_permalink(13222)?>" title="Nos bureaux">Nos bureaux</a></h4>
                     </div>
                 </div>
                 <div class="item">
