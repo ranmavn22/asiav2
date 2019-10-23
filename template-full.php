@@ -14,7 +14,10 @@ while (have_posts()) : the_post(); ?>
 
     <div class="bannerPage positionR">
         <?php echo get_the_post_thumbnail() ?>
-        <div class="titlePage positionA"><h1><?php the_title() ?></h1></div>
+        <div class="titlePage positionA"></div>
+    </div>
+    <div class="grid-container">
+        <div class="titlePageCategory"><h1><?php the_title() ?></h1></div>
     </div>
     <?php the_content() ?>
 

@@ -1118,34 +1118,180 @@
   }
 }
 
-#page{overflow: hidden;}
+.itemBG:nth-child(odd){
+  .leftContent{
+    order: 2;
+  }
+  .rightContent{
+    order: 1;
+    padding-right: 30px;
+    padding-left: 0;
+  }
+}
+.itemBG{
+  background: linear-gradient(to top,#E8E8E8 0%,#FFFFFF 100%);
+  padding: 50px 0;
+  h2{
+    color: #ff9900;
+    font-size: 16px;
+  }
+}
 
-.page-template-template-full{
+.page-id-13218{
+  h3{
+    text-align: center;
+  }
+  .wp-block-separator{
+    height: 40px;
+    border: none;
+  }
+  .wp-block-columns{
+    max-width: 1010px;
+    margin: 0 auto;
+    padding: 20px 15px 40px;
+    img{
+      border-radius: 100%;
+    }
+  }
+  .list_gallery{
+    margin: 40px 0;
+    a{
+      max-width: 10%;
+      padding: 2px;
+      display: inline-block;
+    }
+    a:first-child{
+      max-width: 750px;
+      margin: 0 auto;
+      text-align: center;
+      display: block;
+    }
+  }
+}
+.page-id-13222{
+  .wp-block-columns{
+    max-width: 1010px;
+    margin: 0 auto;
+    padding: 40px 15px 40px;
+    .wp-block-column:first-child{
+      img{
+        max-width: 150px;
+      }
+    }
+  }
+  .location{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 15px 40px;
+    .item{
+      width: 25%;
+      padding: 0 10px;
+    }
+  }
+}
 
+.page-id-13243{
+  p{
+    text-align: justify;
+  }
+  img{
+    border-radius: 100%;
+  }
+  .gallery-thumb{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    a{
+      width: 20%;
+      padding: 2px;
+    }
+  }
+  .bottom{
+    background: url(https://asia-soleil-travel.com/wp-content/uploads/2017/05/bg_img.jpg) no-repeat top left;
+    background-size: cover;
+    text-align: center;
+    padding: 40px 0;
+    p{
+      text-align: center;
+    }
+  }
+}
 
+.page-id-13251{
+  .blockSection{
+    background: url(https://asia-soleil-travel.com/wp-content/uploads/2017/05/bg_img.jpg) no-repeat top left;
+    background-size: cover;
+    margin: 40px 0;
+  }
+  .wp-block-gallery{
+    max-width: 1010px;
+    margin: 0 auto;
+    .blocks-gallery-item{
+      text-align: center;
+      display: inline-block;
+      width: auto;
+      margin: 0;
+      img{
+        flex: inherit;
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+}
+.page-id-13255{
+  .itemBG{
+    img{
+      border-radius: 100%;
+      width: 200px;
+    }
+    .img{
+      width: 30%;
+      padding-left: 0;
+      padding-right: 30px;
+    }
+    .desc{
+      width: 70%;
+      text-align: justify;
+    }
+  }
+  .itemBG:nth-child(odd){
+    .img{
+      order: 2;
+      text-align: right;
+      padding-left: 30px;
+      padding-right: 0;
+    }
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.page-template-template-archives-temoignages{
+  .img_post{
+    img{
+      border-radius: 100%;
+    }
+  }
+  .item{
+    .date{
+      font-style: italic;
+      font-size: 13px;
+      margin-bottom: 0;
+    }
+    .country{
+      background: url(../images/location.png) no-repeat left;
+      padding-left: 40px;
+      line-height: 40px;
+      display: inline-block;
+    }
+  }
+}
+.wrap_temoignages{
+  padding: 40px 0;
+  .img_temoignages{
+    width: 30%;
+    padding-right: 30px;
+  }
+  .content_temoignages{
+    width: 70%;
+  }
 }

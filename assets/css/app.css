@@ -40,6 +40,9 @@
   -o-transition: 0.3s all;
   transition: 0.3s all; }
 
+#page {
+  overflow: hidden; }
+
 html h1, html h2, html h3, html h4 {
   font-weight: bold; }
 
@@ -779,10 +782,10 @@ footer {
   width: 15px; }
 
 .sliderItem .nextIcon {
-  right: -10px; }
+  right: -20px; }
 
 .sliderItem .prevIcon {
-  left: -10px; }
+  left: -20px; }
 
 .listTourHome.listTourStyle1 {
   padding: 40px 0; }
@@ -1943,8 +1946,158 @@ footer {
   width: 70%;
   padding-left: 30px; }
 
-#page {
-  overflow: hidden; }
+.itemBG:nth-child(odd) .leftContent {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2; }
+
+.itemBG:nth-child(odd) .rightContent {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  padding-right: 30px;
+  padding-left: 0; }
+
+.itemBG {
+  background: -webkit-gradient(linear, left bottom, left top, from(#E8E8E8), to(#FFFFFF));
+  background: -webkit-linear-gradient(bottom, #E8E8E8 0%, #FFFFFF 100%);
+  background: -o-linear-gradient(bottom, #E8E8E8 0%, #FFFFFF 100%);
+  background: linear-gradient(to top, #E8E8E8 0%, #FFFFFF 100%);
+  padding: 50px 0; }
+  .itemBG h2 {
+    color: #ff9900;
+    font-size: 16px; }
+
+.page-id-13218 h3 {
+  text-align: center; }
+
+.page-id-13218 .wp-block-separator {
+  height: 40px;
+  border: none; }
+
+.page-id-13218 .wp-block-columns {
+  max-width: 1010px;
+  margin: 0 auto;
+  padding: 20px 15px 40px; }
+  .page-id-13218 .wp-block-columns img {
+    border-radius: 100%; }
+
+.page-id-13218 .list_gallery {
+  margin: 40px 0; }
+  .page-id-13218 .list_gallery a {
+    max-width: 10%;
+    padding: 2px;
+    display: inline-block; }
+  .page-id-13218 .list_gallery a:first-child {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+    display: block; }
+
+.page-id-13222 .wp-block-columns {
+  max-width: 1010px;
+  margin: 0 auto;
+  padding: 40px 15px 40px; }
+  .page-id-13222 .wp-block-columns .wp-block-column:first-child img {
+    max-width: 150px; }
+
+.page-id-13222 .location {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 15px 40px; }
+  .page-id-13222 .location .item {
+    width: 25%;
+    padding: 0 10px; }
+
+.page-id-13243 p {
+  text-align: justify; }
+
+.page-id-13243 img {
+  border-radius: 100%; }
+
+.page-id-13243 .gallery-thumb {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .page-id-13243 .gallery-thumb a {
+    width: 20%;
+    padding: 2px; }
+
+.page-id-13243 .bottom {
+  background: url(https://asia-soleil-travel.com/wp-content/uploads/2017/05/bg_img.jpg) no-repeat top left;
+  background-size: cover;
+  text-align: center;
+  padding: 40px 0; }
+  .page-id-13243 .bottom p {
+    text-align: center; }
+
+.page-id-13251 .blockSection {
+  background: url(https://asia-soleil-travel.com/wp-content/uploads/2017/05/bg_img.jpg) no-repeat top left;
+  background-size: cover;
+  margin: 40px 0; }
+
+.page-id-13251 .wp-block-gallery {
+  max-width: 1010px;
+  margin: 0 auto; }
+  .page-id-13251 .wp-block-gallery .blocks-gallery-item {
+    text-align: center;
+    display: inline-block;
+    width: auto;
+    margin: 0; }
+    .page-id-13251 .wp-block-gallery .blocks-gallery-item img {
+      -webkit-box-flex: inherit;
+      -ms-flex: inherit;
+      flex: inherit;
+      width: auto;
+      height: auto; }
+
+.page-id-13255 .itemBG img {
+  border-radius: 100%;
+  width: 200px; }
+
+.page-id-13255 .itemBG .img {
+  width: 30%;
+  padding-left: 0;
+  padding-right: 30px; }
+
+.page-id-13255 .itemBG .desc {
+  width: 70%;
+  text-align: justify; }
+
+.page-id-13255 .itemBG:nth-child(odd) .img {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+  text-align: right;
+  padding-left: 30px;
+  padding-right: 0; }
+
+.page-template-template-archives-temoignages .img_post img {
+  border-radius: 100%; }
+
+.page-template-template-archives-temoignages .item .date {
+  font-style: italic;
+  font-size: 13px;
+  margin-bottom: 0; }
+
+.page-template-template-archives-temoignages .item .country {
+  background: url(../images/location.png) no-repeat left;
+  padding-left: 40px;
+  line-height: 40px;
+  display: inline-block; }
+
+.wrap_temoignages {
+  padding: 40px 0; }
+  .wrap_temoignages .img_temoignages {
+    width: 30%;
+    padding-right: 30px; }
+  .wrap_temoignages .content_temoignages {
+    width: 70%; }
 
 @media (max-width: 1200px) {
   .header .listFavourite {
