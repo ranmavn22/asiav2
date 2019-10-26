@@ -696,11 +696,12 @@ footer {
   .search .contentForm input {
     width: 25%;
     border: none;
-    height: 40px;
-    line-height: 40px;
+    height: 32px;
+    line-height: 32px;
     padding: 2px 5px;
     border-radius: 2px;
-    margin: 0 5px; }
+    margin: 0 5px;
+    font-size: 16px; }
   .search .contentForm button {
     background: #bb9d55; }
     .search .contentForm button:hover {
@@ -905,7 +906,8 @@ footer {
     padding: 10px; }
   .aboutUs .contentPage {
     max-width: 370px;
-    width: 100%; }
+    width: 100%;
+    margin: 20px 0; }
     .aboutUs .contentPage p {
       text-align: justify; }
       .aboutUs .contentPage p a {
@@ -977,7 +979,7 @@ footer {
 
 .blockSection {
   background: #f7f7f7;
-  padding: 40px; }
+  padding: 40px 0; }
   .blockSection .title {
     text-align: center;
     margin-bottom: 10px; }
@@ -994,7 +996,7 @@ footer {
       margin: 0 auto; }
   .blockSection .wrap_slideBlog .item {
     padding: 15px; }
-    .blockSection .wrap_slideBlog .item img {
+    .blockSection .wrap_slideBlog .item > img {
       width: 100%;
       border-radius: 3px; }
     .blockSection .wrap_slideBlog .item h3 {
@@ -1022,6 +1024,14 @@ footer {
     background: rgba(122, 165, 115, 0.62);
     z-index: 9;
     border-radius: 3px; }
+    .blockSection .wrap_slideBlog .hover img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      opacity: 1; }
   .blockSection .linkToBlog {
     text-align: right; }
     .blockSection .linkToBlog a {
@@ -1466,6 +1476,12 @@ footer {
 .tabContent.active {
   display: block; }
 
+.search.paged {
+  margin: 0; }
+  .search.paged .content_tour {
+    border: none;
+    margin-top: 0; }
+
 .tabs_infor_tour {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -1488,7 +1504,8 @@ footer {
     transition: 0.2s all; }
     .tabs_infor_tour .tab_tour:hover {
       background: url(../images/bg_tabs_05.png) no-repeat center center;
-      color: #fff; }
+      color: #fff;
+      background-size: contain; }
   .tabs_infor_tour .tabs_tour_02 {
     background: url(../images/bg_tabs_02.png) no-repeat center center; }
   .tabs_infor_tour .tabs_tour_01 {
@@ -2100,6 +2117,27 @@ footer {
     width: 70%; }
 
 @media (max-width: 1200px) {
+  .content_tabs_infor3 ul {
+    padding-left: 40px; }
+  .homeSlider .item .slogan .text p {
+    font-size: 2.3vw; }
+  .homeSlider .item .slogan .text p:last-child {
+    font-size: 2vw; }
+  .homeSlider .logo img {
+    width: 12vw; }
+  .search .search_function_main {
+    padding: 15px 5px; }
+  .homeSlider .item .inforTour p:first-child {
+    font-size: 2.5vw; }
+  .homeSlider .item .inforTour p:nth-child(2) {
+    font-size: 2vw; }
+  .videoSection {
+    padding: 40px 0; }
+  .single-tours .titlePage {
+    bottom: 0;
+    -webkit-transform: inherit;
+    -ms-transform: inherit;
+    transform: inherit; }
   .header .listFavourite {
     right: 5px;
     background-size: 40px;
@@ -2116,9 +2154,7 @@ footer {
   .mainMenu {
     padding: 0 90px; }
   footer .sectionFooter1 .leftColumn {
-    background-position: 200px 139px; }
-  .home .grid-container {
-    margin: 0 30px; } }
+    background-position: 200px 139px; } }
 
 @media (max-width: 990px) {
   * {
@@ -2126,12 +2162,6 @@ footer {
   .homeSlider .item .inforTour {
     right: 30px;
     bottom: 30px; }
-  .homeSlider .item .slogan .text p, .homeSlider .item .slogan .text p:last-child {
-    font-size: 24px; }
-  .homeSlider .item .inforTour p:first-child {
-    font-size: 24px; }
-  .homeSlider .item .inforTour p:nth-child(2) {
-    font-size: 18px; }
   .homeSlider .item .inforTour p a {
     border: solid 1px #fff;
     background-color: rgba(0, 0, 0, 0.3);
@@ -2158,18 +2188,97 @@ footer {
     padding: 15px 5px;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
-    justify-content: flex-start; } }
+    justify-content: flex-start; }
+  .videoSection .contentSection {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .videoSection .leftContent, .videoSection .rightContent {
+    width: 100%; }
+  .videoSection .rightContent {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1; }
+  .videoSection .leftContent {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2; }
+  .sliderItem .prevIcon {
+    left: -10px; }
+  .sliderItem .nextIcon {
+    right: -10px; }
+  .listTourStyle1 .item_tour {
+    width: 50%; }
+  .tours_lastnew {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .tabs_infor_tour .tab_tour {
+    width: 25%;
+    background-size: contain; }
+  .tabs_infor_tour {
+    margin-bottom: 30px; } }
 
 @media (max-width: 767px) {
+  .contentPage {
+    margin-top: 30px; }
+  .single-tours .titlePage {
+    display: none; }
+  .tabs_infor_tour .tab_tour {
+    width: 50%; }
+  .sliderItem .prevIcon {
+    left: 15px;
+    z-index: 9; }
+  .countSection .item .counter {
+    font-size: 30px; }
+  .wrap_temoignages,
+  .reviewsSection {
+    padding: 20px 0; }
+  .sliderItem .nextIcon {
+    right: 15px;
+    z-index: 9; }
+  .reviewsSection .grid-container {
+    padding: 0; }
+  .blockSection .wrap_slideBlog .item .desc {
+    margin-top: 5px; }
+  .countSection .contentSection .item {
+    max-width: 100%;
+    width: 100%; }
+  .slide_vnsceret .displayFlex,
+  .countSection .contentSection {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
   .homeSlider .item .slogan {
     top: 50px;
     left: 20px; }
   .homeSlider .item .inforTour {
-    bottom: 20px; }
-  .homeSlider .item .slogan .text p, .homeSlider .item .slogan .text p:last-child {
-    font-size: 20px; }
+    display: none; }
+  .mainMenuHome,
   .content_contact {
     display: none; }
+  .slide_vnsceret .img,
+  .slide_vnsceret .content_infor,
+  .aboutUs .contentPage {
+    max-width: 100%;
+    width: 100%; }
+  .listTourHome.listTourStyle1 h2 {
+    margin-bottom: 20px;
+    font-size: 18px; }
+  .home .titleSection {
+    padding: 20px 5px; }
+  .home h2 {
+    font-size: 18px; }
+  .listTourHome.listTourStyle1 {
+    padding: 20px 0; }
+  #searchform .contentForm button,
+  #searchform .contentForm input,
+  #searchform .contentForm select {
+    width: 100%;
+    margin-bottom: 5px; }
+  #searchform .contentForm {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
   .content_tour .listPost .excerpt_tour_pc {
     display: none; }
   .content_tour .listPost .excerpt_tour {
@@ -2252,20 +2361,52 @@ footer {
   footer .sectionFooter1 .leftColumn aside:last-child {
     margin-top: 25px; }
   footer .sectionFooter1 .rightColumn {
-    width: 100%; } }
-
-@media (max-width: 640px) {
-  .homeSlider .item .slogan .text, .listGuid {
+    width: 100%; }
+  .titlePageCategory2 h1, .titlePageCategory h1 {
+    font-size: 22px; }
+  .titlePageCategory2, .titlePageCategory {
+    text-align: center;
+    padding: 55px 5px;
+    background-position: center; }
+  .content_tabs_infor1 .icon_etape, .content_tabs_infor2 .icon_etape {
     display: none; }
-  .videoSection .leftContent {
+  .content_tabs_infor1 .short_description {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .content_tabs_infor1 .short_description .content_description {
+    width: 100%;
+    padding-right: 0;
+    border: none; }
+  .content_tabs_infor1 .short_description .carte {
+    width: 100%; }
+  .content_tabs_infor1 .img_tour_content .img_vietnam_secret_item {
+    width: 100%; }
+  .slide_vnsceret .content_infor {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
-    order: 2; }
-  .videoSection .leftContent, .videoSection .rightContent {
+    order: 2;
+    padding: 0; }
+  .slide_vnsceret .img {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1; } }
+
+@media (max-width: 600px) {
+  .footerForm.tourForm.form span:first-child {
+    text-align: left; }
+  .content_tabs_infor1 .list_etape, .content_tabs_infor2 .list_etape {
+    width: 100%;
+    margin-bottom: 10px; }
+  .content_tabs_infor1 .content_etape, .content_tabs_infor2 .content_etape {
     width: 100%; }
-  .videoSection .contentSection {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; } }
+  .homeSlider .item .slogan .text, .listGuid {
+    display: none; }
+  .listTourStyle1 .item_tour {
+    width: 100%; }
+  .content_tabs_infor1 .detail .content_tour_jour, .content_tabs_infor2 .detail .content_tour_jour,
+  .content_tabs_infor1 .detail .content_hotel_jour, .content_tabs_infor2 .detail .content_hotel_jour {
+    padding-left: 0;
+    background: none; } }
 
 @media (max-width: 450px) {
   .listPost .item,
@@ -2274,10 +2415,13 @@ footer {
   .footerForm p {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
+  .footerForm.form span,
   .footerForm span {
     width: 100%; }
   html .footerForm p span:nth-child(2) {
     padding-left: 0; }
+  .footerForm.form p:first-child span,
+  .footerForm.form span:first-child,
   html .footerForm p span:first-child {
     display: inline-block;
     width: 100%;
@@ -2288,16 +2432,16 @@ footer {
     margin-left: 0 !important; }
   .footerForm p:first-child span {
     width: 33%; }
-  .footerForm p:nth-child(8) span:first-child,
-  .footerForm p:nth-child(9) span:first-child,
-  .footerForm p:nth-child(7) span:first-child {
+  .footerForm.form p:nth-child(8) span:first-child,
+  .footerForm.form p:nth-child(9) span:first-child,
+  .footerForm.form p:nth-child(7) span:first-child {
     width: 100%; }
-  .footerForm p:nth-child(8) span,
-  .footerForm p:nth-child(7) span {
+  .footerForm.form p:nth-child(8) span,
+  .footerForm.form p:nth-child(7) span {
     width: 25%; }
-  .footerForm p:nth-child(9) span {
+  .footerForm.form p:nth-child(9) span {
     width: 30%; }
-  .footerForm p:nth-child(9) span:last-child {
+  .footerForm.form p:nth-child(9) span:last-child {
     width: 70%; }
   footer .sectionFooter1 .rightColumn aside:last-child {
     text-align: left; }
@@ -2309,4 +2453,6 @@ footer {
   footer .tabs_country .item_country {
     width: 100%; }
   footer .country_vietnam .item_location {
-    width: 100%; } }
+    width: 100%; }
+  footer .sectionFooter1 .rightColumn h3 {
+    font-size: 14px; } }

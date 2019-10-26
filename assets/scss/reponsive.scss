@@ -1,4 +1,28 @@
 @media (max-width: 1200px) {
+  .content_tabs_infor3 ul{
+    padding-left: 40px;
+  }
+  .homeSlider .item .slogan .text p{
+    font-size: 2.3vw;
+  }
+  .homeSlider .item .slogan .text p:last-child{
+    font-size: 2vw;
+  }
+  .homeSlider .logo img{
+    width: 12vw;
+  }
+  .search .search_function_main {
+    padding: 15px 5px;
+  }
+  .homeSlider .item .inforTour p:first-child{ font-size: 2.5vw;}
+  .homeSlider .item .inforTour p:nth-child(2){font-size: 2vw;}
+  .videoSection{
+    padding: 40px 0;
+  }
+  .single-tours .titlePage {
+    bottom: 0;
+    transform: inherit;
+  }
   .header .listFavourite{
     right: 5px;
     background-size: 40px;
@@ -23,19 +47,11 @@
   footer .sectionFooter1 .leftColumn {
     background-position: 200px 139px;
   }
-  .home{
-    .grid-container{
-      margin: 0 30px;
-    }
-  }
 }
 
 @media (max-width: 990px) {
   *{ line-height: 1.3;}
   .homeSlider .item .inforTour{ right: 30px; bottom: 30px;}
-  .homeSlider .item .slogan .text p, .homeSlider .item .slogan .text p:last-child{ font-size: 24px;}
-  .homeSlider .item .inforTour p:first-child{ font-size: 24px;}
-  .homeSlider .item .inforTour p:nth-child(2){font-size: 18px;}
   .homeSlider .item .inforTour p a{ border: solid 1px #fff; background-color: rgba(0,0,0,0.3);
     padding: 5px 15px;}
   .mainMenu ul li > a {
@@ -62,14 +78,108 @@
     padding: 15px 5px;
     justify-content: flex-start;
   }
+  .videoSection .contentSection {
+    flex-wrap: wrap;
+  }
+  .videoSection .leftContent, .videoSection .rightContent {
+    width: 100%;
+  }
+  .videoSection .rightContent{order:1;}
+  .videoSection .leftContent{order:2;}
+  .sliderItem .prevIcon{
+    left: -10px;
+  }
+  .sliderItem .nextIcon{
+    right: -10px;
+  }
+  .listTourStyle1 .item_tour{
+    width: 50%;
+  }
+  .tours_lastnew{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tabs_infor_tour .tab_tour {
+    width: 25%;
+    background-size: contain;
+  }
+  .tabs_infor_tour{
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 767px) {
+  .contentPage {
+    margin-top: 30px;}
+  .single-tours .titlePage{
+    display: none;
+  }
+  .tabs_infor_tour .tab_tour{
+    width: 50%;
+  }
+  .sliderItem .prevIcon {
+    left: 15px;
+    z-index: 9;
+  }
+  .countSection .item .counter {
+    font-size: 30px;
+  }
+  .wrap_temoignages,
+  .reviewsSection{
+    padding: 20px 0;
+  }
+  .sliderItem .nextIcon{
+    right: 15px;
+    z-index: 9;
+  }
+  .reviewsSection .grid-container{
+    padding: 0;
+  }
+  .blockSection .wrap_slideBlog .item .desc{
+    margin-top: 5px;
+  }
+  .countSection .contentSection .item{
+    max-width: 100%;
+    width: 100%;
+  }
+  .slide_vnsceret .displayFlex,
+  .countSection .contentSection{
+    flex-wrap: wrap;
+  }
   .homeSlider .item .slogan{top:50px; left: 20px;}
-  .homeSlider .item .inforTour{ bottom:20px;}
-  .homeSlider .item .slogan .text p, .homeSlider .item .slogan .text p:last-child{ font-size: 20px;}
+  .homeSlider .item .inforTour{ display: none}
+  .mainMenuHome,
   .content_contact{
     display: none;
+  }
+  .slide_vnsceret .img,
+  .slide_vnsceret .content_infor,
+  .aboutUs .contentPage{
+    max-width: 100%;
+    width: 100%;
+  }
+  .listTourHome.listTourStyle1 h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .home .titleSection {
+    padding: 20px 5px;
+  }
+  .home h2{
+    font-size: 18px;
+  }
+  .listTourHome.listTourStyle1{
+    padding: 20px 0;
+  }
+  #searchform .contentForm button,
+  #searchform .contentForm input,
+  #searchform .contentForm select{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  #searchform .contentForm{
+    flex-wrap: wrap;
+
   }
   .content_tour .listPost .excerpt_tour_pc{
     display: none;
@@ -181,13 +291,60 @@
   footer .sectionFooter1 .rightColumn{
     width: 100%;
   }
+  .titlePageCategory2 h1, .titlePageCategory h1{
+    font-size: 22px;
+  }
+  .titlePageCategory2, .titlePageCategory {
+    text-align: center;
+    padding: 55px 5px;
+    background-position: center;
+  }
+  .content_tabs_infor1 .icon_etape, .content_tabs_infor2 .icon_etape{
+    display: none;
+  }
+  .content_tabs_infor1 .short_description{
+    flex-wrap: wrap;
+  }
+  .content_tabs_infor1 .short_description .content_description{
+    width: 100%;
+    padding-right: 0;
+    border: none;
+  }
+  .content_tabs_infor1 .short_description .carte{
+    width: 100%;
+  }
+  .content_tabs_infor1 .img_tour_content .img_vietnam_secret_item{
+    width: 100%;
+  }
+  .slide_vnsceret .content_infor{
+    order: 2;
+    padding: 0;
+  }
+  .slide_vnsceret .img{
+    order: 1;
+  }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 600px) {
+  .footerForm.tourForm.form span:first-child{
+    text-align: left;
+  }
+  .content_tabs_infor1 .list_etape, .content_tabs_infor2 .list_etape{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .content_tabs_infor1 .content_etape, .content_tabs_infor2 .content_etape{
+    width: 100%;
+  }
   .homeSlider .item .slogan .text, .listGuid{display: none;}
-  .videoSection .leftContent{order:2;}
-  .videoSection .leftContent, .videoSection .rightContent{width: 100%;}
-  .videoSection .contentSection{ flex-wrap: wrap;}
+  .listTourStyle1 .item_tour{
+    width: 100%;
+  }
+  .content_tabs_infor1 .detail .content_tour_jour, .content_tabs_infor2 .detail .content_tour_jour,
+  .content_tabs_infor1 .detail .content_hotel_jour, .content_tabs_infor2 .detail .content_hotel_jour{
+    padding-left: 0;
+    background: none;
+  }
 }
 
 @media (max-width: 450px) {
@@ -198,12 +355,15 @@
   .footerForm p {
     flex-wrap: wrap;
   }
+  .footerForm.form span,
   .footerForm span{
     width: 100%;
   }
   html .footerForm p span:nth-child(2) {
     padding-left: 0;
   }
+  .footerForm.form p:first-child span,
+  .footerForm.form span:first-child,
   html .footerForm p span:first-child {
     display: inline-block;
     width: 100%;
@@ -217,19 +377,19 @@
   .footerForm p:first-child span{
     width: 33%;
   }
-  .footerForm p:nth-child(8) span:first-child,
-  .footerForm p:nth-child(9) span:first-child,
-  .footerForm p:nth-child(7) span:first-child{
+  .footerForm.form p:nth-child(8) span:first-child,
+  .footerForm.form p:nth-child(9) span:first-child,
+  .footerForm.form p:nth-child(7) span:first-child{
     width: 100%;
   }
-  .footerForm p:nth-child(8) span,
-  .footerForm p:nth-child(7) span {
+  .footerForm.form p:nth-child(8) span,
+  .footerForm.form p:nth-child(7) span {
     width: 25%;
   }
-  .footerForm p:nth-child(9) span{
+  .footerForm.form p:nth-child(9) span{
     width: 30%;
   }
-  .footerForm p:nth-child(9) span:last-child {
+  .footerForm.form p:nth-child(9) span:last-child {
     width: 70%;
   }
   footer .sectionFooter1 .rightColumn aside:last-child{
@@ -246,5 +406,8 @@
   }
   footer .country_vietnam .item_location{
     width: 100%;
+  }
+  footer .sectionFooter1 .rightColumn h3{
+    font-size: 14px;
   }
 }

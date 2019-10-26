@@ -534,7 +534,13 @@
 .tabContent.active {
   display: block;
 }
-
+.search.paged {
+  margin: 0;
+  .content_tour{
+    border: none;
+    margin-top: 0;
+  }
+}
 .tabs_infor_tour {
   flex-wrap: wrap;
   justify-content: space-between;
@@ -555,6 +561,7 @@
     &:hover {
       background: url(../images/bg_tabs_05.png) no-repeat center center;
       color: #fff;
+      background-size: contain;
     }
   }
 
@@ -689,7 +696,6 @@
       width: 50%;
       padding: 0 20px;
       text-align: center;
-
       img {
         max-width: 250px;
       }

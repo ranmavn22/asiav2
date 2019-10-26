@@ -88,11 +88,12 @@
     input{
       width: 25%;
       border: none;
-      height: 40px;
-      line-height: 40px;
+      height: 32px;
+      line-height: 32px;
       padding: 2px 5px;
       border-radius: 2px;
       margin: 0 5px;
+      font-size: 16px;
     }
     button{
       background: #bb9d55;
@@ -322,6 +323,7 @@
   .contentPage{
     max-width: 370px;
     width: 100%;
+    margin: 20px 0;
     p{
       text-align: justify;
       a{
@@ -410,7 +412,7 @@
 
 .blockSection{
   background: #f7f7f7;
-  padding: 40px;
+  padding: 40px 0;
   .title{
     text-align: center;
     margin-bottom: 10px;
@@ -431,7 +433,7 @@
   .wrap_slideBlog{
     .item{
       padding: 15px;
-      img{
+      > img{
         width: 100%;
         border-radius: 3px;
       }
@@ -460,6 +462,13 @@
       background: rgba(122,165,115,.62);
       z-index: 9;
       border-radius: 3px;
+      img{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        opacity: 1;
+      }
     }
   }
   .linkToBlog{

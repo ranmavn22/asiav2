@@ -96,33 +96,33 @@ get_header('home'); ?>
             </div>
         </div>
     </div>
-    <div class="listGuid">
+    <!--<div class="listGuid">
         <div class="titleSection">
             <h2><span>Tout savoir avant de</span> voyager au vietnam</h2>
         </div>
         <div class="contentList">
             <div class="grid-container">
-                <?php echo do_shortcode("[list_guid]") ?>
+                <?php /*echo do_shortcode("[list_guid]") */?>
                 <div class="linkGuide displayFlex alignCenter">
                     <p>
-                        <a href="<?php get_term_link(15) ?>" title="Guide culturel">Guide culturel <i
+                        <a href="<?php /*get_term_link(15) */?>" title="Guide culturel">Guide culturel <i
                                     class="fa fa-caret-right"></i></a></p>
                     <p>
-                        <a href="<?php get_term_link(16) ?>" title="Guide de voyage">Guide de voyage <i
+                        <a href="<?php /*get_term_link(16) */?>" title="Guide de voyage">Guide de voyage <i
                                     class="fa fa-caret-right"></i></a>
                     </p>
                     <p>
-                        <a href="<?php get_term_link(17) ?>" title="Destinations à découvrir">Destinations à découvrir
+                        <a href="<?php /*get_term_link(17) */?>" title="Destinations à découvrir">Destinations à découvrir
                             <i class="fa fa-caret-right"></i></a>
                     </p>
                     <p>
-                        <a href="<?php get_term_link(3) ?>" title="Guide pratique">Guide pratique <i
+                        <a href="<?php /*get_term_link(3) */?>" title="Guide pratique">Guide pratique <i
                                     class="fa fa-caret-right"></a></i>
                     </p>
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <div class="titleSection">
         <h2><span>À propos </span> de nous</h2>
     </div>

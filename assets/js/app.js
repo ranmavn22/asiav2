@@ -14,6 +14,22 @@
                 arrows: elSlider.data('arrow-disable') ? false : true,
                 prevArrow: '<img src="//asia-soleil-travel.com/wp-content/themes/enfold-child/dist/images/icon_pre.png" alt="prev" class="prevIcon">',
                 nextArrow: '<img src="//asia-soleil-travel.com/wp-content/themes/enfold-child/dist/images/icon_next.png" alt="next" class="nextIcon">',
+                responsive: [
+                    {
+                        breakpoint: 990,
+                        settings: {
+                            slidesToShow: item && item > 1 ? 2 : 1,
+                            slidesToScroll: item && item > 1 ? 2 : 1,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: item && item > 1 ? 1 : 1,
+                            slidesToScroll: item && item > 1 ? 1 : 1,
+                        }
+                    },
+                ]
             });
         })
     }
@@ -111,24 +127,22 @@
         onUpdate: null,  // callback method for every time the element is updated,
         onComplete: null,  // callback method for when the element finishes updating
     };
-    if(!$('.counter').hasClass('complete') && $('.countSection').length > 0){
-        $(window).on('scroll', function() {
-            if ($(window).scrollTop() >= $('.countSection').offset().top - 200) {
-                $('.counter').each(function (index) {
-                    if(!$(this).hasClass('complete')){
-                        $('.counter'+index).countTo({
-                            from: 0,
-                            to: $(this).data('count'),
-                            speed: 4000,
-                            refreshInterval: 50,
-                            onComplete: function(value) {
-                                $(this).addClass('complete')
-                            }
-                        });
-                    }
-                });
-            }
-        });
-    }
+    $(window).on('scroll', function() {
+        if ($(window).scrollTop() >= $('.countSection').offset().top - 200) {
+            $('.counter').each(function (index) {
+                if(!$(this).hasClass('complete')){
+                    $('.counter'+index).countTo({
+                        from: 0,
+                        to: $(this).data('count'),
+                        speed: 4000,
+                        refreshInterval: 50,
+                        onComplete: function(value) {
+                            $(this).addClass('complete')
+                        }
+                    });
+                }
+            });
+        }
+    });
 
 })(jQuery);
