@@ -323,6 +323,7 @@
   .slide_vnsceret .img{
     order: 1;
   }
+
 }
 
 @media (max-width: 600px) {
@@ -333,8 +334,16 @@
     width: 100%;
     margin-bottom: 10px;
   }
+  .blogTemplate #content .listPost .item .content_post,
+  .blogTemplate #content .listPost .item .img_post,
   .content_tabs_infor1 .content_etape, .content_tabs_infor2 .content_etape{
     width: 100%;
+  }
+  .blogTemplate #content .listPost .item .img_post{
+    padding: 0;
+  }
+  .blogTemplate #content .listPost .item .content_post{
+    padding: 10px;
   }
   .homeSlider .item .slogan .text, .listGuid{display: none;}
   .listTourStyle1 .item_tour{

@@ -12,18 +12,16 @@ $value_banner = get_option('wz_taxonomy_option_feature_image'.$obj->term_id);
     <div class="bannerPage positionR">
         <?php echo wp_get_attachment_image( $value_banner,'full' )?>
     </div>
-    <div class="grid-container">
+    <div class="grid-container blogTemplate listHotelPage">
         <div class="titlePageCategory2"><h1>Toutes les idées de voyages : <span><?php echo $obj->name ?></span></h1></div>
         <div class="">
             <?php echo $obj->description ?>
         </div>
-        <!--<p class="seeMoreContentPage text-center"><a href="#" class="" title="VOIR LA SUITE"><span>VOIR LA SUITE</span></a></p>-->
-
         <?php
 
-        $loop = new WP_Query(array('post_type' => 'tours', 'posts_per_page' => 12, 'paged' => get_query_var('paged') ? get_query_var('paged') : 1,'tax_query' => array(
+        $loop = new WP_Query(array('post_type' => 'hotels', 'posts_per_page' => 12, 'paged' => get_query_var('paged') ? get_query_var('paged') : 1,'tax_query' => array(
                 array(
-                    'taxonomy' => 'category_tour',
+                    'taxonomy' => 'category_hotel',
                     'field'    => 'slug',
                     'terms'    => $obj->slug,
                 ),
@@ -31,12 +29,12 @@ $value_banner = get_option('wz_taxonomy_option_feature_image'.$obj->term_id);
         );
 
         ?>
-        <div class="content_tour">
+        <div id="content">
             <div class='listPost'>
                 <?php
                 while ($loop->have_posts()) : $loop->the_post();
-                    $tour = $post->ID;
-                    include __DIR__.'/includes/item_tour.php';
+                    $infor = get_post_meta($post->ID, 'wz_information_hotel', true);
+                    include __DIR__.'/includes/item_hotel.php';
                 endwhile; ?>
             </div>
         </div>

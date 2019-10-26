@@ -846,7 +846,6 @@
   }
 }
 .blogTemplate #content{
-  margin: 0 -15px;
   h1{
     margin-bottom: 10px;
     margin-top: 10px;
@@ -1299,5 +1298,11 @@
   }
   .content_temoignages{
     width: 70%;
+  }
+}
+.listHotelPage.grid-container{
+  max-width: 1010px;
+  .wz_danhgia{
+    color: #bb9d55;
   }
 }
