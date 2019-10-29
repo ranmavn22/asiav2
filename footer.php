@@ -95,7 +95,22 @@ if ( ! defined( 'ABSPATH' ) ) {
         </div>
     </div>
 </footer>
-
+<div class="area_support">
+        <a href="<?php echo get_page_link(553) ?>" class="btn_contact_home" title="Devis gratuit"><?php _e('Devis gratuit', 'wz') ?></a>
+            <div class="wz_support">
+                <div class="content_suport">
+                    <h3>Besoin de conseil d’un expert ?</h3>
+                    <img src="<?php echo get_site_url() ?>/wp-content/themes/enfold-child/dist/images/img_beautyful.png" alt="Mr.Dat">
+                    <p>Hotline: M.DAT: +84 (0) 98 58 30 955</p>
+                    <span><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                </div>
+                <a href="<?php echo get_page_link(553) ?>" title="demander un devis">demander un devis</a>
+            </div>
+</div>
+<div class="contact_mobile displayFlex alignCenter">
+    <a href="<?php echo get_page_link(335)?>" title="CONTACTEZ-NOUS"><i class="fa fa-paper-plane" aria-hidden="true"></i> <?php _e('CONTACTEZ-NOUS' , 'wz')?> </a>
+    <a href="<?php echo get_page_link(342)?>" title="RAPPEL GRATUIT"><i class="fa fa-phone" aria-hidden="true"></i> <?php _e('RAPPEL GRATUIT' , 'wz')?> </a>
+</div>
 <?php wp_footer(); ?>
 
 </body>

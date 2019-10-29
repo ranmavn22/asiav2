@@ -15,14 +15,14 @@
           color: #fff;
           font-family: Constantia,sans-serif;
           text-shadow: rgb(0, 0, 0) 1px 2px 2px;
-          font-size: 30px;
+          font-size: 1.7vw;
           filter: none;
           margin: 0;
         }
         p:last-child {
           font-family: "Monotype Corsiva",sans-serif;
           text-shadow: rgb(0, 0, 0) 1px 2px 2px;
-          font-size: 26px;
+          font-size: 1.3vw;
         }
       }
     }
@@ -39,16 +39,16 @@
           display: inline-block;
           color: #fff;
           padding: 10px 20px;
-          font-size: 20px;
+          font-size: 1.3vw;
         }
       }
       p:first-child {
         border-bottom: 1px solid rgb(255, 255, 255);
         padding: 0 0 5px;
-        font-size: 34px;
+        font-size: 1.7vw;
       }
       p:nth-child(2){
-        font-size: 30px;
+        font-size: 1.3vw;
       }
     }
   }

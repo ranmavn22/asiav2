@@ -1302,7 +1302,247 @@
 }
 .listHotelPage.grid-container{
   max-width: 1010px;
-  .wz_danhgia{
-    color: #bb9d55;
+}
+.wz_danhgia{
+  color: #ffd800;
+}
+.single-hotels{
+  .fa-circle{
+    color: #a7cca0;
+  }
+  table,
+  td{
+    border: 1px solid #dddddd;
+  }
+  td{
+    padding: 5px;
+  }
+}
+.slide_img_hotels{
+  margin-top: 30px;
+}
+.slider-nav{
+  .item{
+    padding: 0 10px;
+    max-height: 100px;
+    overflow: hidden;
+  }
+}
+.tabs_hotel{
+  text-align: center;
+  margin: 30px 0;
+  a:visited,
+  a{
+    display: inline-block;
+    min-width: 200px;
+    background: #a7cca0;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 10px;
+    &:hover{
+      background: #ff9900;
+      color: #fff;
+    }
+  }
+}
+.contactForm{
+  p{
+    span:first-child{
+      width: 30%;
+    }
+
+    span:nth-child(2){
+      width: 70%;
+      span{
+        width: 40%;
+      }
+      span:nth-child(2){
+        width: 30%;
+        padding-left: 20px;
+      }
+      span.wpcf7-not-valid-tip{
+        width: 100%;
+        padding-left: 0;
+      }
+    }
+  }
+  .btnSubmit{
+    text-align: center;
+    .ajax-loader{
+      display: none;
+    }
+    input,button{
+      border-radius: 4px;
+      width: auto;
+      height: 38px;
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: bold;
+      color: #fff;
+      padding: 0 20px;
+      margin: 10px;
+      background: #bb9d55;
+      cursor: pointer;
+      &:hover{
+        background: #7aa573;
+      }
+    }
+  }
+}
+.wpcf7-response-output{
+  text-align: center;
+}
+.rendezForm{
+  max-width: 600px;
+  p{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 10px;
+    span:first-child{
+      display: block;
+      width: 100%;
+    }
+    .wpcf7-form-control-wrap{
+      margin-right: 10px;
+    }
+    span:nth-child(3){
+      margin-right: 10px;
+    }
+  }
+  .btnSubmit{
+    text-align: center;
+    .ajax-loader{
+      display: none;
+    }
+    input,button{
+      border-radius: 4px;
+      width: auto;
+      height: 38px;
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: bold;
+      color: #fff;
+      padding: 0 20px;
+      margin: 10px;
+      background: #bb9d55;
+      cursor: pointer;
+      &:hover{
+        background: #7aa573;
+      }
+    }
+  }
+}
+.area_support .btn_contact_home,.area_support .btn_contact_ {
+  background: #bb9d55;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  width: 200px;
+  text-align: center;
+  padding: 20px 0;
+  color: #fff;
+  display: inline-block;
+  position: fixed;
+  top: 45%;
+  right: -70px;
+  transform: rotateZ(270deg);
+  z-index: 9999;
+}
+.area_support .btn_contact_home:hover,.area_support  .btn_contact_:hover {
+  color: #fff;
+  background: #7aa573; }
+.area_support .btn_contact_home{
+  position: absolute;
+  top: 45%;
+  right: 109px;
+  transition: 0.2s all;
+}
+.area_support{
+  position: fixed;
+  top: 45%;
+  transform: translateY(-45%);
+  right: -180px;
+  z-index: 999;
+  width: auto;
+  height: auto;
+  display: inline-block;
+}
+.area_support:hover .btn_contact_home{
+  right: -30px;
+}
+.area_support:hover .wz_support{
+  right:180px;
+}
+
+.wz_support{
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  transition: 0.4s all;
+  position: relative;
+  right: -100%;
+  width: 240px;
+  z-index: 99999999;
+  background: #bb9d55;
+}
+.wz_support a{
+  border-bottom-left-radius: 4px;
+  background: #f15f29;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  line-height: 40px;
+}
+.wz_support .content_suport span{
+  position: absolute;
+  top: 0;
+  left: 3px;
+  color: #444;
+  font-size: 20px;
+  cursor: pointer;
+}
+.wz_support .content_suport h3{
+  font-size: 16px;
+  line-height: 1;
+}
+.wz_support .content_suport img{
+  display: inline-block;
+  margin: 10px 0;
+  border-radius:100%;
+}
+.wz_support .content_suport p{
+  line-height: 1.2;
+  margin: 0;
+  font-weight: 600;
+}
+.wz_support .content_suport{
+  position: relative;
+  padding: 10px 36px;
+  text-align: center;
+}
+.contact_mobile {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #75946f;
+  z-index: 999;
+  padding: 7px;
+  font-size: 14px;
+  a:visited,
+  a{
+    width: 50%;
+    text-align: center;
+    color: #fff;
+    padding: 2px 0;
+    border-left: 1px solid #fff;
+  }
+  a:first-child{
+    border: none;
   }
 }

@@ -33,6 +33,30 @@
             });
         })
     }
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: false,
+        centerMode: false,
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 990,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    });
 
     $(document).on('click','.list_guide .page-numbers',function (e) {
         e.preventDefault();
@@ -80,6 +104,7 @@
         $('.tabControl .item').on('click',function (e) {
             e.preventDefault();
             let el = $(this).data('el');
+            console.log(el);
             if($(el).length > 0){
                 $('.tabControl .item,.tabContent').removeClass('active');
                 $(this).addClass('active');
@@ -122,13 +147,13 @@
         from: 0,  // the number the element should start at
         to: 100,  // the number the element should end at
         speed: 1000,  // how long it should take to count between the target numbers
-        refreshInterval: 100,  // how often the element should be updated
+        refreshInterval: 1000,  // how often the element should be updated
         decimals: 0,  // the number of decimal places to show
         onUpdate: null,  // callback method for every time the element is updated,
         onComplete: null,  // callback method for when the element finishes updating
     };
     $(window).on('scroll', function() {
-        if ($(window).scrollTop() >= $('.countSection').offset().top - 200) {
+        if ($('.countSection').length > 0 && $(window).scrollTop() >= $('.countSection').offset().top - 200) {
             $('.counter').each(function (index) {
                 if(!$(this).hasClass('complete')){
                     $('.counter'+index).countTo({
@@ -144,5 +169,4 @@
             });
         }
     });
-
 })(jQuery);

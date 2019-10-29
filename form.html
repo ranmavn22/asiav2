@@ -65,3 +65,40 @@
     <p>[textarea message]</p>
     <p class="btnSubmit">[submit "Envoyer"]</p>
 </div>
+
+<div class="form tourForm footerForm">
+    <p class="hasDot"><span>Votre nom et prénom *</span>[text* nom placeholder "Nom"][text* Prenom placeholder "Prénom"][select* mr "Mr" "Ms"]</p>
+    <p><span>Votre nationalité</span>[select country data:countries]</p>
+    <p><span>Votre adresse</span>[text adresse]</p>
+    <p><span>Votre pays</span>[text pays]</p>
+    <p><span>Votre e-mail *</span>[email* email]</p>
+    <p><span>Votre téléphone *</span>[tel* telephone]</p>
+    <p class="hasDot"><span>Durée du voyage *</span>[number* date min:1 max:12]<span> Départ vers </span>[select* month "01" "02" "03" "04" "05" "06" "07" "08" "09" "10" "11" "12"][select* years "2019" "2020" "2021" "2022" "2023" "2024" "2025" "2026" "2027" "2028" "2029" "2030"]</p>
+    <p class="hasDot"><span>Participants? </span>[number* adultes min:1]<span> Adultes et </span>[number* enfants min:1]<span> enfants</span></p>
+    <p class="hasDot"><span>Budget</span>[number* budget min:1] <span>USD/pers(sans vols internationaux depuis votre pays)</span></p>
+    <p class="hasDot">Précisez d'éventuelles informations complémentaires  </p>
+    <p>[textarea message]</p>
+    <p class="btnSubmit">[submit "Envoyer"]</p>
+</div>
+
+<div class="form contactForm">
+    <p class="displayFlex alignCenter"><span>Titre* </span>[select* mr "Mr" "Ms"]</p>
+    <p class="displayFlex alignCenter"><span>Nom * </span><span class="displayFlex alignCenter">[text* nom placeholder "Nom"]<span>Prénom * </span>[text* Prenom placeholder "Prénom"]</span></p>
+    <p class="displayFlex alignCenter"><span>Ville * </span><span class="displayFlex alignCenter">[text* ville placeholder "Nom"]<span>Nationalité * </span>[select country data:countries]</span></p>
+    <p class="displayFlex alignCenter"><span>Téléphone * </span>[tel telephone]</p>
+    <p class="displayFlex alignCenter"><span>Email * </span>[email* email]</p>
+    <p class="displayFlex alignCenter"><span>Sujet * </span>[text* sujet]</p>
+    <p class="displayFlex"><span>Contenu</span>[textarea message]</p>
+    <p class="btnSubmit">[submit "Envoyer"] <button type="reset">Refaire</button> </p>
+</div>
+
+<div class="form rendezForm">
+    <p><span>Votre nom et prénom: (*) </span>[select* mr "Mr" "Ms"][text* nom placeholder "Nom"]</p>
+    <p><span>Votre adresse e-mail : (*) </span>[email* email]</p>
+    <p>Dites nous quel jour et sur quel numéro vous serez joigmable:</p>
+    <p><span>Votre numéro de téléphone : (*)</span>[tel telephone]</p>
+    <p><span>Date / heure pour recevoir nos appels : (*) </span>[text* sujet] <span>entre</span> <span>[select* mr "08H00 et 11H00" "11H00 et 14H00" "14H00 et 17H00"]</span></p>
+    <p class="text-right">( heure locale francaise )</p>
+    <p class="displayFlex"><span>Contenu</span>[textarea message]</p>
+    <p class="btnSubmit">[submit "Envoyer"] <button type="reset">Refaire</button> </p>
+</div>

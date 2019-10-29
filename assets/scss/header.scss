@@ -59,6 +59,7 @@ html {
       visibility: visible;
     }
   }
+  figure,
   img{
     transition: 0.3s all;
     height:auto;
@@ -70,6 +71,7 @@ html {
     color: #333;
     text-decoration: none;
     transition: 0.3s all;
+    outline: none;
     &:hover{
       color: #bb9d55;
       img{
@@ -122,6 +124,7 @@ html {
 
 }
 .form{
+  input[type="date"],
   input[type="text"],
   input[type="tel"],
   input[type="email"],
@@ -132,6 +135,7 @@ html {
     border-radius: 3px;
     background: #fff;
     width: 100%;
+    border: 1px solid #cecece;
   }
   textarea{
     width: 100%;
@@ -225,7 +229,10 @@ html {
     }
   }
 }
-
+.text-right{
+  text-align: right;
+  justify-content: flex-end;
+}
 //Header home page
 .headerHome {
   .leftHeader {
