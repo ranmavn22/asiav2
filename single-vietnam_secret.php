@@ -53,7 +53,7 @@ while (have_posts()) : the_post();
             <input type="hidden" disabled value="<?php echo $post->ID?>" class="data_tour_ID">
             <span class="title_contact"><?php _e('CELA VOUS AIMEZ ?','wz')?></span>
             <span class="link_contact"><a href="<?php echo get_page_link(335 )?>" title="Nous Contacter"><?php _e('Nous Contacter','wz')?></a></span>
-            <span class="wisth_list"><a href="<?php echo get_page_link(672 )?>" class="add_like_post" title="AJOUTER AU PANIER"><?php _e('AJOUTER AU PANIER','wz')?></a></a></span>
+            <span class="wisth_list"><a href="<?php echo get_page_link(672 )?>" data-id="<?php echo get_the_id()?>" class="add_like_post" title="AJOUTER AU PANIER"><?php _e('AJOUTER AU PANIER','wz')?></a></a></span>
         </div>
         <div class="addthis_inline_share_toolbox"></div>
         <div class="content_tour">

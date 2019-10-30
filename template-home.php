@@ -75,7 +75,7 @@ get_header('home'); ?>
                     <a href="<?php echo get_page_link(672) ?>" title="VOTRE LISTE D'ENVIES">
                         <span>Votre liste</span>
                         <span>d'envies</span>
-                        <span class="number_tour positionA">0</span>
+                        <span class="number_tour positionA"><?php echo $_COOKIE["toursID_asia_count"] ? $_COOKIE["toursID_asia_count"] : 0 ?></span>
                     </a>
                 </div>
             </div>

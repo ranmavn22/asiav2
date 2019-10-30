@@ -13,7 +13,7 @@ function wpdocs_theme_name_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
 
-// Thêm script vào backend
+// Backend script
 add_action('admin_enqueue_scripts', 'wz_custom_admin_style');
 if (!function_exists("wz_custom_admin_style")):
     function wz_custom_admin_style()
@@ -47,6 +47,32 @@ function getGuide(){
     wp_die();
 }
 
+//Ajax set cookies
+add_action('wp_ajax_set_cookies', 'wz_set_cookies_callback');
+add_action('wp_ajax_nopriv_set_cookies', 'wz_set_cookies_callback');
+if(!function_exists("wz_set_cookies_callback")){
+    function wz_set_cookies_callback(){
+        $tourID = $_REQUEST["id"];
+        $cookie_name = "toursID_asia";
+        $cookie_count = "toursID_asia_count";
+
+        if(($_COOKIE["toursID_asia"] != "")){
+            $cookie = $_COOKIE["toursID_asia"] .','.$tourID;
+            $value_cookie_array = explode(',',$cookie);
+            $unique_tours_value = array_unique($value_cookie_array);
+            $value_cookie = join(',',$unique_tours_value);
+        }else{
+            $value_cookie = $tourID;
+        }
+        $tours = explode(',',$value_cookie);
+        $unique_tours = array_unique($tours);
+        $count = count($unique_tours);
+        setcookie($cookie_name, $value_cookie, time() + (86400 * 30), "/");
+        setcookie($cookie_count, $count , time() + (86400 * 30), "/");
+        die($_COOKIE["toursID_asia"]);
+        wp_die();
+    }
+}
 
 // Register shortcode
 if (!function_exists('main_menu_callback')):

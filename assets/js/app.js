@@ -73,6 +73,12 @@
             },el)
         }
     });
+    $('.add_like_post').on('click',function (e) {
+        e.preventDefault();
+        ajaxAction(ajax_url.ajax_url+'?action=set_cookies',{id:$(this).data('id')},function (data) {
+            console.log(data);
+        })
+    });
 
     function ajaxAction(url,data,access = null,appent = null,method = "POST",error = null) {
         $.ajax({
