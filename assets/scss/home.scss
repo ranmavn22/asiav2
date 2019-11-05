@@ -372,7 +372,7 @@
 
 .videoSection{
   padding: 40px;
-  .leftContent{
+  /*.leftContent{
     background: url(../images/bg_area_video.jpg) no-repeat;
     background-size: cover;
     width: 40%;
@@ -407,6 +407,42 @@
   }
   .contentSection{
     align-items: stretch;
+  }*/
+  .leftContent{
+    width: 60%;
+    img{
+      width: 100%;
+    }
+  }
+  .rightContent{
+    width: 40%;
+    padding-left: 30px;
+    .item{
+      align-items: flex-start;
+      margin-bottom: 10px;
+      justify-content: flex-start;
+      font-size: 0;
+      > a{
+        width: 40%;
+      }
+      p{
+        font-size: 16px;
+        width: 60%;
+        margin: 0;
+        padding-left: 20px;
+      }
+    }
+    .iconPlay{
+      width: 40px;
+    }
+  }
+  .iconPlay{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  a{
+    display: block;
   }
 }
 

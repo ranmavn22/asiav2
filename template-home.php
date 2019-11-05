@@ -162,7 +162,7 @@ get_header('home'); ?>
 
     <div class="videoSection">
         <div class="grid-container">
-            <div class="contentSection displayFlex">
+            <!--<div class="contentSection displayFlex">
                 <div class="leftContent">
                     <h3>VIETNAM SECRET</h3>
                     <h3>Découvrez nos produits originaux</h3>
@@ -172,7 +172,7 @@ get_header('home'); ?>
                         <li><a href="" title="Plongée dans la vie locale">Plongée dans la vie locale</a></li>
                     </ul>
                     <div class="btnSeemore">
-                        <a href="<?php get_permalink(174) ?>" title="Vous aimerez ">Vous aimerez <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+                        <a href="<?php /*get_permalink(174) */?>" title="Vous aimerez ">Vous aimerez <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="rightContent">
@@ -182,7 +182,45 @@ get_header('home'); ?>
                         support the video tag.
                     </video>
                 </div>
+            </div>-->
+            <h2 class="text-center">Nos récentes vidéos</h2>
+            <p class="text-center">Notre collection de vidéos effectuées par notre équipe de terrain, sur les activités authentiques lors des missions de repérage et aussi sur les activités de notre équipe, les expériences de nos voyageurs.</p>
+            <div class="displayFlex">
+                <div class="leftContent">
+                    <a href="#" class="positionR" title="">
+                        <img src="http://localhost/asia/wp-content/uploads/2019/11/asia.jpg" alt="">
+                        <span class="iconPlay positionA"><img src="<?php echo get_stylesheet_directory_uri()?>/assets/images/iconvideo.png" alt="play"></span>
+                    </a>
+                </div>
+                <div class="rightContent">
+                    <div class="item displayFlex">
+                        <a class="positionR" title="Promenade à vélo jusqu’au marché local" href="#"><img src="http://localhost/asia/wp-content/uploads/2019/11/asia2-1.jpg" alt="Promenade à vélo jusqu’au marché local">
+                        <span class="iconPlay positionA"><img src="<?php echo get_stylesheet_directory_uri()?>/assets/images/iconvideo.png" alt="play"></span>
+                        </a>
+                        <p><a href="#" title="Promenade à vélo jusqu’au marché local">Promenade à vélo jusqu’au marché local</a></p>
+                    </div>
+                    <div class="item displayFlex">
+                        <a href="#" class="positionR" title="Célébration des 10 ans d’ASIA SOLEIL TRAVEL"><img src="http://localhost/asia/wp-content/uploads/2019/11/asia3.jpg" alt="Célébration des 10 ans d’ASIA SOLEIL TRAVEL">
+                            <span class="iconPlay positionA"><img src="<?php echo get_stylesheet_directory_uri()?>/assets/images/iconvideo.png" alt="play"></span>
+                        </a>
+                        <p><a href="#" class="positionR" title="Célébration des 10 ans d’ASIA SOLEIL TRAVEL">Célébration des 10 ans d’ASIA SOLEIL TRAVEL</a></p>
+                    </div>
+                    <div class="item displayFlex">
+                        <a href="#" class="positionR" title="Séance de pêche dans la campagne du Vietnam"><img src="http://localhost/asia/wp-content/uploads/2019/11/asia4.jpg" alt="Séance de pêche dans la campagne du Vietnam">
+                            <span class="iconPlay positionA"><img src="<?php echo get_stylesheet_directory_uri()?>/assets/images/iconvideo.png" alt="play"></span>
+                        </a>
+                        <p><a href="#" title="Séance de pêche dans la campagne du Vietnam">Séance de pêche dans la campagne du Vietnam</a></p>
+                    </div>
+                    <div class="item displayFlex">
+                        <a href="#" class="positionR" title="Satisfaction de Voyageur d'Asia Soleil Travel"><img src="http://localhost/asia/wp-content/uploads/2019/11/asia5.jpg" alt="Satisfaction de Voyageur d'Asia Soleil Travel">
+                            <span class="iconPlay positionA"><img src="<?php echo get_stylesheet_directory_uri()?>/assets/images/iconvideo.png" alt="play"></span>
+                        </a>
+                        <p><a href="#" title="Satisfaction de Voyageur d'Asia Soleil Travel">Satisfaction de Voyageur d'Asia Soleil Travel</a></p>
+                    </div>
+                </div>
             </div>
+
+
         </div>
     </div>
 
