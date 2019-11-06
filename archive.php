@@ -10,6 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 $obj = get_queried_object();
 $value_banner = get_option('wz_taxonomy_option_banner'.$obj->term_id);
+if(empty($value_banner)) $value_banner = get_option('wz_taxonomy_option_banner89');
 get_header('blog'); ?>
 
     <div class="bannerPage positionR">
@@ -65,6 +66,9 @@ get_header('blog'); ?>
                 <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
                     <?php dynamic_sidebar( 'sidebar-1' ); ?>
                 <?php endif; ?>
+                <?php
+                include_once __DIR__.'/includes/sidebar.php'
+                ?>
             </div>
         </div>
     </div>

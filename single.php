@@ -32,6 +32,7 @@ get_header('blog'); ?>
                 <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
                     <?php dynamic_sidebar( 'sidebar-1' ); ?>
                 <?php endif; ?>
+                <?php include_once __DIR__.'/includes/sidebar.php' ?>
             </div>
         </div>
     </div>

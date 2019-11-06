@@ -16,6 +16,8 @@ while (have_posts()) : the_post(); ?>
         <?php echo get_the_post_thumbnail() ?>
         <div class="titlePage positionA"><h1><?php the_title() ?></h1></div>
     </div>
+    <div class="wrapPage1">
+        <div class="wrapPage2">
     <div class="grid-container">
         <?php the_content() ?>
     </div>
@@ -75,8 +77,8 @@ while (have_posts()) : the_post(); ?>
         <div class="grid-container">
             <div class="topLink">
                 <div class="item">
-                    <a href="#" title="MOT DU FONDATEUR"><img src="//asia-soleil-travel.com/wp-content/uploads/2017/05/directeur-asia-soleil-travel-180x180.jpg" alt="MOT DU FONDATEUR"></a>
-                    <h4><a href="#" title="MOT DU FONDATEUR">MOT DU FONDATEUR</a></h4>
+                    <a href="<?php echo get_permalink(13210)?>" title="MOT DU FONDATEUR"><img src="//asia-soleil-travel.com/wp-content/uploads/2017/05/directeur-asia-soleil-travel-180x180.jpg" alt="MOT DU FONDATEUR"></a>
+                    <h4><a href="<?php echo get_permalink(13210)?>" title="MOT DU FONDATEUR">MOT DU FONDATEUR</a></h4>
                 </div>
             </div>
             <div class="linkMain displayFlex">
@@ -199,6 +201,8 @@ while (have_posts()) : the_post(); ?>
         <div id="back">
             <a href="#" title="AUTRES FORMULES"><i class="fa fa-chevron-circle-left"></i>
                 <span><?php _e('AUTRES FORMULES', 'wz') ?></span></a>
+        </div>
+    </div>
         </div>
     </div>
 <?php endwhile; ?>

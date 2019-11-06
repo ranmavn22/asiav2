@@ -414,6 +414,7 @@ html .grid-container {
         .mainMenu ul .site_a_decouvrir .item_sub-menu .textwidget a:hover {
           color: #bb9d55; }
 
+.single .mainMenu ul,
 .category .mainMenu ul {
   max-width: 700px;
   float: right; }
@@ -2415,6 +2416,12 @@ footer {
 .wrapPage1 {
   background: url(//asia-soleil-travel.com/wp-content/themes/enfold-child/dist/images/img1.png) no-repeat;
   background-position: top left; }
+
+.infor_temoignages_country {
+  background: url(../images/location.png) no-repeat left;
+  padding-left: 20px;
+  margin-left: 13px;
+  background-size: 18px; }
 
 @media (max-width: 1200px) {
   .content_tabs_infor3 ul {
