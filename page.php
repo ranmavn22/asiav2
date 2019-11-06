@@ -23,9 +23,14 @@ get_header(); ?>
             <?php echo get_the_post_thumbnail() ?>
             <div class="titlePage positionA"><h1><?php the_title() ?></h1></div>
         </div>
-        <div class="grid-container">
-            <div class="contentPage"><?php the_content() ?></div>
+        <div class="wrapPage1">
+            <div class="wrapPage2">
+                <div class="grid-container">
+                    <div class="contentPage"><?php the_content() ?></div>
+                </div>
+            </div>
         </div>
         <?php endwhile; ?>
+
 <?php
 get_footer();

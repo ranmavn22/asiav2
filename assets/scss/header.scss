@@ -114,7 +114,7 @@ html {
     padding: 0 15px;
   }
 }
-.archive,
+.category,
 .home{
   .grid-container{
     max-width: 1200px;
@@ -312,6 +312,8 @@ html {
   ul{
     width: 100%;
     display: table;
+    max-width: 600px;
+    margin: 0 auto;
     li{
       display: table-cell;
       font-size: 14px;
@@ -443,6 +445,10 @@ html {
       }
     }
   }
+}
+.category .mainMenu ul{
+  max-width: 700px;
+  float: right;
 }
 .containerMenuBlog.mainMenu{
   padding-right: 0;

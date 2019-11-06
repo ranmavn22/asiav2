@@ -127,7 +127,7 @@ html .grid-container {
   margin: 0 auto;
   padding: 0 15px; }
 
-.archive .grid-container,
+.category .grid-container,
 .home .grid-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -302,7 +302,9 @@ html .grid-container {
   z-index: 9999; }
   .mainMenu ul {
     width: 100%;
-    display: table; }
+    display: table;
+    max-width: 600px;
+    margin: 0 auto; }
     .mainMenu ul li {
       display: table-cell;
       font-size: 14px;
@@ -411,6 +413,10 @@ html .grid-container {
         color: #fff; }
         .mainMenu ul .site_a_decouvrir .item_sub-menu .textwidget a:hover {
           color: #bb9d55; }
+
+.category .mainMenu ul {
+  max-width: 700px;
+  float: right; }
 
 .containerMenuBlog.mainMenu {
   padding-right: 0; }
@@ -2400,6 +2406,15 @@ footer {
     border-left: 1px solid #fff; }
   .contact_mobile a:first-child {
     border: none; }
+
+.wrapPage2 {
+  background: url(//asia-soleil-travel.com/wp-content/themes/enfold-child/dist/images/img3.png) no-repeat;
+  background-position-x: 100%;
+  background-position-y: 100%; }
+
+.wrapPage1 {
+  background: url(//asia-soleil-travel.com/wp-content/themes/enfold-child/dist/images/img1.png) no-repeat;
+  background-position: top left; }
 
 @media (max-width: 1200px) {
   .content_tabs_infor3 ul {

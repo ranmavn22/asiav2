@@ -12,6 +12,8 @@ $value_banner = get_option('wz_taxonomy_option_feature_image'.$obj->term_id);
     <div class="bannerPage positionR">
         <?php echo wp_get_attachment_image( $value_banner,'full' )?>
     </div>
+    <div class="wrapPage1">
+    <div class="wrapPage2">
     <div class="grid-container">
         <div class="titlePageCategory2"><h1>Toutes les idées de voyages : <span><?php echo $obj->name ?></span></h1></div>
         <div class="">
@@ -59,6 +61,8 @@ $value_banner = get_option('wz_taxonomy_option_feature_image'.$obj->term_id);
         <div id="back">
             <a href="#" title="AUTRES FORMULES"><i class="fa fa-chevron-circle-left"></i> <span><?php _e('AUTRES FORMULES','wz')?></span></a>
         </div>
+    </div>
+    </div>
     </div>
 <?php
 get_footer();

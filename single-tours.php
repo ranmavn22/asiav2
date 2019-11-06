@@ -63,6 +63,8 @@ while (have_posts()) : the_post();
             </p>
         </div>
     </div>
+    <div class="wrapPage1">
+        <div class="wrapPage2">
     <div class="grid-container">
         <div class="contentPage">
             <?php
@@ -241,20 +243,10 @@ while (have_posts()) : the_post();
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
         <div id="back">
             <a href="#" title="AUTRES FORMULES"><i class="fa fa-chevron-circle-left"></i> <span><?php _e('AUTRES FORMULES','wz')?></span></a>
+        </div>
+    </div>
         </div>
     </div>
 <?php endwhile; ?>
