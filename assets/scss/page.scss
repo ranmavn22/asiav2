@@ -964,15 +964,15 @@
     .see_more{
       display: inline-block;
       background-color: #689c72;
-      background-image: url(../images/icon_seemore.png);
       color: #fff;
-      background-repeat: no-repeat;
-      background-position: 125px center;
-      padding: 4px 28px 4px 13px;
+      padding: 4px 10px 4px 10px;
       border-radius: 3px;
       text-decoration: none;
       &:hover{
         background-color: #bb9d55;
+      }
+      img{
+        width: auto;
       }
     }
   }
@@ -1561,4 +1561,10 @@
   padding-left: 20px;
   margin-left: 13px;
   background-size: 18px;;
+}
+.slider-nav{
+  margin-top: 10px;
+  .slick-track{
+    margin: 0 -10px;
+  }
 }

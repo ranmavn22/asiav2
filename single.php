@@ -27,6 +27,9 @@ get_header('blog'); ?>
             <div class="mainContent">
                 <h1><?php the_title() ?></h1>
                 <?php the_content() ?>
+                <div class="comments-area">
+                    <?php comments_template(); ?>
+                </div>
             </div>
             <div class="mainSidebar">
                 <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>

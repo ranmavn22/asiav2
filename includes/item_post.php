@@ -17,7 +17,7 @@
         </span>
         <p><?php echo wp_trim_words($post->post_content, '35', '') ?></p>
         <a href="<?php echo get_permalink($post->ID) ?>" title="<?php echo get_the_title($post->ID) ?>"
-           class="see_more">VOIR LA SUITE
+           class="see_more">Voir la suite <img src="<?php echo get_stylesheet_directory_uri()?>/assets/images/icon_seemore.png" alt="Detail">
         </a>
     </div>
 </div>

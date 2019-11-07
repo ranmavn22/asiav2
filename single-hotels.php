@@ -92,6 +92,9 @@ while (have_posts()) : the_post();
             <div class="information_detail">
                 <?php the_content(); ?>
             </div>
+            <div class="comments-area">
+                <?php comments_template(); ?>
+            </div>
         </div>
         <div class="mainSidebar">
             <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
