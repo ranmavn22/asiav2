@@ -14,7 +14,7 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
-get_header();
+get_header('blog');
 
 ?>
 
@@ -26,15 +26,24 @@ while (have_posts()) : the_post();
     <div class="bannerPage positionR">
         <?php echo wp_get_attachment_image($value_banner, 'full',false,['alt' => get_the_title()]) ?>
     </div>
-    <div class="grid-container">
-        <div class="titlePageCategory"><h1><?php the_title() ?></h1></div>
-        <div class="contentPage">
+    <div class="breadcrumbs">
+        <div class="grid-container">
+            <?php
+            if ( function_exists('yoast_breadcrumb') ) {
+                yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+            }
+            ?>
+        </div>
+    </div>
+    <div class="grid-container blogTemplate">
+    <div id="content" class="displayFlex">
+        <div class="contentPage mainContent">
             <?php
             $value = get_post_meta($post->ID, 'wz_information_hotel', true);
             $value_editor = get_post_meta($post->ID, 'wz_demande', true);
             ?>
             <div class="top_infor">
-                <h4><?php the_title() ?></h4>
+                <h1><?php the_title() ?></h1>
                 <?php
                 if (!empty($value)) {
                     if ($value['assess'] != '') {
@@ -84,11 +93,13 @@ while (have_posts()) : the_post();
                 <?php the_content(); ?>
             </div>
         </div>
-
-        <div id="back">
-            <a href="#" title="AUTRES FORMULES"><i class="fa fa-chevron-circle-left"></i>
-                <span><?php _e('AUTRES FORMULES', 'wz') ?></span></a>
+        <div class="mainSidebar">
+            <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+                <?php dynamic_sidebar( 'sidebar-1' ); ?>
+            <?php endif; ?>
+            <?php include_once __DIR__.'/includes/sidebar.php' ?>
         </div>
+    </div>
     </div>
 <?php endwhile; ?>
 <?php get_footer();

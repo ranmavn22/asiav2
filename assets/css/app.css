@@ -414,6 +414,7 @@ html .grid-container {
         .mainMenu ul .site_a_decouvrir .item_sub-menu .textwidget a:hover {
           color: #bb9d55; }
 
+.tax-category_hotel .mainMenu ul,
 .single .mainMenu ul,
 .category .mainMenu ul {
   max-width: 700px;

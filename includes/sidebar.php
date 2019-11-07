@@ -62,8 +62,10 @@
                 </ul>
             </aside>
         <?php }
+    echo 1231234567456456;
 } else { ?>
     <?php if (is_tax('category_hotel')) {
+        echo 123123;
         $args = array('orderby' => 'name', 'parent' => 0, 'taxonomy' => 'category_hotel',);
         $terms = get_terms($args);
         if ($terms)

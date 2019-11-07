@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
-get_header();
+get_header('blog');
 $obj = get_queried_object();
 $value_banner = get_option('wz_taxonomy_option_feature_image'.$obj->term_id);
 

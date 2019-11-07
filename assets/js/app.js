@@ -118,6 +118,15 @@
             }
         })
     })
+
+    document.addEventListener( 'wpcf7mailsent', function( event ) {
+        console.log('send mail');
+        // For the form at https://www.framefreakstudio.com/application/
+        if ( 2714 === event.detail.contactFormId ) {
+            location = 'https://www.framefreakstudio.com/thanks-app/';
+        }
+    }, false );
+
 }(jQuery));
 
 (function($) {
