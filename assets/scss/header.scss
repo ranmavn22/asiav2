@@ -3,6 +3,7 @@
   line-height: 1.5;
   padding: 0;
   margin: 0;
+  -webkit-text-size-adjust: none;
 }
 .admin-bar .header{
   top: 32px;
@@ -114,6 +115,10 @@ html {
     padding: 0 15px;
   }
 }
+.single .contentHeader{
+  overflow: hidden;
+}
+.tax-category_hotel,
 .category,
 .home{
   .grid-container{
@@ -121,7 +126,6 @@ html {
     margin: 0 auto;
     padding: 0 15px;
   }
-
 }
 .form{
   input[type="date"],
@@ -373,7 +377,7 @@ html {
         padding: 0 60px 0 60px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
         margin-bottom: 30px;
       }
       .item{

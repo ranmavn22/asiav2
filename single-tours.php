@@ -177,6 +177,7 @@ while (have_posts()) : the_post();
                     <?php $num++; }} ?>
             </div>
             <div class="tabContent content_tabs_infor content_tabs_infor3">
+				<?php echo do_shortcode('[wz_table_hotel]')?>
                 <?php the_content()?>
             </div>
             <div class="tabContent content_tabs_infor content_tabs_infor4">

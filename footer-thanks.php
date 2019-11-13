@@ -83,7 +83,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
             <div class="menu_socket">
                 <div class="addthis_inline_share_toolbox"></div>
-                
+              
                 <div class="kkstart">
                     <span></span>
                     <span></span>
@@ -112,6 +112,24 @@ if ( ! defined( 'ABSPATH' ) ) {
     <a href="<?php echo get_page_link(342)?>" title="RAPPEL GRATUIT"><i class="fa fa-phone" aria-hidden="true"></i> <?php _e('RAPPEL GRATUIT' , 'wz')?> </a>
 </div>
 <?php wp_footer(); ?>
+
+<script type="text/javascript">
+            /* <![CDATA[ */
+            var google_conversion_id = 941629668;
+            var google_conversion_language = "en";
+            var google_conversion_format = "3";
+            var google_conversion_color = "ffffff";
+            var google_conversion_label = "mFm_CIej4XIQ5MGAwQM";
+            var google_remarketing_only = false;
+            /* ]]> */
+        </script>
+        <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+        </script>
+        <noscript>
+            <div style="display:inline;">
+                <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/941629668/?label=mFm_CIej4XIQ5MGAwQM&amp;guid=ON&amp;script=0"/>
+            </div>
+        </noscript>
 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPXKMTT"

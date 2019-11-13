@@ -146,6 +146,8 @@
 
 #wz_pagination .content_pagination {
   text-align: right;
+  max-width: 1010px;
+  margin: 0 auto;
 
   .page-numbers {
     background: #fff;
@@ -735,11 +737,6 @@
     display: flex;
     clear: both;
     margin: 0 -10px;
-
-    .img_vietnam_secret_item:nth-child(2n+1) {
-      display: none;
-    }
-
     .img_vietnam_secret_item {
       width: 50%;
       padding: 10px;
@@ -935,6 +932,9 @@
     padding: 15px;
     p{
       text-align: justify;
+    }
+    .text-center{
+      text-align: center;
     }
   }
   .listPost{
@@ -1142,7 +1142,7 @@
   }
 }
 
-.page-id-13218{
+.page-id-13280{
   h3{
     text-align: center;
   }
@@ -1173,7 +1173,7 @@
     }
   }
 }
-.page-id-13222{
+.page-id-13285{
   .wp-block-columns{
     max-width: 1010px;
     margin: 0 auto;
@@ -1195,7 +1195,7 @@
   }
 }
 
-.page-id-13243{
+.page-id-13288{
   p{
     text-align: justify;
   }
@@ -1222,7 +1222,7 @@
   }
 }
 
-.page-id-13251{
+.page-id-13291{
   .blockSection{
     background: url(https://asia-soleil-travel.com/wp-content/uploads/2017/05/bg_img.jpg) no-repeat top left;
     background-size: cover;
@@ -1244,7 +1244,7 @@
     }
   }
 }
-.page-id-13255{
+.page-id-13294{
   .itemBG{
     img{
       border-radius: 100%;
@@ -1299,9 +1299,6 @@
   .content_temoignages{
     width: 70%;
   }
-}
-.listHotelPage.grid-container{
-  max-width: 1010px;
 }
 .wz_danhgia{
   color: #ffd800;

@@ -11,7 +11,7 @@ get_header('home'); ?>
     <div class="banner">
         <div class="sliderItem homeSlider">
             <div class="item positionR">
-                <img src="https://asia-soleil-travel.com/wp-content/uploads/2017/07/1.jpg" alt="ASIA SOLEIL TRAVEL">
+                <img src="https://asia-soleil-travel.com/wp-content/uploads/2019/11/2-1.jpg" alt="ASIA SOLEIL TRAVEL">
                 <div class="slogan positionA displayFlex alignCenter">
                     <div class="logo"><?php generate_construct_logo() ?></div>
                     <div class="text">
@@ -28,7 +28,7 @@ get_header('home'); ?>
                 </div>
             </div>
             <div class="item positionR">
-                <img src="https://asia-soleil-travel.com/wp-content/uploads/2017/07/1.jpg" alt="ASIA SOLEIL TRAVEL">
+                <img src="https://asia-soleil-travel.com/wp-content/uploads/2019/11/IMG_6610_03_02.jpg" alt="ASIA SOLEIL TRAVEL">
                 <div class="slogan positionA displayFlex alignCenter">
                     <div class="logo"><?php generate_construct_logo() ?></div>
                     <div class="text">
@@ -45,7 +45,7 @@ get_header('home'); ?>
                 </div>
             </div>
             <div class="item positionR">
-                <img src="https://asia-soleil-travel.com/wp-content/uploads/2017/07/1.jpg" alt="ASIA SOLEIL TRAVEL">
+                <img src="https://asia-soleil-travel.com/wp-content/uploads/2019/11/6_02.jpg" alt="ASIA SOLEIL TRAVEL">
                 <div class="slogan positionA displayFlex alignCenter">
                     <div class="logo"><?php generate_construct_logo() ?></div>
                     <div class="text">
@@ -91,7 +91,7 @@ get_header('home'); ?>
             <h2><span>Inspirez-vous de</span> nos idées de voyage</h2>
             <?php echo do_shortcode("[tour_feature]") ?>
             <div class="btnSeemore">
-                <a href="<?php get_permalink(2792) ?>" title="Tous nos circuits">Tous nos circuits <i
+                <a href="<?php echo get_permalink(2792) ?>" title="Tous nos circuits">Tous nos circuits <i
                             class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
             </div>
         </div>
@@ -136,7 +136,7 @@ get_header('home'); ?>
                     endwhile;
                     ?>
                     <div class="btnSeemore">
-                        <a href="<?php get_permalink(480) ?>" title="En savoir plus">En savoir plus <i
+                        <a href="<?php echo get_permalink(13363) ?>" title="En savoir plus">En savoir plus <i
                                     class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
@@ -154,7 +154,7 @@ get_header('home'); ?>
                 <?php echo do_shortcode("[list_reviews]") ?>
             </div>
             <div class="btnSeemore">
-                <a href="<?php get_permalink(174) ?>" title="En savoir plus">En savoir plus <i
+                <a href="<?php echo get_permalink(174) ?>" title="En savoir plus">En savoir plus <i
                             class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
             </div>
         </div>
@@ -187,35 +187,35 @@ get_header('home'); ?>
             <p class="text-center">Notre collection de vidéos effectuées par notre équipe de terrain, sur les activités authentiques lors des missions de repérage et aussi sur les activités de notre équipe, les expériences de nos voyageurs.</p>
             <div class="displayFlex">
                 <div class="leftContent">
-                    <a href="#" class="positionR" title="">
-                        <img src="http://localhost/asia/wp-content/uploads/2019/11/asia.jpg" alt="">
+                    <a href="https://www.youtube.com/embed/8RuWbz9ZNCs" class="positionR lightBox iframe" title="Séance de pêche dans la campagne du Vietnam">
+                        <img src="/wp-content/uploads/2019/11/capture_03.jpg" alt="Séance de pêche dans la campagne du Vietnam">
                         <span class="iconPlay positionA"><img src="<?php echo get_stylesheet_directory_uri()?>/assets/images/iconvideo.png" alt="play"></span>
                     </a>
                 </div>
                 <div class="rightContent">
                     <div class="item displayFlex">
-                        <a class="positionR" title="Promenade à vélo jusqu’au marché local" href="#"><img src="http://localhost/asia/wp-content/uploads/2019/11/asia2-1.jpg" alt="Promenade à vélo jusqu’au marché local">
+                        <a class="positionR lightBox iframe" title="Promenade à vélo jusqu’au marché local" href="https://www.youtube.com/embed/LreJAGHyweU"><img src="/wp-content/uploads/2019/11/asia2.jpg" alt="Promenade à vélo jusqu’au marché local">
                         <span class="iconPlay positionA"><img src="<?php echo get_stylesheet_directory_uri()?>/assets/images/iconvideo.png" alt="play"></span>
                         </a>
-                        <p><a href="#" title="Promenade à vélo jusqu’au marché local">Promenade à vélo jusqu’au marché local</a></p>
+                        <p><a href="https://www.youtube.com/embed/LreJAGHyweU" class="lightBox iframe" title="Promenade à vélo jusqu’au marché local">Promenade à vélo jusqu’au marché local</a></p>
                     </div>
                     <div class="item displayFlex">
-                        <a href="#" class="positionR" title="Célébration des 10 ans d’ASIA SOLEIL TRAVEL"><img src="http://localhost/asia/wp-content/uploads/2019/11/asia3.jpg" alt="Célébration des 10 ans d’ASIA SOLEIL TRAVEL">
+                        <a href="https://www.youtube.com/embed/u_XoBGJaBpM" class="positionR lightBox iframe" title="Célébration des 10 ans d’ASIA SOLEIL TRAVEL"><img src="/wp-content/uploads/2019/11/asia3.jpg" alt="Célébration des 10 ans d’ASIA SOLEIL TRAVEL">
                             <span class="iconPlay positionA"><img src="<?php echo get_stylesheet_directory_uri()?>/assets/images/iconvideo.png" alt="play"></span>
                         </a>
-                        <p><a href="#" class="positionR" title="Célébration des 10 ans d’ASIA SOLEIL TRAVEL">Célébration des 10 ans d’ASIA SOLEIL TRAVEL</a></p>
+                        <p><a href="https://www.youtube.com/embed/u_XoBGJaBpM" class="positionR lightBox iframe" title="Célébration des 10 ans d’ASIA SOLEIL TRAVEL">Célébration des 10 ans d’ASIA SOLEIL TRAVEL</a></p>
                     </div>
                     <div class="item displayFlex">
-                        <a href="#" class="positionR" title="Séance de pêche dans la campagne du Vietnam"><img src="http://localhost/asia/wp-content/uploads/2019/11/asia4.jpg" alt="Séance de pêche dans la campagne du Vietnam">
+                        <a href="https://www.youtube.com/embed/GtwiS73eNqc" class="positionR lightBox iframe" title="Agence de Voyage au Vietnam"><img src="/wp-content/uploads/2019/11/asia_02.jpg" alt="Agence de Voyage au Vietnam">
                             <span class="iconPlay positionA"><img src="<?php echo get_stylesheet_directory_uri()?>/assets/images/iconvideo.png" alt="play"></span>
                         </a>
-                        <p><a href="#" title="Séance de pêche dans la campagne du Vietnam">Séance de pêche dans la campagne du Vietnam</a></p>
+                        <p><a href="https://www.youtube.com/embed/GtwiS73eNqc" class="lightBox iframe" title="Agence de Voyage au Vietnam">Séance de pêche dans la campagne du Vietnam</a></p>
                     </div>
                     <div class="item displayFlex">
-                        <a href="#" class="positionR" title="Satisfaction de Voyageur d'Asia Soleil Travel"><img src="http://localhost/asia/wp-content/uploads/2019/11/asia5.jpg" alt="Satisfaction de Voyageur d'Asia Soleil Travel">
+                        <a href="https://www.youtube.com/embed/E5eXB4HzE9g" class="positionR lightBox iframe" title="Satisfaction de Voyageur d'Asia Soleil Travel"><img src="/wp-content/uploads/2019/11/asia5.jpg" alt="Satisfaction de Voyageur d'Asia Soleil Travel">
                             <span class="iconPlay positionA"><img src="<?php echo get_stylesheet_directory_uri()?>/assets/images/iconvideo.png" alt="play"></span>
                         </a>
-                        <p><a href="#" title="Satisfaction de Voyageur d'Asia Soleil Travel">Satisfaction de Voyageur d'Asia Soleil Travel</a></p>
+                        <p><a href="https://www.youtube.com/embed/E5eXB4HzE9g" class="lightBox iframe" title="Satisfaction de Voyageur d'Asia Soleil Travel">Satisfaction de Voyageur d'Asia Soleil Travel</a></p>
                     </div>
                 </div>
             </div>
@@ -236,23 +236,23 @@ get_header('home'); ?>
         <div class="grid-container">
             <div class="contentSection displayFlex alignCenter">
                 <div class="item">
-                    <div class="counter counter0" data-count="25386">0</div>
+                    <div class="" data-count="">25386</div>
                     <p>Voyageurs nous ont fait confiance</p>
                 </div>
                 <div class="item">
-                    <div class="counter counter1" data-count="743">0</div>
+                    <div class="" data-count="743">743</div>
                     <p>Avis de voyageurs</p>
                 </div>
                 <div class="item">
-                    <div class="counter counter2" data-count="52">0</div>
+                    <div class="" data-count="52">52</div>
                     <p>Produits originaux et uniques</p>
                 </div>
                 <div class="item">
-                    <div class="counter counter3" data-count="7">0</div>
+                    <div class="" data-count="7">7</div>
                     <p>Projets solidaire</p>
                 </div>
                 <div class="item">
-                    <div class="counter counter4" data-count="5">0</div>
+                    <div class="" data-count="5">7</div>
                     <p>Bureaux au Vietnam, Laos, Cambodge et France</p>
                 </div>
             </div>

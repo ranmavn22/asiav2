@@ -121,9 +121,10 @@
 
     document.addEventListener( 'wpcf7mailsent', function( event ) {
         console.log('send mail');
+        location = 'https://asia-soleil-travel.com/devis/';
         // For the form at https://www.framefreakstudio.com/application/
         if ( 2714 === event.detail.contactFormId ) {
-            location = 'https://www.framefreakstudio.com/thanks-app/';
+            location = 'http://localhost/asia/devis/';
         }
     }, false );
 

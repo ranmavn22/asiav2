@@ -28,8 +28,8 @@ get_header('blog'); ?>
     <div class="grid-container blogTemplate">
         <div id="content" class="displayFlex">
             <div class="mainContent">
-                <h1><?php echo $obj->name ?></h1>
-                <?php echo $obj->description ?>
+				<h1><?php if(!$obj->description) echo $obj->name;?></h1>
+                <?php echo wpautop($obj->description) ?>
                 <?php
                 $loop = new WP_Query(
                         array('post_type' => 'post',

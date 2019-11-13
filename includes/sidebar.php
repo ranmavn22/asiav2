@@ -1,6 +1,8 @@
 <?php if (is_category(89)) {
-    $args = array('orderby' => 'name', 'parent' => 0, 'exclude' => array(1, 89));
+
+    $args = array('orderby' => 'name', 'parent' => 89, 'exclude' => array(1, 89));
     $categories = get_categories($args);
+
     if ($categories)
         foreach ($categories as $term) {
             ?>
@@ -38,7 +40,7 @@
                 </ul>
             </aside>
         <?php }
-    $args = array('orderby' => 'name', 'parent' => 0, 'taxonomy' => 'category_hotel',);
+    $args = array('orderby' => 'name', 'parent' => 0, 'taxonomy' => 'category_hotel');
     $terms = get_terms($args);
     if ($terms)
         foreach ($terms as $term) {

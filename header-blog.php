@@ -25,11 +25,11 @@ if (!defined('ABSPATH')) {
             <div class="logo positionA">
                 <?php generate_construct_logo()?>
             </div>
-            <?php wp_nav_menu( ['menu' => 347, 'menu_class' => 'displayFlex alignCenter', 'container_class' => 'containerMenuBlog mainMenu'] ) ?>
+            <?php wp_nav_menu( ['menu' => 400, 'menu_class' => 'displayFlex alignCenter', 'container_class' => 'containerMenuBlog mainMenu'] ) ?>
         </div>
         <div class="positionR hoverContent menuMobile">
             <button type="button" class="btnShowMenu positionR"><i class="fa fa-bars" aria-hidden="true"></i></button>
-            <?php wp_nav_menu( ['menu' => 347,'menu_class'=> '', 'container_class'=> 'positionA hideContent topUL'] ) ?>
+            <?php wp_nav_menu( ['menu' => 400,'menu_class'=> '', 'container_class'=> 'positionA hideContent topUL'] ) ?>
         </div>
     </div>
 </div>

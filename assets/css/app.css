@@ -5,7 +5,8 @@
   box-sizing: border-box;
   line-height: 1.5;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  -webkit-text-size-adjust: none; }
 
 .admin-bar .header {
   top: 32px; }
@@ -127,6 +128,10 @@ html .grid-container {
   margin: 0 auto;
   padding: 0 15px; }
 
+.single .contentHeader {
+  overflow: hidden; }
+
+.tax-category_hotel .grid-container,
 .category .grid-container,
 .home .grid-container {
   max-width: 1200px;
@@ -358,9 +363,9 @@ html .grid-container {
         display: flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
         margin-bottom: 30px; }
       .mainMenu ul li .item {
         width: 33%;
@@ -492,7 +497,10 @@ footer {
         -ms-flex-pack: end;
         justify-content: flex-end; }
         footer .sectionFooter1 .rightColumn aside:last-child .wz_images_footer img {
-          margin-left: 10px; }
+          margin-left: 10px;
+          height: 70px;
+          width: auto;
+          margin-top: 20px; }
   footer .tabs_country {
     padding-top: 40px; }
     footer .tabs_country .item_country {
@@ -1119,7 +1127,7 @@ footer {
     padding-top: 50px;
     max-width: 200px;
     margin: 0 auto; }
-    .countSection .item .counter {
+    .countSection .item div {
       font-size: 40px; }
     .countSection .item p {
       margin-top: 0; }
@@ -1246,7 +1254,9 @@ footer {
       color: #bb9d55; }
 
 #wz_pagination .content_pagination {
-  text-align: right; }
+  text-align: right;
+  max-width: 1010px;
+  margin: 0 auto; }
   #wz_pagination .content_pagination .page-numbers {
     background: #fff;
     color: #689c72;
@@ -1701,8 +1711,6 @@ footer {
   display: flex;
   clear: both;
   margin: 0 -10px; }
-  .content_tabs_infor1 .img_tour_content .img_vietnam_secret_item:nth-child(2n+1) {
-    display: none; }
   .content_tabs_infor1 .img_tour_content .img_vietnam_secret_item {
     width: 50%;
     padding: 10px; }
@@ -1854,6 +1862,8 @@ footer {
   padding: 15px; }
   .blogTemplate #content .mainContent p {
     text-align: justify; }
+  .blogTemplate #content .mainContent .text-center {
+    text-align: center; }
 
 .blogTemplate #content .listPost {
   margin: 0;
@@ -2044,54 +2054,54 @@ footer {
     color: #ff9900;
     font-size: 16px; }
 
-.page-id-13218 h3 {
+.page-id-13280 h3 {
   text-align: center; }
 
-.page-id-13218 .wp-block-separator {
+.page-id-13280 .wp-block-separator {
   height: 40px;
   border: none; }
 
-.page-id-13218 .wp-block-columns {
+.page-id-13280 .wp-block-columns {
   max-width: 1010px;
   margin: 0 auto;
   padding: 20px 15px 40px; }
-  .page-id-13218 .wp-block-columns img {
+  .page-id-13280 .wp-block-columns img {
     border-radius: 100%; }
 
-.page-id-13218 .list_gallery {
+.page-id-13280 .list_gallery {
   margin: 40px 0; }
-  .page-id-13218 .list_gallery a {
+  .page-id-13280 .list_gallery a {
     max-width: 10%;
     padding: 2px;
     display: inline-block; }
-  .page-id-13218 .list_gallery a:first-child {
+  .page-id-13280 .list_gallery a:first-child {
     max-width: 750px;
     margin: 0 auto;
     text-align: center;
     display: block; }
 
-.page-id-13222 .wp-block-columns {
+.page-id-13285 .wp-block-columns {
   max-width: 1010px;
   margin: 0 auto;
   padding: 40px 15px 40px; }
-  .page-id-13222 .wp-block-columns .wp-block-column:first-child img {
+  .page-id-13285 .wp-block-columns .wp-block-column:first-child img {
     max-width: 150px; }
 
-.page-id-13222 .location {
+.page-id-13285 .location {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 15px 40px; }
-  .page-id-13222 .location .item {
+  .page-id-13285 .location .item {
     width: 25%;
     padding: 0 10px; }
 
-.page-id-13243 p {
+.page-id-13288 p {
   text-align: justify; }
 
-.page-id-13243 img {
+.page-id-13288 img {
   border-radius: 100%; }
 
-.page-id-13243 .gallery-thumb {
+.page-id-13288 .gallery-thumb {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -2100,52 +2110,52 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
-  .page-id-13243 .gallery-thumb a {
+  .page-id-13288 .gallery-thumb a {
     width: 20%;
     padding: 2px; }
 
-.page-id-13243 .bottom {
+.page-id-13288 .bottom {
   background: url(https://asia-soleil-travel.com/wp-content/uploads/2017/05/bg_img.jpg) no-repeat top left;
   background-size: cover;
   text-align: center;
   padding: 40px 0; }
-  .page-id-13243 .bottom p {
+  .page-id-13288 .bottom p {
     text-align: center; }
 
-.page-id-13251 .blockSection {
+.page-id-13291 .blockSection {
   background: url(https://asia-soleil-travel.com/wp-content/uploads/2017/05/bg_img.jpg) no-repeat top left;
   background-size: cover;
   margin: 40px 0; }
 
-.page-id-13251 .wp-block-gallery {
+.page-id-13291 .wp-block-gallery {
   max-width: 1010px;
   margin: 0 auto; }
-  .page-id-13251 .wp-block-gallery .blocks-gallery-item {
+  .page-id-13291 .wp-block-gallery .blocks-gallery-item {
     text-align: center;
     display: inline-block;
     width: auto;
     margin: 0; }
-    .page-id-13251 .wp-block-gallery .blocks-gallery-item img {
+    .page-id-13291 .wp-block-gallery .blocks-gallery-item img {
       -webkit-box-flex: inherit;
       -ms-flex: inherit;
       flex: inherit;
       width: auto;
       height: auto; }
 
-.page-id-13255 .itemBG img {
+.page-id-13294 .itemBG img {
   border-radius: 100%;
   width: 200px; }
 
-.page-id-13255 .itemBG .img {
+.page-id-13294 .itemBG .img {
   width: 30%;
   padding-left: 0;
   padding-right: 30px; }
 
-.page-id-13255 .itemBG .desc {
+.page-id-13294 .itemBG .desc {
   width: 70%;
   text-align: justify; }
 
-.page-id-13255 .itemBG:nth-child(odd) .img {
+.page-id-13294 .itemBG:nth-child(odd) .img {
   -webkit-box-ordinal-group: 3;
   -ms-flex-order: 2;
   order: 2;
@@ -2174,9 +2184,6 @@ footer {
     padding-right: 30px; }
   .wrap_temoignages .content_temoignages {
     width: 70%; }
-
-.listHotelPage.grid-container {
-  max-width: 1010px; }
 
 .wz_danhgia {
   color: #ffd800; }
@@ -2504,14 +2511,6 @@ footer {
     flex-wrap: wrap; }
   .videoSection .leftContent, .videoSection .rightContent {
     width: 100%; }
-  .videoSection .rightContent {
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1; }
-  .videoSection .leftContent {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2; }
   .sliderItem .prevIcon {
     left: -10px; }
   .sliderItem .nextIcon {
@@ -2539,6 +2538,91 @@ footer {
     font-size: 1.5vw; } }
 
 @media (max-width: 767px) {
+  html .linkMain.displayFlex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    html .linkMain.displayFlex .item:nth-child(even),
+    html .linkMain.displayFlex .item:nth-child(odd) {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      border: none; }
+      html .linkMain.displayFlex .item:nth-child(even) .content,
+      html .linkMain.displayFlex .item:nth-child(odd) .content {
+        width: 100%;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start; }
+        html .linkMain.displayFlex .item:nth-child(even) .content > a,
+        html .linkMain.displayFlex .item:nth-child(odd) .content > a {
+          -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+          order: 1;
+          padding-right: 10px; }
+        html .linkMain.displayFlex .item:nth-child(even) .content > h4,
+        html .linkMain.displayFlex .item:nth-child(odd) .content > h4 {
+          -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+          order: 2;
+          margin: 0;
+          text-align: left; }
+      html .linkMain.displayFlex .item:nth-child(even):before,
+      html .linkMain.displayFlex .item:nth-child(odd):before {
+        display: none; }
+  .listVideo .displayFlex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .listVideo .displayFlex .item {
+      width: 50%;
+      padding: 5px; }
+  .videoSection .displayFlex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .videoSection .leftContent {
+    margin-bottom: 20px; }
+  .videoSection .rightContent {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .videoSection .rightContent .item {
+      width: 50%; }
+  body #page .itemBG:nth-child(even) .leftContent,
+  body #page .itemBG:nth-child(even) .img,
+  body #page .itemBG:nth-child(odd) .img {
+    width: 100%;
+    padding: 0;
+    text-align: center; }
+  .itemBG .displayFlex .desc {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    padding: 0; }
+  .itemBG .displayFlex .img {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1; }
+  .wrap_temoignages,
+  .itemBG .displayFlex,
+  .page-id-13285 .location,
+  .aboutUsContent {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .wrap_temoignages .content_temoignages,
+  .wrap_temoignages .img_temoignages,
+  .aboutUsContent .leftContent,
+  .aboutUsContent .rightContent,
+  .blogTemplate #content .mainSidebar,
+  .blogTemplate #content .mainContent {
+    width: 100%;
+    padding: 0; }
+  .blogTemplate .displayFlex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
   .contentPage {
     margin-top: 30px; }
   .single-tours .titlePage {
@@ -2684,7 +2768,9 @@ footer {
     font-size: 22px; }
   .titlePageCategory2, .titlePageCategory {
     text-align: center;
-    padding: 55px 5px;
+    padding: 0;
+    margin-top: 10px;
+    background: none;
     background-position: center; }
   .content_tabs_infor1 .icon_etape, .content_tabs_infor2 .icon_etape {
     display: none; }
@@ -2717,11 +2803,16 @@ footer {
     margin-bottom: 10px; }
   .homeSlider .item .slogan .text, .listGuid {
     display: none; }
-  .listTourStyle1 .item_tour
-.blogTemplate #content .listPost .item .content_post,
+  .videoSection .rightContent .item,
+  .listTourStyle1 .item_tour,
+  .blogTemplate #content .listPost .item .content_post,
   .blogTemplate #content .listPost .item .img_post,
   .content_tabs_infor1 .content_etape, .content_tabs_infor2 .content_etape {
     width: 100%; }
+  html p,
+  .wrap_temoignages .item h3,
+  .listTourStyle1 .item_tour .positionA {
+    font-size: 16px; }
   .blogTemplate #content .listPost .item .img_post {
     padding: 0; }
   .blogTemplate #content .listPost .item .content_post {
@@ -2785,4 +2876,8 @@ footer {
   footer .tabs_country .item_country.active:before {
     display: none; }
   footer .sectionFooter1 .rightColumn h3 {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .listPost {
+    margin: 0; }
+    .listPost .item {
+      padding-bottom: 20px; } }

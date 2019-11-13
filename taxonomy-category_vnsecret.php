@@ -6,7 +6,7 @@ if (!defined('ABSPATH')) {
 
 get_header();
 $obj = get_queried_object();
-$value_banner = get_option('wz_taxonomy_option_feature_image'.$obj->term_id);
+$value_banner = get_option('wz_taxonomy_option_banner'.$obj->term_id);
 
 ?>
     <div class="bannerPage positionR">

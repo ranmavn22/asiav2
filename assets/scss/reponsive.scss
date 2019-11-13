@@ -82,8 +82,6 @@
   .videoSection .leftContent, .videoSection .rightContent {
     width: 100%;
   }
-  .videoSection .rightContent{order:1;}
-  .videoSection .leftContent{order:2;}
   .sliderItem .prevIcon{
     left: -10px;
   }
@@ -115,6 +113,91 @@
 }
 
 @media (max-width: 767px) {
+  html .linkMain.displayFlex{
+    flex-wrap: wrap;
+     .item:nth-child(even),
+     .item:nth-child(odd){
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      border:none;
+       .content{
+         width: 100%;
+         justify-content: flex-start;
+         > a{
+           order: 1;
+           padding-right: 10px;
+         }
+         > h4{
+           order: 2;
+           margin: 0;
+           text-align: left;
+         }
+       }
+      &:before{
+        display: none;
+      }
+    }
+  }
+  .listVideo{
+    .displayFlex{
+      flex-wrap: wrap;
+      .item{
+        width: 50%;
+        padding: 5px;
+      }
+    }
+  }
+  .videoSection{
+    .displayFlex{
+      flex-wrap: wrap;
+    }
+    .leftContent{
+      margin-bottom: 20px;
+    }
+    .rightContent{
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      .item{
+        width: 50%;
+      }
+    }
+  }
+  body #page .itemBG:nth-child(even) .leftContent,
+  body #page .itemBG:nth-child(even) .img,
+  body #page .itemBG:nth-child(odd) .img{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .itemBG .displayFlex .desc{
+    width: 100%;
+    order: 2;
+    padding: 0;
+  }
+  .itemBG .displayFlex .img{
+    width: 100%;
+    order: 1;
+  }
+  .wrap_temoignages,
+  .itemBG .displayFlex,
+  .page-id-13285 .location,
+  .aboutUsContent{
+    flex-wrap: wrap;
+  }
+  .wrap_temoignages .content_temoignages,
+  .wrap_temoignages .img_temoignages,
+  .aboutUsContent .leftContent,
+  .aboutUsContent .rightContent,
+  .blogTemplate #content .mainSidebar,
+  .blogTemplate #content .mainContent{
+    width: 100%;
+    padding: 0;
+  }
+  .blogTemplate .displayFlex{
+    flex-wrap: wrap;
+  }
   .contentPage {
     margin-top: 30px;}
   .single-tours .titlePage{
@@ -302,7 +385,9 @@
   }
   .titlePageCategory2, .titlePageCategory {
     text-align: center;
-    padding: 55px 5px;
+    padding: 0;
+    margin-top: 10px;
+    background: none;
     background-position: center;
   }
   .content_tabs_infor1 .icon_etape, .content_tabs_infor2 .icon_etape{
@@ -341,12 +426,16 @@
     margin-bottom: 10px;
   }
   .homeSlider .item .slogan .text, .listGuid{display: none;}
-  .listTourStyle1 .item_tour
+  .videoSection .rightContent .item,
+  .listTourStyle1 .item_tour,
   .blogTemplate #content .listPost .item .content_post,
   .blogTemplate #content .listPost .item .img_post,
   .content_tabs_infor1 .content_etape, .content_tabs_infor2 .content_etape{
     width: 100%;
   }
+  html p,
+  .wrap_temoignages .item h3,
+  .listTourStyle1 .item_tour .positionA{font-size: 16px}
   .blogTemplate #content .listPost .item .img_post{
     padding: 0;
   }
@@ -427,5 +516,11 @@
   }
   footer .sectionFooter1 .rightColumn h3{
     font-size: 14px;
+  }
+  .listPost{
+    margin: 0;
+    .item{
+      padding-bottom: 20px;
+    }
   }
 }
