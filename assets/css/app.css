@@ -41,6 +41,9 @@
   -o-transition: 0.3s all;
   transition: 0.3s all; }
 
+table {
+  width: auto; }
+
 #page {
   overflow: hidden; }
 
