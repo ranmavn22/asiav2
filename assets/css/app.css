@@ -2438,6 +2438,60 @@ footer {
   .slider-nav .slick-track {
     margin: 0 -10px; }
 
+.comments-area label {
+  font-weight: bold; }
+
+.comments-area textarea, .comments-area input {
+  width: 100%;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ddd; }
+
+.comments-area input {
+  margin-bottom: 13px; }
+
+.comments-area input[name="url"], .comments-area label[for="url"] {
+  display: none; }
+
+.comments-area #wp-comment-cookies-consent {
+  width: auto; }
+
+.comments-area .form-submit {
+  text-align: center !important; }
+  .comments-area .form-submit input {
+    width: auto;
+    padding: 5px 10px;
+    color: #fff;
+    background: #7aa573;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold; }
+    .comments-area .form-submit input:hover {
+      background: #bb9d55; }
+
+#comments {
+  margin-top: 30px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px; }
+  #comments .comments-title {
+    margin-bottom: 20px; }
+  #comments .comment-list li {
+    list-style: none;
+    border-bottom: 1px solid #ddd; }
+  #comments .comment-list .comment-meta {
+    background: #fff !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 0; }
+    #comments .comment-list .comment-meta img {
+      border-radius: 100%;
+      margin-right: 10px; }
+  #comments .comment-list .comment-content {
+    padding-left: 60px; }
+    #comments .comment-list .comment-content p {
+      margin-top: 0; }
+
 @media (max-width: 1200px) {
   .content_tabs_infor3 ul {
     padding-left: 40px; }
