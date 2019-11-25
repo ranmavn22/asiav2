@@ -11,6 +11,15 @@ get_header();
         <?php echo get_the_post_thumbnail(174) ?>
         <div class="titlePage positionA"><h1><?php echo get_the_title(174)?></h1></div>
     </div>
+	<div class="breadcrumbs">
+        <div class="grid-container">
+            <?php
+            if ( function_exists('yoast_breadcrumb') ) {
+                yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+            }
+            ?>
+        </div>
+    </div>
     <div class="grid-container">
         <?php
         if (have_posts()) :

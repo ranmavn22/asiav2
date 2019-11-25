@@ -1,4 +1,7 @@
 @media (max-width: 1200px) {
+  .hotlineHeader{
+    display: none;
+  }
   .content_tabs_infor3 ul{
     padding-left: 40px;
   }
@@ -450,6 +453,13 @@
 }
 
 @media (max-width: 450px) {
+  .related_post.blockSection{
+    .wrap_slideBlog{
+      .item{
+        width: 100%;
+      }
+    }
+  }
   .rendezForm p span{
     width: 100%;
     margin-bottom: 5px;

@@ -507,22 +507,22 @@
       }
     }
   }
-  .linkToBlog{
-    text-align: right;
-    a{
-      display: inline-block;
-      width: 160px;
-      text-align: center;
-      line-height: 35px;
-      border-radius: 5px;
-      border: 2px solid #78a471;
-      font-size: 16px;
-      font-style: italic;
-      color: #78a471;
-      &:hover{
-        background: #78a471;
-        color: #fff;
-      }
+}
+body .linkToBlog{
+  text-align: right;
+  a{
+    display: inline-block;
+    width: 160px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+    border: 2px solid #78a471;
+    font-size: 16px;
+    font-style: italic;
+    color: #78a471;
+    &:hover{
+      background: #78a471;
+      color: #fff;
     }
   }
 }

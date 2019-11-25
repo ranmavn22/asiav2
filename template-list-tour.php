@@ -15,6 +15,15 @@ while (have_posts()) : the_post(); ?>
         <?php echo get_the_post_thumbnail() ?>
         <div class="titlePage positionA"><h1><?php the_title() ?></h1></div>
     </div>
+	<div class="breadcrumbs">
+        <div class="grid-container">
+            <?php
+            if ( function_exists('yoast_breadcrumb') ) {
+                yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+            }
+            ?>
+        </div>
+    </div>
     <div class="wrapPage1">
         <div class="wrapPage2">
             <div class="grid-container">

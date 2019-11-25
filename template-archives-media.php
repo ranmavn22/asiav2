@@ -14,6 +14,15 @@ get_header();
     <div class="bannerPage positionR">
         <?php the_post_thumbnail()?>
     </div>
+	<div class="breadcrumbs">
+        <div class="grid-container">
+            <?php
+            if ( function_exists('yoast_breadcrumb') ) {
+                yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+            }
+            ?>
+        </div>
+    </div>
     <div class="grid-container">
         <div class="titlePageCategory"><h1><?php the_title() ?></h1></div>
         <div class="contentPage"><?php echo the_content() ?></div>

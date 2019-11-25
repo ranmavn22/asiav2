@@ -112,7 +112,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     <a href="<?php echo get_page_link(342)?>" title="RAPPEL GRATUIT"><i class="fa fa-phone" aria-hidden="true"></i> <?php _e('RAPPEL GRATUIT' , 'wz')?> </a>
 </div>
 <?php wp_footer(); ?>
-
+<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58d4936e094a8e1b"></script>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPXKMTT"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -120,6 +120,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <!-- Subiz -->
 <script>
+	(function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-102337344-1', 'auto');
+            ga('send', 'pageview');
+	
     (function(s, u, b, i, z){
         u[i]=u[i]||function(){
             u[i].t=+new Date();

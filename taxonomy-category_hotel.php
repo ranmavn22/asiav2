@@ -12,6 +12,15 @@ $value_banner = get_option('wz_taxonomy_option_banner' . $obj->term_id);
     <div class="bannerPage positionR">
         <?php echo wp_get_attachment_image($value_banner, 'full') ?>
     </div>
+	<div class="breadcrumbs">
+        <div class="grid-container">
+            <?php
+            if ( function_exists('yoast_breadcrumb') ) {
+                yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+            }
+            ?>
+        </div>
+    </div>
     <div class="grid-container blogTemplate listHotelPage">
         <div id="content" class="displayFlex">
             <div class="mainContent">

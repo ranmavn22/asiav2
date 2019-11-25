@@ -37,6 +37,7 @@ if (!defined('ABSPATH')) {
                     <li><a href="//cambodge.asia-soleil-travel.com/" title=""><img src="<?php echo get_stylesheet_directory_uri()?>/assets/images/cambodia_flat.jpg" alt=""></a></li>
                     <li><a href="//birmanie.asia-soleil-travel.com/" title=""><img src="<?php echo get_stylesheet_directory_uri()?>/assets/images/myanmar_flats.jpg" alt=""></a></li>
                 </ul>
+				<span class="hotlineHeader">Hotline M.Dat: +84 (0) 985 830 955</span>
             </div>
             <div class="rightHeader">
                 <span><a href="<?php echo get_page_link(335)?>" title="" class="alignCenter"><i class="fa fa-paper-plane" aria-hidden="true"></i>CONTACTEZ-NOUS </a></span>

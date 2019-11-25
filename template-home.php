@@ -187,8 +187,8 @@ get_header('home'); ?>
             <p class="text-center">Notre collection de vidéos effectuées par notre équipe de terrain, sur les activités authentiques lors des missions de repérage et aussi sur les activités de notre équipe, les expériences de nos voyageurs.</p>
             <div class="displayFlex">
                 <div class="leftContent">
-                    <a href="https://www.youtube.com/embed/8RuWbz9ZNCs" class="positionR lightBox iframe" title="Séance de pêche dans la campagne du Vietnam">
-                        <img src="/wp-content/uploads/2019/11/capture_03.jpg" alt="Séance de pêche dans la campagne du Vietnam">
+                    <a href="https://www.youtube.com/embed/8RuWbz9ZNCs" class="positionR lightBox iframe" title="Agence de Voyage au Vietnam">
+                        <img src="/wp-content/uploads/2019/11/capture_03.jpg" alt="Agence de Voyage au Vietnam">
                         <span class="iconPlay positionA"><img src="<?php echo get_stylesheet_directory_uri()?>/assets/images/iconvideo.png" alt="play"></span>
                     </a>
                 </div>
@@ -206,10 +206,10 @@ get_header('home'); ?>
                         <p><a href="https://www.youtube.com/embed/u_XoBGJaBpM" class="positionR lightBox iframe" title="Célébration des 10 ans d’ASIA SOLEIL TRAVEL">Célébration des 10 ans d’ASIA SOLEIL TRAVEL</a></p>
                     </div>
                     <div class="item displayFlex">
-                        <a href="https://www.youtube.com/embed/GtwiS73eNqc" class="positionR lightBox iframe" title="Agence de Voyage au Vietnam"><img src="/wp-content/uploads/2019/11/asia_02.jpg" alt="Agence de Voyage au Vietnam">
+                        <a href="https://www.youtube.com/embed/GtwiS73eNqc" class="positionR lightBox iframe" title="Séance de pêche dans la campagne du Vietnam"><img src="/wp-content/uploads/2019/11/asia_02.jpg" alt="Séance de pêche dans la campagne du Vietnam">
                             <span class="iconPlay positionA"><img src="<?php echo get_stylesheet_directory_uri()?>/assets/images/iconvideo.png" alt="play"></span>
                         </a>
-                        <p><a href="https://www.youtube.com/embed/GtwiS73eNqc" class="lightBox iframe" title="Agence de Voyage au Vietnam">Séance de pêche dans la campagne du Vietnam</a></p>
+                        <p><a href="https://www.youtube.com/embed/GtwiS73eNqc" class="lightBox iframe" title="Séance de pêche dans la campagne du Vietnam">Séance de pêche dans la campagne du Vietnam</a></p>
                     </div>
                     <div class="item displayFlex">
                         <a href="https://www.youtube.com/embed/E5eXB4HzE9g" class="positionR lightBox iframe" title="Satisfaction de Voyageur d'Asia Soleil Travel"><img src="/wp-content/uploads/2019/11/asia5.jpg" alt="Satisfaction de Voyageur d'Asia Soleil Travel">

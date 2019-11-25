@@ -29,6 +29,23 @@ get_header('blog'); ?>
         <div id="content" class="displayFlex">
             <div class="mainContent">
 				<h1><?php if(!$obj->description) echo $obj->name;?></h1>
+
+                <div class="navContentPage">
+                    <div class="navtitle">Contenu de l'article <i class="fa fa-chevron-circle-down" aria-hidden="true"></i></div>
+                    <div class="contentNav">
+                        <ul>
+                            <li><a href="#section1">Fêtes traditionnelles vietnamiennes</a></li>
+                            <li><a href="#section2">Le culte des ancêtres chez les Viet</a></li>
+                            <li><a href="#section3">La cuisine de Fête du Tet</a></li>
+                            <li><a href="#section4">Le culte des Génies du Foyer</a></li>
+                            <li><a href="#section5">Différences de coutume du Nord au Sud</a></li>
+                            <li><a href="#section6">Les rituels tenus dans la cuisine</a></li>
+                            <li><a href="#section7">Fêtes du Tet traditionnel vietnamien</a></li>
+                            <li><a href="#section8">Le commencement et les préparatifs du Tet</a></li>
+                        </ul>
+                    </div>
+                </div>
+
                 <?php echo wpautop($obj->description) ?>
                 <?php
                 $loop = new WP_Query(

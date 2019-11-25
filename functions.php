@@ -138,7 +138,7 @@ function no_category_parents($catlink, $category_id) {
 
     if ( is_wp_error( $category ) )
         return $category;
-
+    
     $category_nicename = $category->slug;
     if ( $category->parent == $category->cat_ID ) {
         $category->parent = 0;
@@ -173,7 +173,6 @@ function no_category_parents_rewrite_rules($category_rewrite) {
     $old_base = $wp_rewrite->get_category_permastruct();
     $old_base = str_replace( '%category%', '(.+)', $old_base );
     $old_base = trim($old_base, '/');
-    echo $old_base;
     $category_rewrite[$old_base.'$'] = 'index.php?category_redirect=$matches[1]';
 
     return $category_rewrite;
@@ -197,3 +196,42 @@ function no_category_parents_request($query_vars) {
     return $query_vars;
 }
 
+add_filter( 'wpseo_breadcrumb_single_link' ,'wpseo_remove_breadcrumb_link', 10 ,2);
+function wpseo_remove_breadcrumb_link( $link_output , $link ){
+    $textRemoveArray = [
+        'Vietnams',
+        'Tours',
+        'Temoignages'
+    ];
+    if(in_array($link['text'],$textRemoveArray )) {
+        $link_output = '';
+    }
+
+    return $link_output;
+}
+
+add_filter('comment_form_defaults', 'set_my_comment_title', 20);
+function set_my_comment_title( $defaults ){
+ $defaults['title_reply'] = __('Commentaire - Votre message', '');
+ return $defaults;
+}
+
+add_filter( 'comment_form_fields', 'mo_comment_fields_custom_order' );
+function mo_comment_fields_custom_order( $fields ) {
+	$comment_field = '<textarea id="comment" name="comment" cols="45" rows="12" maxlength="65525" aria-required="true" required="required"></textarea>';
+	$author_field = '<label for="author">Votre nom & prénom*:</label><input id="author" name="author" type="text" value="" size="30" maxlength="245" />';
+	$email_field = '<label for="email">Votre adresse-mail*:</label><input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" />';
+	$url_field = $fields['url'];
+	unset( $fields['comment'] );
+	unset( $fields['author'] );
+	unset( $fields['email'] );
+	unset( $fields['url'] );
+	unset($fields['cookies']);
+	// the order of fields is the order below, change it as needed:
+	$fields['comment'] = $comment_field;
+	$fields['author'] = $author_field;
+	$fields['email'] = $email_field;
+	$fields['url'] = $url_field;
+	// done ordering, now return the fields:
+	return $fields;
+}

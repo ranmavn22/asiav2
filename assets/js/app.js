@@ -110,22 +110,35 @@
         $('.tabControl .item').on('click',function (e) {
             e.preventDefault();
             let el = $(this).data('el');
-            console.log(el);
             if($(el).length > 0){
                 $('.tabControl .item,.tabContent').removeClass('active');
                 $(this).addClass('active');
                 $(el).addClass('active');
             }
+        });
+        $('a').click(function (e){
+            if($($(this).attr("href")).length != 0){
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $($(this).attr("href")).offset().top - 150
+                }, 500)
+            }
+        });
+        $(".navtitle").on('click',function (e) {
+            if(!$(this).hasClass('show')){
+                $(this).closest('.navContentPage').find('.contentNav').stop().slideDown();
+                $(this).addClass('show');
+            }else{
+                $(this).closest('.navContentPage').find('.contentNav').stop().slideUp();
+                $(this).removeClass('show');
+            }
+
         })
-    })
+    });
 
     document.addEventListener( 'wpcf7mailsent', function( event ) {
-        console.log('send mail');
-        location = 'https://asia-soleil-travel.com/devis/';
-        // For the form at https://www.framefreakstudio.com/application/
-        if ( 2714 === event.detail.contactFormId ) {
-            location = 'http://localhost/asia/devis/';
-        }
+        let location = 'https://asia-soleil-travel.com/devis/';
+        window.location.href = location;
     }, false );
 
 }(jQuery));

@@ -837,7 +837,9 @@
 }
 .breadcrumbs{
   padding: 15px 0;
-  background: #ddd;
+  background: #f5f5f5;
+  z-index: 1;
+  position: relative;
   p{
     margin: 0;
   }
@@ -868,7 +870,7 @@
       }
       ul{
         li{
-          padding: 5px 0;
+          padding: 8px 0;
           position: relative;
           a{
             display: block;
@@ -882,15 +884,16 @@
       }
       .sub-menu{
         li{
-          padding-left: 10px;
+          padding-left: 20px;
           &:before{
             display: inline-block;
             font: normal normal normal 14px/1 FontAwesome;
-            content: "\f054";
+            content: "\f138";
             position: absolute;
-            top: 13px;
-            font-size: 11px;
+            top: 14px;
+            font-size: 14px;
             left: 0;
+            color: #689c72;
           }
           a{
             color: #545454;
@@ -935,6 +938,21 @@
     }
     .text-center{
       text-align: center;
+    }
+    table{
+      border: 1px solid #ddd;
+      border-collapse: collapse;
+      p{
+        text-align: left;
+        margin: 0;
+      }
+      tr{
+        border: 1px solid #ddd;
+      }
+      td{
+        border-left: 1px solid #ddd;
+        padding: 5px;
+      }
     }
   }
   .listPost{
@@ -982,8 +1000,26 @@
     flex-wrap: wrap;
   }
 }
+.single-post{
+  .mainContent{
+    a:visited,
+    a{
+      color: #004F8B;
+      &:hover{
+        color: #bb9d55;
+      }
+    }
+    h2{
+      font-size: 1.17em;
+    }
+  }
+}
 .textRight{
   text-align: right;
+}
+.titleCategories{
+  text-transform:uppercase;
+  margin-bottom:30px;
 }
 .listVideo{
   padding: 40px 0;
@@ -1627,6 +1663,54 @@
       p{
         margin-top: 0;
       }
+    }
+  }
+}
+
+.hotlineHeader{
+  margin-left: 70px;
+}
+
+.related_post.blockSection{
+  background: transparent;
+  .wrap_slideBlog{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    .item{
+      width: 50%;
+      .img{
+        font-size: 0;
+        img.wp-post-image{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.navContentPage{
+  background: #fdf9f6;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  .navtitle{
+    font-weight:bold;
+    .fa{
+      color: #689c72;
+    }
+  }
+  .navtitle.show{
+    .fa{
+      transform: rotate(-180deg);
+    }
+  }
+  .contentNav{
+    padding:10px 20px;
+    display: none;
+  }
+  li{
+    font-weight: bold;
+    ul{
+      padding-left: 15px;
     }
   }
 }
