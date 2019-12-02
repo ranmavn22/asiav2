@@ -1918,6 +1918,12 @@ body .linkToBlog {
     .blogTemplate #content .listPost .item .see_more img {
       width: auto; }
 
+.blogTemplate #content .listPost.galleries {
+  margin: 0 -5px; }
+  .blogTemplate #content .listPost.galleries .item {
+    width: 33.33%;
+    padding: 5px; }
+
 .blogTemplate #content .contentItem {
   border: 1px solid #ddd;
   display: -webkit-box;
@@ -1926,15 +1932,24 @@ body .linkToBlog {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
+.category .mainContent a:visited,
+.category .mainContent a,
 .single-post .mainContent a:visited,
 .single-post .mainContent a {
   color: #004F8B; }
+  .category .mainContent a:visited:hover,
+  .category .mainContent a:hover,
   .single-post .mainContent a:visited:hover,
   .single-post .mainContent a:hover {
     color: #bb9d55; }
 
+.category .mainContent h2,
 .single-post .mainContent h2 {
-  font-size: 1.17em; }
+  font-size: 20px; }
+
+.category .mainContent h3,
+.single-post .mainContent h3 {
+  font-size: 18px; }
 
 .textRight {
   text-align: right; }
@@ -2820,6 +2835,7 @@ body .linkToBlog {
     margin-top: 20px;
     padding: 0;
     text-align: left; }
+  .blogTemplate #content .listPost.galleries .item,
   .listPost .item {
     width: 50%; }
   .list_category {
@@ -2961,6 +2977,7 @@ body .linkToBlog {
   .contactForm .displayFlex {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
+  .blogTemplate #content .listPost.galleries .item,
   footer .tabs_country .item_country,
   footer .country_vietnam .item_location,
   .footerForm.form p:nth-child(8) span:first-child,

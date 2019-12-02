@@ -30,8 +30,7 @@ get_header('blog'); ?>
                 <div class="comments-area">
                     <?php comments_template(); ?>
                 </div>
-
-                <div class="related_post blockSection">
+				<div class="related_post blockSection">
                     <div class="wrap_slideBlog">
                     <?php
                     $category = get_the_category($post->ID);
@@ -60,7 +59,6 @@ get_header('blog'); ?>
                         <?php }} ?>
                     </div>
                 </div>
-
             </div>
             <div class="mainSidebar">
                 <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>

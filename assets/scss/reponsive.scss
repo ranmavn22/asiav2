@@ -285,6 +285,7 @@
     padding: 0;
     text-align: left;
   }
+  .blogTemplate #content .listPost.galleries .item,
   .listPost .item{
     width: 50%;
   }
@@ -467,6 +468,7 @@
   .contactForm .displayFlex {
     flex-wrap: wrap;
   }
+  .blogTemplate #content .listPost.galleries .item,
   footer .tabs_country .item_country,
   footer .country_vietnam .item_location,
   .footerForm.form p:nth-child(8) span:first-child,

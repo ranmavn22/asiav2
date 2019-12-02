@@ -25,10 +25,10 @@ get_header();
     </div>
     <div class="grid-container">
         <div class="titlePageCategory"><h1><?php the_title() ?></h1></div>
-        <div class="contentPage"><?php echo the_content() ?></div>
+        <div class="contentPage"><?php the_content() ?></div>
         <?php
         $loop = new WP_Query(array('post_type' => 'attachment',
-                'posts_per_page' => 12,
+                'posts_per_page' => 30,
                 'post_status' => 'inherit',
                 'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
                 'tax_query' => array(
@@ -45,7 +45,7 @@ get_header();
             ?>
             <div class="item">
                 <?php $image = wp_get_attachment_image_src($post->ID, "custom-medium"); ?>
-                <a rel="gallery" class="lightBox" href="<?php echo $image[0]?>" title="">
+                <a rel="gallery" class="lightBox" href="<?php echo wp_get_attachment_url($post->ID)?>" title="">
                     <img src="<?php echo $image[0]?>" alt="">
                 </a>
             </div>

@@ -994,12 +994,20 @@
       }
     }
   }
+  .listPost.galleries{
+    margin: 0 -5px;
+    .item{
+      width: 33.33%;
+      padding: 5px;
+    }
+  }
   .contentItem{
     border: 1px solid #ddd;
     display: flex;
     flex-wrap: wrap;
   }
 }
+.category,
 .single-post{
   .mainContent{
     a:visited,
@@ -1010,7 +1018,10 @@
       }
     }
     h2{
-      font-size: 1.17em;
+      font-size: 20px;
+    }
+    h3{
+      font-size: 18px;
     }
   }
 }

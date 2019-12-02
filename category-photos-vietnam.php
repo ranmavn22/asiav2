@@ -6,7 +6,7 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
+    exit; // Exit if accessed directly.
 }
 $obj = get_queried_object();
 $value_banner = get_option('wz_taxonomy_option_banner'.$obj->term_id);
@@ -16,35 +16,50 @@ get_header('blog'); ?>
     <div class="bannerPage positionR">
         <?php echo wp_get_attachment_image( $value_banner,'full' )?>
     </div>
-<div class="breadcrumbs">
-    <div class="grid-container">
-        <?php
-        if ( function_exists('yoast_breadcrumb') ) {
-            yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
-        }
-        ?>
+    <div class="breadcrumbs">
+        <div class="grid-container">
+            <?php
+            if ( function_exists('yoast_breadcrumb') ) {
+                yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+            }
+            ?>
+        </div>
     </div>
-</div>
     <div class="grid-container blogTemplate">
         <div id="content" class="displayFlex">
             <div class="mainContent">
-				<h1><?php if(!$obj->description) echo $obj->name;?></h1>
+                <h1><?php if(!$obj->description) echo $obj->name;?></h1>
                 <?php echo wpautop($obj->description) ?>
                 <?php
-                $loop = new WP_Query(
-                        array('post_type' => 'post',
-                            'posts_per_page' => 12,
-                            'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
-                            'category_name' => $obj->slug)
+                $loop = new WP_Query(array('post_type' => 'attachment',
+                        'posts_per_page' => -1,
+                        'post_status' => 'inherit',
+                        'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
+                        'tax_query' => array(
+                            array(
+                                'taxonomy' => 'media_category',
+                                'field'    => 'slug',
+                                'terms'    => 'galery',
+                            ),
+                        ),
+                    )
                 );
 
+                echo "<div class='listPost galleries'>";
+                while ($loop->have_posts()) : $loop->the_post();
+                    ?>
+                    <div class="item">
+                        <?php $image = wp_get_attachment_image_src($post->ID, "custom-medium"); ?>
+                        <a rel="gallery" class="lightBox" href="<?php echo wp_get_attachment_url($post->ID)?>" title="">
+                            <img src="<?php echo $image[0]?>" alt="">
+                        </a>
+                    </div>
+                <?php
+                endwhile;
+                wp_reset_postdata();
+                wp_reset_query();
+                echo "</div>";
                 ?>
-                <div class='listPost'>
-                    <?php
-                    while ($loop->have_posts()) : $loop->the_post();
-                        include __DIR__.'/includes/item_post.php';
-                    endwhile; ?>
-                </div>
                 <div id="wz_pagination">
                     <div class="content_pagination">
                         <?php
@@ -75,3 +90,4 @@ get_header('blog'); ?>
 
 <?php
 get_footer();
+
